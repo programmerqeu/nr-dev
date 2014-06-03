@@ -14,4 +14,17 @@
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-hdpi/icon.png \
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-land-mdpi/screen.png \
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-port-xhdpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-mdpi/icon.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-ldpi/icon.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-land-hdpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable/icon.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-land-xhdpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \
+/var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
 /var/www/vergissberlin/nr-dev/platforms/android/ant-build/AndroidManifest.xml \
