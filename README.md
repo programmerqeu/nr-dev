@@ -85,7 +85,7 @@ Warning: the nightly version is not stable.
 
 # Developer
 ## Prepare Environment
-1. Donwload SDK
+1. Donwload SDK http://developer.android.com/sdk/index.html
 - Follow Instructions: http://cordova.apache.org/docs/en/2.5.0/guide_getting-started_android_index.md.html
 - Export the paths to your  ~/.basrc file like so:
 ```
