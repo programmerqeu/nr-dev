@@ -83,6 +83,15 @@ If you feel daring and want use the bleeding edge 'Nightly' version of Ionic, ch
 Warning: the nightly version is not stable.
 
 
+# Developer
+## Prepare Environment
+Follow Instructions: http://cordova.apache.org/docs/en/2.5.0/guide_getting-started_android_index.md.html
+
+```
+export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/platform-tools/:
+export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/tools/
+```
+
 ## Issues
 Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
 
