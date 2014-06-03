@@ -92,11 +92,28 @@ Warning: the nightly version is not stable.
 export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/platform-tools/:
 export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/tools/
 ```
-- create hardware config 
-```
-android create avd --name my_and --target 1
-```
+- install ant ```sudo aptitude install ant```
+- create hardware config ```android create avd --name my_and --target 1```
 - build http://ionicframework.com/getting-started/
+
+
+```
+sudo aptitude install -y python-software-properties python g++ make
+sudo add-apt-repository -y ppa:chris-lea/node.js
+sudo aptitude update
+sudo aptitude install nodejs
+sudo aptitude install npm
+sudo npm install -g cordova
+sudo npm install -g phonegap
+phonegap create my-app
+cd my-app
+export PATH=${PATH}:/home/oshirowanen/Downloads/adt-bundle-linux-x86_64-20131030/sdk/platform-tools:/home/oshirowanen/Downloads/adt-bundle-linux-x86_64-20131030/sdk/tools
+sudo aptitude install ant
+cordova platform add android
+android create avd --name my_and --target 1
+phonegap run android
+```
+
 
 ## Issues
 Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
