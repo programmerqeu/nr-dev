@@ -1,6 +1,5 @@
-NR{dev} - Crossplattform app
-==============================
----
+NR{dev} - Cross platform application
+====================================
 
 
 ## Using this project
