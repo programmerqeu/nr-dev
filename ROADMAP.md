@@ -1,3 +1,7 @@
+NR{dev} - Cross platform application
+====================================
+---
+
 # Roadmap NR{dev}
 
 ## Collection of ideas 
@@ -83,6 +87,7 @@ You don’t need to constrain your palette to web-safe colors.
 - Icon generator app for iOS [Appstore](https://itunes.apple.com/de/app/prepo/id476533227?mt=12&ign-mpt=uo%3D4)
 
 ##### App Icon Apple
+
 - **iPhone5:**	120 x 120
 - **iPod:**	120 x 120
 - **iPad:**	152 x 152
@@ -111,17 +116,4 @@ You don’t need to constrain your palette to web-safe colors.
 - **iPod:**	58 x 58
 - **iPad:**	58 x 58
 - **iPad2:**	29 x 29
-
-
-
-
-
-
-
-
-
-
-
-
-
 
