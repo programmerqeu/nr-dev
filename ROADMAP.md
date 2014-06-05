@@ -56,10 +56,10 @@ NR{dev} - Cross platform application
 - Home page
 - documentation 
 
-### version 0.0.2 
+### version 0.1.0 
 1. imprint 
 
-### version 0.0.3 
+### version 0.2.0 
 1. contacts Ligth 
 - data 
 	- a simple Array 
@@ -84,6 +84,8 @@ You don’t need to constrain your palette to web-safe colors.
 
 ##### Helper
 - Icon templates for iOS and Android [Download](http://appicontemplate.com/)
+	- http://ios.robs.im/files/iOS-7-Vector-Icon.sketch.zip
+	- http://ios.robs.im/files/iOS-7-Icon-Set.psd
 - Icon generator app for iOS [Appstore](https://itunes.apple.com/de/app/prepo/id476533227?mt=12&ign-mpt=uo%3D4)
 
 ##### App Icon Apple
