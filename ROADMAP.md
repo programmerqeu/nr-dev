@@ -6,12 +6,17 @@ NR{dev} - Cross platform application
 
 ## Collection of ideas 
 1. Contacts
-	- call phone number
-	- email open mail app
-	- photo Gravatar 
-	- photo G+
-	- Send as vCard
-	- Sync to local adresss book
+	- attributes
+		- phone number
+		- email
+		- photo Gravatar 
+		- photo G+
+	- functions
+		- safe to local storage 
+		- call phone number
+		- email open mail app
+		- send as vCard
+		- sync to local adresss book
 - Give me a peer
 - Days until the next cake OR Happy birthday reminder
 - Remote controlled lights (lampen.nr) 
