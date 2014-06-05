@@ -5,12 +5,23 @@ NR{dev} - Cross platform application
 # Roadmap NR{dev}
 
 ## Collection of ideas 
-1. contacts
-	- call phone number
-	- email open mail app
-	- photo Gravatar 
-	- photo G+ 
-- Give me a peer 
+1. Contacts
+	- attributes
+		- phone number
+		- email
+		- photo Gravatar 
+		- photo G+
+	- functions
+		- safe to local storage 
+		- call phone number
+		- email open mail app
+		- send as vCard
+		- sync to local adresss book
+- Google Analtics
+	- Including UA-Code
+	- Eventtracking
+- Give me a peer
+- Days until the next cake OR Happy birthday reminder
 - Remote controlled lights (lampen.nr) 
 	- status 
 	- selectable presets
