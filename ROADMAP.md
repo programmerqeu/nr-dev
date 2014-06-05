@@ -67,6 +67,11 @@ NR{dev} - Cross platform application
 - Home page
 - documentation 
 
+### version 0.0.2
+1. Google Analtics
+	- Including UA-Code
+	- Eventtracking
+
 ### version 0.1.0 
 1. imprint 
 
@@ -94,10 +99,14 @@ The standard bit depth for icons and images is 24 bits—that is, 8 bits each fo
 You don’t need to constrain your palette to web-safe colors.
 
 ##### Helper
-- Icon templates for iOS and Android [Download](http://appicontemplate.com/)
-	- http://ios.robs.im/files/iOS-7-Vector-Icon.sketch.zip
-	- http://ios.robs.im/files/iOS-7-Icon-Set.psd
-- Icon generator app for iOS [Appstore](https://itunes.apple.com/de/app/prepo/id476533227?mt=12&ign-mpt=uo%3D4)
+- **Icons**
+	- Icon templates for iOS and Android [Download](http://appicontemplate.com/)
+		- http://ios.robs.im/files/iOS-7-Vector-Icon.sketch.zip
+		- http://ios.robs.im/files/iOS-7-Icon-Set.psd
+	- Icon generator app for iOS [Appstore](https://itunes.apple.com/de/app/prepo/id476533227?mt=12&ign-mpt=uo%3D4)
+	- [Cordova documentation](http://docs.phonegap.com/en/3.3.0/config_ref_images.md.html#Icons%20and%20Splash%20Screens)
+- **Splash screen**
+	- [Cordova documentation](http://cordova.apache.org/docs/en/3.3.0/cordova_splashscreen_splashscreen.md.html#Splashscreen)
 
 ##### App Icon Apple
 
@@ -130,3 +139,13 @@ You don’t need to constrain your palette to web-safe colors.
 - **iPad:**	58 x 58
 - **iPad2:**	29 x 29
 
+## User story
+
+### version 0.0.1
+- app icons
+- splash screen with nr logo
+- homescreen with nr logo
+
+
+
+## Implemation
