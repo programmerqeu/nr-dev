@@ -17,6 +17,9 @@ NR{dev} - Cross platform application
 		- email open mail app
 		- send as vCard
 		- sync to local adresss book
+- Google Analtics
+	- Including UA-Code
+	- Eventtracking
 - Give me a peer
 - Days until the next cake OR Happy birthday reminder
 - Remote controlled lights (lampen.nr) 
