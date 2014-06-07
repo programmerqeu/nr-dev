@@ -7,7 +7,5 @@ It is based on [Ionic](ionicframework.com) base project. A special thanks goes t
 
 
 ## Content
-- [Roadmap](ROADMAP.md)
-- [Contribute](CONTRIBUTE.md)
-
-
+- [Roadmap](docs/roadmap.md)
+- [Contribute](docs/contribute.md)
