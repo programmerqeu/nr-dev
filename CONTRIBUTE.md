@@ -1,6 +1,17 @@
 NR{dev} - Cross platform application
 ====================================
 
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Workflow
+
+- This project used [git-flow](https://github.com/nvie/gitflow). If you never used it before, have a look on [this blog post]()http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/) and this [this cheat sheet](http://danielkummer.github.io/git-flow-cheatsheet/)
 
 ## Using this project
 
