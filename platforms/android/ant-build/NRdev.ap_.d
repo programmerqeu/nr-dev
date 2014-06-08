@@ -168,10 +168,14 @@
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/res/icon/android/icon-36-ldpi.png \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/res/icon/android/icon-48-mdpi.png \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/res/icon/android/icon-72-hdpi.png \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/img/icon-96-xhdpi.png \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/img/ionic.png \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/img/bg.jpg \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/playlist.html \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/search.html \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/home.html \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/browse.html \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/sample.html \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/menu.html \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/playlists.html \
 /var/www/vergissberlin/nr-dev/platforms/android/ant-build/AndroidManifest.xml \

@@ -2475,7 +2475,7 @@ a.subdued {
   border-style: solid;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #ddd;
-  background-color: #66ffee;
+  background-color: white;
   /* border-width: 1px will actually create 2 device pixels on retina */
   /* this nifty trick sets an actual 1px border on hi-res displays */
   background-size: 0; }
@@ -2503,7 +2503,7 @@ a.subdued {
       background: transparent; }
   .bar.bar-light {
     border-color: #ddd;
-    background-color: #66ffee;
+    background-color: white;
     background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
     color: #444; }
     .bar.bar-light .title {
@@ -2559,7 +2559,7 @@ a.subdued {
       color: #fff; }
   .bar.bar-dark {
     border-color: #111;
-    background-color: #22dd66;
+    background-color: #333333;
     background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
     color: #fff; }
     .bar.bar-dark .title {
@@ -2629,7 +2629,7 @@ a.subdued {
 
 .bar-light .button {
   border-color: #ddd;
-  background-color: #66ffee;
+  background-color: white;
   color: #444; }
   .bar-light .button:hover {
     color: #444;
@@ -2797,7 +2797,7 @@ a.subdued {
 
 .bar-dark .button {
   border-color: #111;
-  background-color: #22dd66;
+  background-color: #333333;
   color: #fff; }
   .bar-dark .button:hover {
     color: #fff;
@@ -2894,12 +2894,12 @@ a.subdued {
 /* Allow parent element of tabs to define color, or just the tab itself */
 .tabs-light > .tabs, .tabs.tabs-light {
   border-color: #ddd;
-  background-color: #6fe;
+  background-color: #fff;
   background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
   color: #444; }
   .tabs-light > .tabs .tab-item .badge, .tabs.tabs-light .tab-item .badge {
     background-color: #444;
-    color: #6fe; }
+    color: #fff; }
 
 .tabs-stable > .tabs, .tabs.tabs-stable {
   border-color: #b2b2b2;
@@ -2966,12 +2966,12 @@ a.subdued {
 
 .tabs-dark > .tabs, .tabs.tabs-dark {
   border-color: #111;
-  background-color: #2d6;
+  background-color: #333;
   background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
   color: #fff; }
   .tabs-dark > .tabs .tab-item .badge, .tabs.tabs-dark .tab-item .badge {
     background-color: #fff;
-    color: #2d6; }
+    color: #333; }
 
 /* Allow parent element to have tabs-top */
 /* If you change this, change platform.scss as well */
@@ -3053,7 +3053,7 @@ a.subdued {
 .tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
   opacity: 1; }
   .tab-item.tab-item-active.tab-item-light, .tab-item.active.tab-item-light, .tab-item.activated.tab-item-light {
-    color: #6fe; }
+    color: #fff; }
   .tab-item.tab-item-active.tab-item-stable, .tab-item.active.tab-item-stable, .tab-item.activated.tab-item-stable {
     color: #6af; }
   .tab-item.tab-item-active.tab-item-positive, .tab-item.active.tab-item-positive, .tab-item.activated.tab-item-positive {
@@ -3069,7 +3069,7 @@ a.subdued {
   .tab-item.tab-item-active.tab-item-royal, .tab-item.active.tab-item-royal, .tab-item.activated.tab-item-royal {
     color: #8a6de9; }
   .tab-item.tab-item-active.tab-item-dark, .tab-item.active.tab-item-dark, .tab-item.activated.tab-item-dark {
-    color: #2d6; }
+    color: #333; }
 
 .item.tabs {
   display: -webkit-box;
@@ -3293,7 +3293,7 @@ a.subdued {
  */
 .item {
   border-color: #ddd;
-  background-color: #6fe;
+  background-color: #fff;
   color: #444;
   position: relative;
   z-index: 2;
@@ -3338,7 +3338,7 @@ a.subdued {
     margin-right: 5px; }
   .item.item-light {
     border-color: #ddd;
-    background-color: #6fe;
+    background-color: #fff;
     color: #444; }
   .item.item-stable {
     border-color: #b2b2b2;
@@ -3370,7 +3370,7 @@ a.subdued {
     color: #fff; }
   .item.item-dark {
     border-color: #111;
-    background-color: #2d6;
+    background-color: #333;
     color: #fff; }
   .item[ng-click]:hover {
     cursor: pointer; }
@@ -3777,7 +3777,7 @@ a.item-content {
       font-size: 32px; }
 
 .item-reorder .button.icon {
-  color: #2d6;
+  color: #333;
   font-size: 32px; }
 
 .item-reordering {
@@ -3910,7 +3910,7 @@ a.item-content {
     display: none; }
 
 .tabs .tab-item .badge.badge-light, .badge.badge-light {
-  background-color: #6fe;
+  background-color: #fff;
   color: #444; }
 .tabs .tab-item .badge.badge-stable, .badge.badge-stable {
   background-color: #6af;
@@ -3934,7 +3934,7 @@ a.item-content {
   background-color: #8a6de9;
   color: #fff; }
 .tabs .tab-item .badge.badge-dark, .badge.badge-dark {
-  background-color: #2d6;
+  background-color: #333;
   color: #fff; }
 
 .button .badge {
@@ -4040,7 +4040,7 @@ legend {
   padding: 0;
   width: 100%;
   border: 1px solid #ddd;
-  color: #2d6;
+  color: #333;
   font-size: 21px;
   line-height: 2.85714; }
   legend small {
@@ -4175,7 +4175,7 @@ input, button, select, textarea {
   padding: 7px 10px 7px 3px;
   max-width: 200px;
   width: 35%;
-  color: #2d6;
+  color: #333;
   font-weight: bold;
   font-size: 14px; }
 
@@ -4201,7 +4201,7 @@ input, button, select, textarea {
   border-radius: 2px;
   padding: 4px 8px 3px;
   border: none;
-  background-color: #6fe; }
+  background-color: #fff; }
 
 .item-stacked-label input {
   overflow: hidden;
@@ -4244,11 +4244,11 @@ input[type="file"] {
   width: 200px; }
 
 input:-moz-placeholder, textarea:-moz-placeholder {
-  color: #d3f8e0; }
+  color: #999999; }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #d3f8e0; }
+  color: #999999; }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #d3f8e0; }
+  color: #999999; }
 
 input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.cloned-text-input), textarea[readonly]:not(.cloned-text-input), select[readonly] {
   background-color: #6af;
@@ -4303,9 +4303,9 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
   .checkbox.checkbox-royal input:checked:before, .checkbox.checkbox-royal input:checked + .checkbox-icon:before {
     background: #8a6de9; }
   .checkbox.checkbox-dark input:before, .checkbox.checkbox-dark .checkbox-icon:before {
-    border-color: #2d6; }
+    border-color: #333; }
   .checkbox.checkbox-dark input:checked:before, .checkbox.checkbox-dark input:checked + .checkbox-icon:before {
-    background: #2d6; }
+    background: #333; }
 
 .checkbox.checkbox-input-hidden input {
   display: none !important; }
@@ -4430,8 +4430,8 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
     border-color: #8a6de9;
     background-color: #8a6de9; }
   .toggle.toggle-dark input:checked + .track {
-    border-color: #2d6;
-    background-color: #2d6; }
+    border-color: #333;
+    background-color: #333; }
 
 .toggle input {
   display: none; }
@@ -4474,7 +4474,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
   width: 28px;
   height: 28px;
   border-radius: 28px;
-  background-color: #6fe;
+  background-color: #fff;
   top: 7px;
   left: 7px; }
   .toggle .handle:before {
@@ -4488,7 +4488,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
   -webkit-transform: translate3d(22px, 0, 0);
   -moz-transform: translate3d(22px, 0, 0);
   transform: translate3d(22px, 0, 0);
-  background-color: #6fe; }
+  background-color: #fff; }
 
 .item-toggle.active {
   box-shadow: none; }
@@ -4578,7 +4578,7 @@ input[type="range"] {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: #6fe;
+    background-color: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 1px 3px 5px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     -webkit-appearance: none; }
@@ -4589,7 +4589,7 @@ input[type="range"] {
     left: -2001px;
     width: 2000px;
     height: 4px;
-    background: #2d6;
+    background: #333;
     content: ' '; }
   input[type="range"]::-webkit-slider-thumb:after {
     /* create a larger (but hidden) hit area */
@@ -4629,7 +4629,7 @@ input[type="range"] {
   .range.range-royal input::-webkit-slider-thumb:before {
     background: #8a6de9; }
   .range.range-dark input::-webkit-slider-thumb:before {
-    background: #2d6; }
+    background: #333; }
 
 .range .icon {
   -webkit-box-flex: 0;
@@ -4785,7 +4785,7 @@ progress {
     margin-bottom: 10px; }
   .button.button-light {
     border-color: #ddd;
-    background-color: #6fe;
+    background-color: #fff;
     color: #444; }
     .button.button-light:hover {
       color: #444;
@@ -5001,7 +5001,7 @@ progress {
         color: #fff; }
   .button.button-dark {
     border-color: #111;
-    background-color: #2d6;
+    background-color: #333;
     color: #fff; }
     .button.button-dark:hover {
       color: #fff;
@@ -5014,16 +5014,16 @@ progress {
       border-color: transparent;
       background: none;
       box-shadow: none;
-      color: #2d6; }
+      color: #333; }
     .button.button-dark.button-icon {
       border-color: transparent;
       background: none; }
     .button.button-dark.button-outline {
-      border-color: #2d6;
+      border-color: #333;
       background: transparent;
-      color: #2d6; }
+      color: #333; }
       .button.button-dark.button-outline.active, .button.button-dark.button-outline.activated {
-        background-color: #2d6;
+        background-color: #333;
         box-shadow: none;
         color: #fff; }
 
@@ -6319,10 +6319,10 @@ a.button {
  * instead have colors which represent an emotion or generic theme.
  */
 .light, a.light {
-  color: #6fe; }
+  color: #fff; }
 
 .light-bg {
-  background-color: #6fe; }
+  background-color: #fff; }
 
 .light-border {
   border-color: #ddd; }
@@ -6391,10 +6391,10 @@ a.button {
   border-color: #552bdf; }
 
 .dark, a.dark {
-  color: #2d6; }
+  color: #333; }
 
 .dark-bg {
-  background-color: #2d6; }
+  background-color: #333; }
 
 .dark-border {
   border-color: #111; }
@@ -6430,3 +6430,11 @@ a.button {
 .platform-c:not(.enable-transitions) * {
   -webkit-transition: none !important;
   transition: none !important; }
+
+.home {
+  background: transparent url(../img/bg.jpg) center center;
+  background-size: cover; }
+  .home .logo {
+    margin-left: auto;
+    margin-top: 100px;
+    text-align: center; }
