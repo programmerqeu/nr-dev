@@ -145,6 +145,13 @@ ios/screen-iphone-portrait.png
 ios/screen-iphone-portrait-568h-2x.png
 </pre>
 
+
+- cp: no such file or directory: /var/www/vergissberlin/nr-dev/res/android/ldpi.png
+- cp: no such file or directory: /var/www/vergissberlin/nr-dev/res/ios/icon.png
+- cp: no such file or directory: /var/www/vergissberlin/nr-dev/res/android/hdpi.png
+- cp: no such file or directory: /var/www/vergissberlin/nr-dev/res/android/xhdpi.png
+
+
 ## User story
 
 ### version 0.0.1
