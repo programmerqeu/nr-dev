@@ -11,12 +11,14 @@ NR{dev} - Cross platform application
 		- email
 		- photo Gravatar
 		- photo G+
+		- adress
 	- functions
 		- safe to local storage
 		- call phone number
 		- email open mail app
 		- send as vCard
 		- sync to local adresss book
+		- Google Map with dot from address
 - Google Analtics
 	- Including UA-Code
 	- Eventtracking

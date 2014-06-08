@@ -6431,7 +6431,6 @@ a.button {
   -webkit-transition: none !important;
   transition: none !important; }
 
-@import url(http://fonts.googleapis.com/css?family=Lobster);
 .home {
   background: transparent url(../img/bg.jpg) center center;
   background-size: cover; }
@@ -6441,5 +6440,6 @@ a.button {
     text-align: center; }
     .home figure figcaption {
       font-family: 'Lobster', cursive;
-      font-size: 2em;
+      font-size: 2.4em;
+      font-weight: 400;
       color: #fff; }

@@ -21,8 +21,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-
 // home page
 .home {
     background: transparent url(../img/bg.jpg) center center;
@@ -36,7 +34,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
         figcaption {
             font-family: 'Lobster', cursive;
-            font-size: 2em;
+            font-size: 2.4em;
+            font-weight: 400;
             color: #fff;
         }
     }

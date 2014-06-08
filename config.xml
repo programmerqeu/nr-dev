@@ -15,6 +15,8 @@
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true"/>
 
     <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage
          to be sent to iCloud. Note: enabling this could result in Apple rejecting your app.
@@ -31,6 +33,7 @@
         <icon src="www/res/icon/android/icon-96-xhdpi.png" density="xhdpi" />
     </platform>
     <!-- Platforms END -->
+
 
     <feature name="StatusBar">
       <param name="ios-package" value="CDVStatusBar" onload="true" />
