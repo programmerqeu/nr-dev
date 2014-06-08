@@ -12,12 +12,14 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <name>HelloCordova</name>
+    <name>NR{dev}</name>
     <description>
-        An Ionic Framework and Cordova project.
+        An application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG.
+        The app includes experiments with various API's. Manage colors of lamps in the office, games from noise,
+        let you list parts of the internal address book.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="andre.lademann@netresearch.de" href="http://netresearch.de">
+        Netresearch Developer Team
     </author>
     <content src="index.html" />
     <access origin="*" />

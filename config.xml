@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>NR{dev}</name>
     <description>
-        An Ionic Framework and Cordova project.
+        An application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG.
+        The app includes experiments with various API's. Manage colors of lamps in the office, games from noise,
+        let you list parts of the internal address book.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="andre.lademann@netresearch.de" href="http://netresearch.de/">
+        Netresearch Developer Team
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -14,10 +16,22 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
 
-    <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage 
+    <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage
          to be sent to iCloud. Note: enabling this could result in Apple rejecting your app.
     -->
     <preference name="BackupWebStorage" value="none" />
+
+    <!-- Platforms BEGIN -->
+    <platform name="android">
+        <icon src="res/android/ldpi.png" density="ldpi" />
+        <icon src="res/android/mdpi.png" density="mdpi" />
+        <icon src="res/android/hdpi.png" density="hdpi" />
+        <icon src="res/android/xhdpi.png" density="xhdpi" />
+    </platform>
+
+    <!-- Platforms END -->
+
+    <icon src="res/ios/icon.png" platform="ios" width="57" height="57" density="mdpi" />
 
     <feature name="StatusBar">
       <param name="ios-package" value="CDVStatusBar" onload="true" />
