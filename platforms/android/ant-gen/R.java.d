@@ -9,7 +9,7 @@
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-land-ldpi/screen.png \
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-port-ldpi/screen.png \
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-land-hdpi/screen.png \
-/var/www/vergissberlin/nr-dev/platforms/android/res/drawable/icon.jpg \
+/var/www/vergissberlin/nr-dev/platforms/android/res/drawable/icon.png \
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-land-xhdpi/screen.png \
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-hdpi/icon.png \
 /var/www/vergissberlin/nr-dev/platforms/android/res/drawable-land-mdpi/screen.png \
