@@ -9,9 +9,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         .run(function($ionicPlatform) {
             $ionicPlatform.ready(function() {
 
-                // start google anlytics tracking
-                analytics.startTrackerWithId('UA-35739360-3');
-                analytics.trackEvent('Category', 'Action', 'Label', 321);
+                // start google analytics tracking
+                if (typeof analytics !== 'undefined') {
+                    analytics.startTrackerWithId('UA-35739360-3');
+                    analytics.trackView('Screen Title');
+                } else {
+                    console.log("Google Analytics plugin could not be loaded.")
+                }
 
                 // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
                 // for form inputs)

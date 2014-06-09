@@ -41,8 +41,10 @@
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/README.md \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/index.html \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt/lobster.svg \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt/lobster.woff \
-/var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt/Lobster.ttf \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt/lobster.eot \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt/lobster.ttf \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-translate \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-animate \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-ui-router \
