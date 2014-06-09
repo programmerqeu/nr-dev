@@ -53,7 +53,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                         url: "/impress",
                         views: {
                             'menuContent': {
-                                templateUrl: "templates/impress.html"
+                                templateUrl: "templates/impress.html",
+                                controller: "ImpressCtrl"
                             }
                         }
                     })
