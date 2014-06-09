@@ -172,7 +172,7 @@ cordova plugin add https://github.com/danwilson/google-analytics-plugin.git
 .run(function(previewData, localStorage, $ionicPlatform) {
   $ionicPlatform.ready(function() {
       if (typeof analytics !== 'undefined'){
-        analytics.startTrackerWithId('UA-XXXXXXXX-X');
+        analytics.startTrackerWithId('UA-35739360-3');
       }
       else
       {
@@ -184,6 +184,7 @@ cordova plugin add https://github.com/danwilson/google-analytics-plugin.git
 cd /path/sdk/tools
 android sdk
 ``` and select Google Analytics
+
 ##### UA Code
 
 - [Google Analytics](https://www.google.com/analytics/)

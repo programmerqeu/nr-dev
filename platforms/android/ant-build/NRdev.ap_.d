@@ -29,6 +29,7 @@
 /var/www/vergissberlin/nr-dev/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/_where-is-www.txt \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/js \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins \
@@ -40,6 +41,8 @@
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/README.md \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/index.html \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt/lobster.woff \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/fnt/Lobster.ttf \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-translate \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-animate \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-ui-router \
@@ -147,11 +150,14 @@
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/js/app.js \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/com.ionic.keyboard \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/com.danielcwilson.plugins.googleanalytics \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/com.ionic.keyboard/www \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/com.danielcwilson.plugins.googleanalytics/www \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/com.danielcwilson.plugins.googleanalytics/www/analytics.js \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/css/ionic.app.min.css \

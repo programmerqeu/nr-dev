@@ -4,6 +4,7 @@ angular.module('starter.controllers', [])
         })
 
         .controller('HomeCtrl', function($scope) {
+            analytics.trackView('Screen Title');
         })
 
 
