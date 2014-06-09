@@ -12,12 +12,21 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <name>HelloCordova</name>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
+    <icon density="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
+    <icon density="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
+    <icon density="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+    <name>NR{dev}</name>
     <description>
-        An Ionic Framework and Cordova project.
+        An application for mobile devices. Created by and for developers of Netresearch GmbH &amp; Co.KG.
+        The app includes experiments with various API's. Manage colors of lamps in the office, games from noise,
+        let you list parts of the internal address book.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="andre.lademann@netresearch.de" href="http://netresearch.de/">
+        Netresearch Developer Team
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -25,11 +34,11 @@
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
     <preference name="BackupWebStorage" value="none" />
+    <icon src="www/res/icon/default.png" />
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
-    </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
     </feature>
 </widget>
