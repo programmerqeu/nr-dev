@@ -21,6 +21,10 @@ _Start simple as possible_
 	- Including UA-Code
 	- Eventtracking
 
+## version 0.0.3
+- BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+
+
 ## version 0.1.0
 1. Multi language support
 	- German
