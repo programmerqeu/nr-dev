@@ -40,11 +40,16 @@
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/README.md \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/index.html \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-translate \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-animate \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-ui-router \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-sanitize \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/ionic \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-translate/bower.json \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-translate/angular-translate.min.js \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-translate/README.md \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-translate/angular-translate.js \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-animate/angular-animate.min.js \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-animate/bower.json \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/lib/angular-animate/angular-animate.min.js.map \

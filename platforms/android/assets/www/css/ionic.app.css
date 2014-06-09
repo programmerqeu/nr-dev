@@ -6435,8 +6435,11 @@ a.button {
   background: transparent url(../img/bg.jpg) center center;
   background-size: cover; }
   .home figure {
-    margin: 200px auto;
-    width: 300px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 300px auto;
     text-align: center; }
     .home figure figcaption {
       font-family: 'Lobster', cursive;

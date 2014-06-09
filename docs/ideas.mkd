@@ -1,0 +1,65 @@
+NR{dev} - Cross platform application
+====================================
+
+
+# Ideas NR{dev}
+
+_Collection of ideas_
+
+1. **Contacts**
+	- attributes
+		- phone number
+		- email
+		- photo Gravatar
+		- photo G+
+		- adress
+	- functions
+		- safe to local storage
+		- call phone number
+		- email open mail app
+		- send as vCard
+		- sync to local adresss book
+		- Google Map with dot from address
+- **Google Analtics**
+	- Including UA-Code
+	- Event tracking
+- **Remote controlled lights** (lampen.nr)
+	- status
+	- selectable presets
+	- preset disco
+	- Import your own sound
+- **Give me a beer**
+	- integraed payment system
+	- Animated beer graphic
+- **Calendar**
+	- array
+	- Google Calendar
+	- Google Calender participants
+	- Meet and Greet: trade fairs, round tables, table football events, workshops
+	- Show event in native calendar
+	- Sync calendar/event to native valendar
+	- Days until the next cake OR Happy birthday reminder
+- **Feedback**
+	- Push Notification Cell
+	- e-mail
+	- Push Notification Chrome
+	- What you always wanted to tell a developer wanted:
+		- To this end, a nice illustration
+- **Countr**
+	- hint
+	- coffee machine
+	- pizza
+	- Copy Paste Counter
+	- football table gool counter with raspberypi and sensors
+- **Football table**
+	- Rasberypi with cam in a football table
+	- acrylic glass
+- **Classicals**
+	- photo collection gallery
+	- snap with integrated phone cam
+	- Upload from file system
+	- comments
+	- linking Author
+		- internal
+		- External only hidden
+		- implementation
