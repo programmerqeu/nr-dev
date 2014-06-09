@@ -171,6 +171,7 @@
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/img/icon-96-xhdpi.png \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/img/ionic.png \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/img/bg.jpg \
+/var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/impress.html \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/playlist.html \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/search.html \
 /var/www/vergissberlin/nr-dev/platforms/android/assets/www/templates/home.html \

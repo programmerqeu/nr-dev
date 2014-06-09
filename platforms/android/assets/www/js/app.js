@@ -40,11 +40,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                         }
                     })
 
-                    .state('app.search', {
-                        url: "/search",
+                    .state('app.impress', {
+                        url: "/impress",
                         views: {
                             'menuContent': {
-                                templateUrl: "templates/search.html"
+                                templateUrl: "templates/impress.html"
                             }
                         }
                     })
