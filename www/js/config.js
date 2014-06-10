@@ -1,3 +1,3 @@
 appConfig = {};
 appConfig.servicesUrl = '';
-appConfig.version = '0.0.2'
+appConfig.version = '0.1.0';

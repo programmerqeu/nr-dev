@@ -1,5 +1,4 @@
 <ion-side-menus>
-
   <ion-pane ion-side-menu-content>
       <ion-nav-bar class="bar-dark nav-title-slide-ios7">
           <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
@@ -9,17 +8,13 @@
 
   <ion-side-menu side="left">
       <header class="bar bar-header bar-dark">
-          <h1 class="title">Menu</h1>
+          <h1 class="title">{{'menu' | translate}}</h1>
       </header>
       <ion-content class="has-header">
           <ion-list>
-              <ion-item nav-clear menu-close href="#/app/home">
-              Home
-          </ion-item>
-              <ion-item nav-clear menu-close href="#/app/impress">
-                  Impress
-              </ion-item>
-      </ion-list>
-    </ion-content>
+              <ion-item nav-clear menu-close href="#/app/home">{{'home' | translate}}</ion-item>
+              <ion-item nav-clear menu-close href="#/app/imprint">{{'imprint' | translate}}</ion-item>
+          </ion-list>
+      </ion-content>
   </ion-side-menu>
 </ion-side-menus>
