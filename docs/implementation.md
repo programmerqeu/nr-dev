@@ -1,9 +1,7 @@
 NR{dev} - Cross platform application
 ====================================
 
-# Implementation NR{dev}
-
-## Requirements
+## Implementation &  Requirements
 
 ### version 0.0.1
 #### Icons
@@ -16,7 +14,7 @@ You don’t need to constrain your palette to web-safe colors.
 	- Icon templates for iOS and Android [Download](http://appicontemplate.com/)
 		- http://ios.robs.im/files/iOS-7-Vector-Icon.sketch.zip
 		- http://ios.robs.im/files/iOS-7-Icon-Set.psd
-		- iOS7 http://appicontemplate.com/downloads/appicontemplate_v3.3.zip 
+		- iOS7 http://appicontemplate.com/downloads/appicontemplate_v3.3.zip
 		- iOS6 http://appicontemplate.com/downloads/appicontemplate_v2.1.zip
 		- Android http://appicontemplate.com/downloads/androidlaunchertemplate_v1.1.zip
 	- Icon generator app for iOS [Appstore](https://itunes.apple.com/de/app/prepo/id476533227?mt=12&ign-mpt=uo%3D4)
@@ -71,7 +69,7 @@ You don’t need to constrain your palette to web-safe colors.
     <td>1024×1024</td>
     <td>
 	768×1024 (portrait)<br>
-	1024×768 (landscape)	
+	1024×768 (landscape)
     </td>
     <td>40×40</td>
     <td>29×29</td>
@@ -163,7 +161,7 @@ ios/screen-iphone-portrait-568h-2x.png
 - [Angularlytics](http://luisfarzati.github.io/angulartics/)
 
 ##### Steps
-1. Install Cordova GA Plugin 
+1. Install Cordova GA Plugin
 ```
 cordova plugin add https://github.com/danwilson/google-analytics-plugin.git
 ```
@@ -179,7 +177,7 @@ cordova plugin add https://github.com/danwilson/google-analytics-plugin.git
         console.log("Google Analytics plugin could not be loaded.")
       }
 ```
-3. Download Google Analytics SDK 3.0 for [iOS](https://dl.google.com/dl/googleanalyticsservices/GoogleAnalyticsServicesiOS.zip) and/or [Android](https://dl.google.com/dl/googleanalyticsservices/GoogleAnalyticsServicesAndroid.zip) OR 
+3. Download Google Analytics SDK 3.0 for [iOS](https://dl.google.com/dl/googleanalyticsservices/GoogleAnalyticsServicesiOS.zip) and/or [Android](https://dl.google.com/dl/googleanalyticsservices/GoogleAnalyticsServicesAndroid.zip) OR
 ```bash
 cd /path/sdk/tools
 android sdk

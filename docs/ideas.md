@@ -2,7 +2,7 @@ NR{dev} - Cross platform application
 ====================================
 
 
-# Ideas NR{dev}
+## Ideas
 
 _Collection of ideas_
 
