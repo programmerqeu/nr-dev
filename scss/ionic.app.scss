@@ -37,10 +37,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-// home page
-.home {
+// blur background
+.bg-blur {
     background: transparent url(../img/bg.jpg) center center;
     background-size: cover;
+
+}
+
+// home page
+.page-home {
 
     figure {
         width: 300px;
