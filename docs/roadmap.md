@@ -22,8 +22,10 @@ _Start simple as possible_
 	- Eventtracking
 
 ## version 0.0.3
-- BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+1. Multi language support with [angular-translate](https://github.com/angular-translate/angular-translate) 
 
+## version 0.0.4
+1. BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
 
 ## version 0.1.0
 1. Multi language support

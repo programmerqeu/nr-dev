@@ -189,7 +189,12 @@ android sdk
 - UA-35739360-3
 
 ### version 0.0.3
+#### Multi language support
 
+1. Install [angular-translate](https://github.com/angular-translate/angular-translate) 
+
+
+### version 0.0.4
 #### BDD Test
 
 - [AngularJs and Jasmin](http://angularjs.de/artikel/angularjs-test)

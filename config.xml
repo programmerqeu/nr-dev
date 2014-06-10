@@ -18,8 +18,9 @@
     <preference name="Orientation" value="portrait" />
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
 
-    <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage
-         to be sent to iCloud. Note: enabling this could result in Apple rejecting your app.
+    <!--
+    Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage
+    to be sent to iCloud. Note: enabling this could result in Apple rejecting your app.
     -->
     <preference name="BackupWebStorage" value="none" />
 

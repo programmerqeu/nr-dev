@@ -1,10 +1,19 @@
-// Ionic Starter App
+/**
+ * NRdev
+ *
+ * @category   Application
+ * @package    NRdev
+ * @author     EAndré Lademann <andre.lademann@netresearch.de>
+ * @license    https://netresearch.de/license
+ * @version    0.0.3
+ */
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.controllers' is found in controllers.js
-angular.module('nrdev', ['ionic', 'nrdev.controllers'])
+'use strict';
+ionic.Platform.ready(function() {
+    console.log("Platform is ready!");
+});
+
+angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate'])
 
         .run(function($ionicPlatform) {
             $ionicPlatform.ready(function() {
@@ -29,7 +38,9 @@ angular.module('nrdev', ['ionic', 'nrdev.controllers'])
             });
         })
 
-        .config(function($stateProvider, $urlRouterProvider) {
+
+        .config(function($stateProvider, $urlRouterProvider, $translateProvider) {
+
             $stateProvider
 
                     .state('app', {
@@ -88,5 +99,9 @@ angular.module('nrdev', ['ionic', 'nrdev.controllers'])
                     });
             // if none of the above states are matched, use this as the fallback
             $urlRouterProvider.otherwise('/app/home');
-        });
 
+            // translation
+            $translateProvider.translations('en', translations_en);
+            $translateProvider.translations('de', translations_de);
+            $translateProvider.preferredLanguage('en');
+        });
