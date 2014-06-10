@@ -49,11 +49,11 @@ angular.module('nrdev', ['ionic', 'nrdev.controllers'])
                         }
                     })
 
-                    .state('app.impress', {
-                        url: "/impress",
+                    .state('app.imprint', {
+                        url: "/imprint",
                         views: {
                             'menuContent': {
-                                templateUrl: "templates/impress.html",
+                                templateUrl: "templates/imprint.html",
                                 controller: "ImpressCtrl"
                             }
                         }
