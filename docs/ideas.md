@@ -6,7 +6,7 @@ NR{dev} - Cross platform application
 
 _Collection of ideas_
 
-1. **Contacts**
+- **Contacts**
 	- attributes
 		- phone number
 		- email

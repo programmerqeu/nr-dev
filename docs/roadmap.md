@@ -13,7 +13,7 @@ _Start simple as possible_
 	- colours with SASS
 	- downloud web font
 - Home page
-- Impress page
+- Imprint page
 - Documentation
 
 ## version 0.0.2
@@ -21,18 +21,16 @@ _Start simple as possible_
 	- Including UA-Code
 	- Eventtracking
 
-## version 0.0.3
-1. Multi language support with [angular-translate](https://github.com/angular-translate/angular-translate) 
-
-## version 0.0.4
-1. BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
-
 ## version 0.1.0
 1. Multi language support
 	- German
 	- English
+-. Multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
 
 ## version 0.2.0
+1. BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+
+## version 0.3.0
 1. contacts Ligth
 - data
 	- a simple Array
@@ -46,7 +44,7 @@ _Start simple as possible_
 	- first name
 	- phone
 
-## version 0.2.0
+## version 0.4.0
 1. contacts Ligth
 - data
 	- simple
@@ -61,33 +59,34 @@ _Start simple as possible_
 	- phone
 - Google Analytics
 
-### version 0.2.1
+### version 0.5.0
 1. contacts Ligth+
 - data
 	- parse XML
 
-### version 0.2.2
+### version 0.6.0
 1. contacts Ligth++
 - data
 	- use local storage
 	- photos
 	- xml data
 
-### version 0.3.0
+### version 0.7.0
 1. Give me a beer
 	- flattr
 	- pay pal spenden knopf
 	- beer image
 
-### version 0.4.0
+### version 0.8.0
 _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 1. lampen internal access
 	- show internal status
 - Google Analytics Event Tracking
 
-### version 0.4.1
-- colour switcher
+### version 0.9.0
+- colour switcher for to lamps
+- show lamp color status
 
 
 ## Version 1.0.0

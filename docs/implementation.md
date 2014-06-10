@@ -188,13 +188,13 @@ android sdk
 - [Google Analytics](https://www.google.com/analytics/)
 - UA-35739360-3
 
-### version 0.0.3
+### version 0.1.0
 #### Multi language support
 
-1. Install [angular-translate](https://github.com/angular-translate/angular-translate) 
+1. Install [angular-translate](https://github.com/angular-translate/angular-translate)
 
 
-### version 0.0.4
+### version 0.2.0
 #### BDD Test
 
 - [AngularJs and Jasmin](http://angularjs.de/artikel/angularjs-test)
@@ -215,5 +215,3 @@ android sdk
 #### Android
 
 **Path:**	platforms/android/res/drawable
-
-
