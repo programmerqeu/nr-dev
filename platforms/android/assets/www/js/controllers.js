@@ -4,8 +4,18 @@ angular.module('starter.controllers', [])
         })
 
         .controller('HomeCtrl', function($scope) {
+            // start google analytics tracking
+            if (typeof analytics !== 'undefined') {
+                analytics.trackView('Home page');
+            }
         })
 
+        .controller('ImpressCtrl', function($scope) {
+            // start google analytics tracking
+            if (typeof analytics !== 'undefined') {
+                analytics.trackView('Impress page');
+            }
+        })
 
         .controller('PlaylistsCtrl', function($scope) {
             $scope.playlists = [

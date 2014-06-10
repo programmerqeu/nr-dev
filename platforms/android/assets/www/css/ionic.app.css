@@ -4,6 +4,15 @@ in ionic's _variables.scss file.
 
 For example, you might change some of the default colors:
 */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fnt/lobster.eot');
+  src: url('../fnt/lobster.eot?#iefix') format('embedded-opentype'), url('../fnt/lobster.woff') format('woff'), url('../fnt/lobster.ttf') format('truetype'), url('../fnt/lobster.svg#lobster_1.4regular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 /*!
   Ionicons, v1.4.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -6435,11 +6444,11 @@ a.button {
   background: transparent url(../img/bg.jpg) center center;
   background-size: cover; }
   .home figure {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     padding: 20px;
     box-sizing: border-box;
-    margin: 300px auto;
+    margin: 200px auto;
     text-align: center; }
     .home figure figcaption {
       font-family: 'Lobster', cursive;

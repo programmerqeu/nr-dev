@@ -18,13 +18,34 @@ $dark:                 #333 !default;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
+
+
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fnt/lobster.eot');
+    src: url('../fnt/lobster.eot?#iefix') format('embedded-opentype'),
+        url('../fnt/lobster.woff') format('woff'),
+        url('../fnt/lobster.ttf') format('truetype'),
+        url('../fnt/lobster.svg#lobster_1.4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-// home page
-.home {
+// blur background
+.bg-blur {
     background: transparent url(../img/bg.jpg) center center;
     background-size: cover;
+
+}
+
+// home page
+.page-home {
 
     figure {
         width: 300px;

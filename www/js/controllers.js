@@ -1,11 +1,27 @@
-angular.module('starter.controllers', [])
+angular.module('nrdev.controllers', [])
 
         .controller('AppCtrl', function($scope) {
         })
 
         .controller('HomeCtrl', function($scope) {
+            var page = {title: 'Developers home'};
+            $scope.page = page;
+
+            // start google analytics tracking
+            if (typeof analytics !== 'undefined') {
+                analytics.trackView(page.title);
+            }
         })
 
+        .controller('ImpressCtrl', function($scope) {
+            var page = {title: 'Impress'};
+            $scope.page = page;
+
+            // start google analytics tracking
+            if (typeof analytics !== 'undefined') {
+                analytics.trackView(page.title);
+            }
+        })
 
         .controller('PlaylistsCtrl', function($scope) {
             $scope.playlists = [
