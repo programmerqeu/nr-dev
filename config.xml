@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>NR{dev}</name>
+<widget id="com.ionicframework.starter" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>NRdev</name>
     <description>
         An application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG.
         The app includes experiments with various API's. Manage colors of lamps in the office, games from noise,

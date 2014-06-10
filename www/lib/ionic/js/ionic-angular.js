@@ -2905,7 +2905,7 @@ function($rootScope, $state, $location, $document, $animate, $ionicPlatform, $io
     return false;
   }
   $ionicPlatform.registerBackButtonAction(
-    onHardwareBackButton, 
+    onHardwareBackButton,
     PLATFORM_BACK_BUTTON_PRIORITY_VIEW
   );
 
@@ -3950,9 +3950,9 @@ function($scope, $ionicViewService, $attrs, $location, $state) {
 
 IonicModule
 .controller('$ionicTabs', [
-  '$scope', 
-  '$ionicViewService', 
-  '$element', 
+  '$scope',
+  '$ionicViewService',
+  '$element',
 function($scope, $ionicViewService, $element) {
   var _selectedTab = null;
   var self = this;
@@ -4425,7 +4425,7 @@ angular.module('collectionRepeatContacts', ['ionic'])
     $scope.search = '';
   };
 });
- * 
+ *
  * @html
 <div ng-controller="ContactsCtrl">
   <ion-header-bar class="bar-positive">
@@ -4458,7 +4458,7 @@ angular.module('collectionRepeatContacts', ['ionic'])
     </div>
   </ion-content>
 </div>
- * 
+ *
  * @css
 .button.button-icon.input-button {
   position: absolute;
@@ -6032,7 +6032,7 @@ function($animate, $rootScope) {
  * @usage
  *
  * ```html
- * <body ng-app="starter">
+ * <body ng-app="nrdev">
  *   <!-- The nav bar that will be updated as we navigate -->
  *   <ion-nav-bar class="bar-positive nav-title-slide-ios7">
  *   </ion-nav-bar>
@@ -6654,7 +6654,7 @@ IonicModule
  * @ngdoc demo
  * @name ionRefresher#withAList
  * @module refresherList
- * @javascript 
+ * @javascript
  * angular.module('refresherList', ['ionic'])
  * .controller('RefresherCtrl', function($scope, $timeout) {
  *   $scope.items = ['Item 1', 'Item 2', 'Item 3'];
@@ -6674,19 +6674,19 @@ IonicModule
  * <ion-header-bar class="bar-positive">
  *   <h1 class="title">Refresher</h1>
  * </ion-header-bar>
- * 
+ *
  * <ion-content ng-controller="RefresherCtrl">
- * 
- *   <ion-refresher on-refresh="doRefresh()" 
- *                  pulling-text="Pull to refresh..." 
- *                  refreshing-text="Refreshing!" 
+ *
+ *   <ion-refresher on-refresh="doRefresh()"
+ *                  pulling-text="Pull to refresh..."
+ *                  refreshing-text="Refreshing!"
  *                  refreshing-icon="ion-loading-c">
  *   </ion-refresher>
- * 
+ *
  *   <ion-list>
  *     <ion-item ng-repeat="item in items">{{item}}</ion-item>
  *   </ion-list>
- * 
+ *
  * </ion-content>
  */
 IonicModule
@@ -7724,8 +7724,8 @@ angular.module('tabsAndNavigation', ['ionic'])
 
 IonicModule
 .directive('ionTabs', [
-  '$ionicViewService', 
-  '$ionicTabsDelegate', 
+  '$ionicViewService',
+  '$ionicTabsDelegate',
 function($ionicViewService, $ionicTabsDelegate) {
   return {
     restrict: 'E',

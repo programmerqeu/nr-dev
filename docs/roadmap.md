@@ -2,7 +2,7 @@ NR{dev} - Cross platform application
 ====================================
 
 
-# Roadmap NR{dev}
+## Roadmap
 
 _Start simple as possible_
 
@@ -104,7 +104,7 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 ### 1.x.x
 1. Give me a beer
 	- beer with sensor controlled liquid with sensor controlled liquid rotate background image with CSS and JavaScript
-	
+
 ### 1.x.x
 
 1. **Meet and great**
@@ -125,6 +125,6 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 1. **Meet and great**
 	- Show event in native calendar (ical)
-	- Sync calendar to local calendar 
+	- Sync calendar to local calendar
 	- Sync event to local calendar (ical?)
-	
+
