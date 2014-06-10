@@ -77,7 +77,7 @@ You don’t need to constrain your palette to web-safe colors.
 
   <tr>
     <th align="left">Android xlarge (xhdpi)</th>
-    <td></td>
+    <td>36×36</td>
     <td></td>
     <td>960×720</td>
     <td></td>
@@ -86,7 +86,7 @@ You don’t need to constrain your palette to web-safe colors.
 
   <tr>
     <th align="left">Android large (hdpi):</th>
-    <td></td>
+    <td>48×48</td>
     <td></td>
     <td>640×480</td>
     <td></td>
@@ -95,7 +95,7 @@ You don’t need to constrain your palette to web-safe colors.
 
   <tr>
     <th align="left">Android medium (mdpi)</th>
-    <td></td>
+    <td>72×72</td>
     <td></td>
     <td>470×320</td>
     <td></td>
@@ -104,7 +104,7 @@ You don’t need to constrain your palette to web-safe colors.
 
   <tr>
     <th align="left">Android small (ldpi)</th>
-    <td></td>
+    <td>96×96</td>
     <td></td>
     <td>426×320</td>
     <td></td>
@@ -191,6 +191,7 @@ android sdk
 ### version 0.0.3
 
 #### BDD Test
+
 - [AngularJs and Jasmin](http://angularjs.de/artikel/angularjs-test)
 
 
