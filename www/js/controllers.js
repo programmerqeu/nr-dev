@@ -14,8 +14,8 @@ angular.module('nrdev.controllers', [])
 	.controller('AppCtrl', function ($scope) {
 	})
 
-        .controller('HomeCtrl', function($scope) {
-            var page = {title: 'Developers home'};
+	.controller('HomeCtrl', function ($scope) {
+	  var page = {title: 'Developers home'};
 
 	  // start google analytics tracking
 	  if (typeof analytics !== 'undefined') {
@@ -23,8 +23,8 @@ angular.module('nrdev.controllers', [])
 	  }
 	})
 
-        .controller('ImprintCtrl', function($scope) {
-            var page = {title: 'Imprint'};
+	.controller('ImprintCtrl', function ($scope) {
+	  var page = {title: 'Imprint'};
 
 	  // start google analytics tracking
 	  if (typeof analytics !== 'undefined') {

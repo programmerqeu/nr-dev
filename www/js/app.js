@@ -11,12 +11,12 @@
 'use strict';
 angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate'])
 
-        .run(function($ionicPlatform, $rootScope) {
-            console.log("Platform is ready!");
+	.run(function ($ionicPlatform, $rootScope) {
+	  console.log("Platform is ready!");
 
-            $rootScope.appVersion = appConfig.version;
+	  $rootScope.appVersion = appConfig.version;
 
-            $ionicPlatform.ready(function() {
+	  $ionicPlatform.ready(function () {
 
 		// start google analytics tracking
 		if (typeof analytics !== 'undefined') {
@@ -58,49 +58,50 @@ angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate']
 			}
 		  })
 
-                    .state('app.impress', {
-                        url: "/impress",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/impress.html",
-                                controller: "ImpressCtrl"
-                            }
-                        }
-                    })
+		  .state('app.impress', {
+			url: "/impress",
+			views: {
+			  'menuContent': {
+				templateUrl: "templates/impress.html",
+				controller: "ImpressCtrl"
+			  }
+			}
+		  })
 
-                    .state('app.browse', {
-                        url: "/browse",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/browse.html"
-                            }
-                        }
-                    })
-                    .state('app.playlists', {
-                        url: "/playlists",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/playlists.html",
-                                controller: 'PlaylistsCtrl'
-                            }
-                        }
-                    })
+		  .state('app.browse', {
+			url: "/browse",
+			views: {
+			  'menuContent': {
+				templateUrl: "templates/browse.html"
+			  }
+			}
+		  })
+		  .state('app.playlists', {
+			url: "/playlists",
+			views: {
+			  'menuContent': {
+				templateUrl: "templates/playlists.html",
+				controller: 'PlaylistsCtrl'
+			  }
+			}
+		  })
 
-                    .state('app.single', {
-                        url: "/playlists/:playlistId",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/playlist.html",
-                                controller: 'PlaylistCtrl'
-                            }
-                        }
-                    });
-            // if none of the above states are matched, use this as the fallback
-            $urlRouterProvider.otherwise('/app/home');
-        });
+		  .state('app.single', {
+			url: "/playlists/:playlistId",
+			views: {
+			  'menuContent': {
+				templateUrl: "templates/playlist.html",
+				controller: 'PlaylistCtrl'
+			  }
+			}
+		  });
+	  // if none of the above states are matched, use this as the fallback
+	  $urlRouterProvider.otherwise('/app/home');
+	});
 
-            // translation
-            $translateProvider.translations('en_GB', en_GB);
-            $translateProvider.translations('de_DE', de_DE);
-            $translateProvider.preferredLanguage('de_DE');
-        });
+// translation
+$translateProvider.translations('en_GB', en_GB);
+$translateProvider.translations('de_DE', de_DE);
+$translateProvider.preferredLanguage('de_DE');
+})
+;

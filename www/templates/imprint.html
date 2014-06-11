@@ -1,74 +1,76 @@
 <ion-view title="{{'imprint' | translate}}" class="bg-blur">
-    <ion-nav-buttons side="left" class="bar-dark ">
-        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-    </ion-nav-buttons>
+  <ion-nav-buttons side="left" class="bar-dark ">
+	<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
 
-    <ion-content class="has-header padding" overflow-scroll="scroll" scrollbar-x="true" scrollbar-y="false">
-
-
-        <div class="list">
-
-            <div class="item item-divider" translate="authors"></div>
-
-            <div class="item item-avatar">
-                <img src="img/alademann.jpg">
-                <h2>André Lademann</h2>
-                <address>
-                    <p>Hardenbergstraße 48</p>
-                    <p>04275 Leipzig</p>
-                </address>
-            </div>
-
-            <a  href="https://github.com/vergissberlin/nr-dev" target="_blank" class="item item-button-right">
-                {{'link_to_github' | translate}}
-                <button class="button button-positive">
-                    <i class="icon ion-ios7-cloud-download"></i>
-                </button>
-            </a>
+  <ion-content class="has-header padding" overflow-scroll="scroll" scrollbar-x="true" scrollbar-y="false">
 
 
-            <div class="item item-divider" translate="company"></div>
+	<div class="list">
 
-            <div class="item item-avatar">
-                <img src="img/icon-96-xhdpi.png">
-                <address>
-                    <h2>Netresearch GmbH & Co.KG</h2>
-                    Nonnenstraße 11d<br>
-                    04229 Leipzig<br>
-                </address>
+	  <div class="item item-divider" translate="authors"></div>
 
-                <h2 translate="company_director"></h2>
-                Dipl.-Ing. Michael Ablass
-            </div>
+	  <div class="item item-avatar">
+		<img src="img/alademann.jpg">
 
-            <a  href="mailto:info@netresearch.de" class="item item-button-right">
-                {{'mail_to' | translate}}
-                <button class="button button-positive">
-                    <i class="icon ion-ios7-email"></i>
-                </button>
-            </a>
+		<h2>André Lademann</h2>
+		<address>
+		  <p>Hardenbergstraße 48</p>
 
-            <a  href="tel:+49341478420" class="item item-button-right">
-                {{'call_to' | translate}}
-                <button class="button button-positive">
-                    <i class="icon ion-ios7-telephone"></i>
-                </button>
-            </a>
+		  <p>04275 Leipzig</p>
+		</address>
+	  </div>
 
-            <a  href="http://netresearch.de" target="_blank" class="item item-button-right">
-                {{'link_to' | translate}}
-                <button class="button button-positive">
-                    <i class="icon ion-ios7-world"></i>
-                </button>
-            </a>
+	  <a href="https://github.com/vergissberlin/nr-dev" target="_blank" class="item item-button-right">
+		{{'link_to_github' | translate}}
+		<button class="button button-positive">
+		  <i class="icon ion-ios7-cloud-download"></i>
+		</button>
+	  </a>
 
-        </div>
 
-        <center>
-            <small>
-                {{'version'|translate}} {{appVersion}}
-            </small>
-        </center>
+	  <div class="item item-divider" translate="company"></div>
 
-    </ion-content>
+	  <div class="item item-avatar">
+		<img src="img/icon-96-xhdpi.png">
+		<address>
+		  <h2>Netresearch GmbH & Co.KG</h2>
+		  Nonnenstraße 11d<br>
+		  04229 Leipzig<br>
+		</address>
+
+		<h2 translate="company_director"></h2>
+		Dipl.-Ing. Michael Ablass
+	  </div>
+
+	  <a href="mailto:info@netresearch.de" class="item item-button-right">
+		{{'mail_to' | translate}}
+		<button class="button button-positive">
+		  <i class="icon ion-ios7-email"></i>
+		</button>
+	  </a>
+
+	  <a href="tel:+49341478420" class="item item-button-right">
+		{{'call_to' | translate}}
+		<button class="button button-positive">
+		  <i class="icon ion-ios7-telephone"></i>
+		</button>
+	  </a>
+
+	  <a href="http://netresearch.de" target="_blank" class="item item-button-right">
+		{{'link_to' | translate}}
+		<button class="button button-positive">
+		  <i class="icon ion-ios7-world"></i>
+		</button>
+	  </a>
+
+	</div>
+
+	<center>
+	  <small>
+		{{'version'|translate}} {{appVersion}}
+	  </small>
+	</center>
+
+  </ion-content>
 </ion-view>
