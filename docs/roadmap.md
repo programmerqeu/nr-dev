@@ -27,7 +27,7 @@ _Start simple as possible_
 - Impress page
 - Documentation
 
-## version 0.0.2
+###  0.0.2
 1. Google Analtics
 	- Including UA-Code
 	- Eventtracking
@@ -57,9 +57,6 @@ _Start simple as possible_
 
 
 ## Version 1.0.0
-
----
-
 **New feature:** lamp control
 
 ### 1.0.0
@@ -75,8 +72,6 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 
 ## Version 2.0.0
-
----
 **New feature:** Meet and great
 
 ### 2.0.0
@@ -93,8 +88,6 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 
 ## Version 3.0.0
-
----
 **New feature:** Give me a beer
 
 ### 3.0.0
@@ -122,8 +115,7 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 
 ## Version 4.0.0
----
-**New feature:** 
+**New feature:** _not planned yet_
 
 ### 4.x.0
 1. Give me a beer 2.0
@@ -131,8 +123,7 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 
 ## Version 5.0.0
----
-**New feature:** 
+**New feature:** _not planned yet_
 
 ### 5.x.0
 1. Give me a beer 3.0
