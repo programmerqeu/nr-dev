@@ -6,7 +6,18 @@ NR{dev} - Cross platform application
 
 _Start simple as possible_
 
-## version 0.0.1
+## Version 0.0.0
+
+**Features:** 
+- Frame layout
+- Icons, splash screen
+- home page, imprint
+- Google Analytics
+- Documentation
+- BDD
+- Contacts
+
+### 0.0.1
 1. frame layout
 	- icons
 	- splash screen
@@ -21,16 +32,16 @@ _Start simple as possible_
 	- Including UA-Code
 	- Eventtracking
 
-## version 0.1.0
+### 0.1.0
 1. Multi language support
 	- German
 	- English
 
-## version 0.2.0
+### 0.2.0
 - BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
 
-## version 0.3.0
-1. contacts Ligth
+### 0.3.0
+1. contacts 1.0
 - data
 	- a simple Array
 - list view
@@ -43,50 +54,24 @@ _Start simple as possible_
 	- first name
 	- phone
 
-### version 0.4.0
-1. contacts Ligth+
-- data
-	- parse XML
-
-### version 0.5.0
-1. contacts Ligth++
-- data
-	- use local storage
-	- photos
-	- xml data
-
-
-### version 0.7.0
-_lampen.nr control lamps an theirs colours in the office of netresearch_
-
-1. lampen internal access
-	- show internal status
-- Google Analytics Event Tracking
-
-### version 0.8.0
-- colour switcher
 
 
 ## Version 1.0.0
 
 ---
-**New feature:** Give me a beer
 
-### version 1.0.0
-1. **Give me a beer**
-	- flattr
-	- pay pal spenden knopf
-	- beer image
+**New feature:** lamp control
+
+### 1.0.0
+_lampen.nr control lamps an theirs colours in the office of netresearch_
+
+1. **lamp control 1.0**
+	- show internal status
 
 ### 1.1.0
-1.  contact advanced
+1.  contact 2.0
 	- filter search
 	- groups
-### 1.2.0
-1.  contact advanced
-	- Sync into local address book (vcf)
-	- show contacts
-
 
 
 ## Version 2.0.0
@@ -99,25 +84,58 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- Developers calendar
 
 ### 2.1.0
-1. Give me a beer
-	- beer with sensor controlled liquid in canvas
-		- rotate background image
+1. contacts 3.0
+	- data parse XML
+	- use local storage
+	- local file storage for photos
+
+
 
 
 ## Version 3.0.0
 
 ---
+**New feature:** Give me a beer
 
 ### 3.0.0
+1. **Give me a beer 1.0**
+	- flattr
+	- pay pal spenden knopf
+	- beer image
 
 
 ### 3.1.0
+1. Lamp control
+	- colour switcher
+	- Google Analytics Event Tracking
+
+### 3.2.0
 1. Meet and great advanced
 	- Show event in native calendar (ical)
 	- Sync calendar to local calendar
 	- Sync event to local calendar (ical?)
 
+### 3.3.0
+1.  contacts 4.0
+	- Sync into local address book (vcf)
+	- show contacts
 
-### 3.2.0
-1. Give me a beer
+
+## Version 4.0.0
+---
+**New feature:** 
+
+### 4.x.0
+1. Give me a beer 2.0
 	- beer with sensor controlled liquid with sensor controlled liquid rotate background image with CSS and JavaScript
+
+
+## Version 5.0.0
+---
+**New feature:** 
+
+### 5.x.0
+1. Give me a beer 3.0
+	- beer with sensor controlled liquid in canvas
+
+
