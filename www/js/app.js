@@ -8,7 +8,6 @@
  * @version    0.0.3
  */
 
-
 angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate'])
 
 	.run(function ($ionicPlatform, $rootScope, $log) {
