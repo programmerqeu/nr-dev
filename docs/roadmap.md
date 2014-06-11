@@ -19,19 +19,21 @@ _Start simple as possible_
 - Multi language
 
 #### 0.0.1
-1. frame layout
+1. **frame layout**
 	- icons
 	- splash screen
 	- colours with SASS
-	- downloud web font
-- Home page
-- Impress page
-- Documentation
+	- download web font
+- **Home page**
+- **Imprint page**
+	- _tel_ links to call phone numbers
+	- _mailto_ links
+- **Documentation**
 
 ####  0.0.2
-- **Google Analtics**
+- **Google Analtics 1.0**
+	- Include GA Cordova Plugin
 	- Including UA-Code
-	- Eventtracking
 
 #### 0.1.0
 - **Multi language support**
@@ -58,7 +60,7 @@ _Start simple as possible_
 		- phone
 	
 
-#### 4.0.0
+#### 0.4.0
 - **Donate a feature/beer 1.0**
 	- PayPal Donate Button
 	- Amazon wish list
