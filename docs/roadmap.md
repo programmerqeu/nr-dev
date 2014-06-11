@@ -16,6 +16,7 @@ _Start simple as possible_
 - Documentation
 - BDD
 - Contacts
+- Multi language
 
 ### 0.0.1
 1. frame layout
