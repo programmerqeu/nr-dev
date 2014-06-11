@@ -189,8 +189,13 @@ and select Google Analytics
 - [Google Analytics](https://www.google.com/analytics/)
 - UA-35739360-3
 
-### version 0.0.3
+### version 0.1.0
+#### Multi language support
 
+1. Install [angular-translate](https://github.com/angular-translate/angular-translate)
+
+
+### version 0.2.0
 #### BDD Test
 
 - [AngularJs and Jasmin](http://angularjs.de/artikel/angularjs-test)
@@ -211,5 +216,3 @@ and select Google Analytics
 #### Android
 
 **Path:**	platforms/android/res/drawable
-
-

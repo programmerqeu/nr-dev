@@ -39,6 +39,7 @@ _Start simple as possible_
 - **Multi language support**
 	- German
 	- English
+	-. Multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
 
 #### 0.2.0
 - **BDD Testing**

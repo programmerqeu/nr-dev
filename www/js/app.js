@@ -1,13 +1,22 @@
-// Ionic Starter App
+/**
+ * NRdev
+ *
+ * @category   Application
+ * @package    NRdev
+ * @author     André Lademann <andre.lademann@netresearch.de>
+ * @license    https://netresearch.de/license
+ * @version    0.0.3
+ */
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.controllers' is found in controllers.js
-angular.module('nrdev', ['ionic', 'nrdev.controllers'])
+'use strict';
+angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate'])
 
-	.run(function ($ionicPlatform) {
-	  $ionicPlatform.ready(function () {
+        .run(function($ionicPlatform, $rootScope) {
+            console.log("Platform is ready!");
+
+            $rootScope.appVersion = appConfig.version;
+
+            $ionicPlatform.ready(function() {
 
 		// start google analytics tracking
 		if (typeof analytics !== 'undefined') {
@@ -49,44 +58,49 @@ angular.module('nrdev', ['ionic', 'nrdev.controllers'])
 			}
 		  })
 
-		  .state('app.imprint', {
-			url: "/imprint",
-			views: {
-			  'menuContent': {
-				templateUrl: "templates/imprint.html",
-				controller: "ImpressCtrl"
-			  }
-			}
-		  })
+                    .state('app.impress', {
+                        url: "/impress",
+                        views: {
+                            'menuContent': {
+                                templateUrl: "templates/impress.html",
+                                controller: "ImpressCtrl"
+                            }
+                        }
+                    })
 
-		  .state('app.browse', {
-			url: "/browse",
-			views: {
-			  'menuContent': {
-				templateUrl: "templates/browse.html"
-			  }
-			}
-		  })
-		  .state('app.playlists', {
-			url: "/playlists",
-			views: {
-			  'menuContent': {
-				templateUrl: "templates/playlists.html",
-				controller: 'PlaylistsCtrl'
-			  }
-			}
-		  })
+                    .state('app.browse', {
+                        url: "/browse",
+                        views: {
+                            'menuContent': {
+                                templateUrl: "templates/browse.html"
+                            }
+                        }
+                    })
+                    .state('app.playlists', {
+                        url: "/playlists",
+                        views: {
+                            'menuContent': {
+                                templateUrl: "templates/playlists.html",
+                                controller: 'PlaylistsCtrl'
+                            }
+                        }
+                    })
 
-		  .state('app.single', {
-			url: "/playlists/:playlistId",
-			views: {
-			  'menuContent': {
-				templateUrl: "templates/playlist.html",
-				controller: 'PlaylistCtrl'
-			  }
-			}
-		  });
-	  // if none of the above states are matched, use this as the fallback
-	  $urlRouterProvider.otherwise('/app/home');
-	});
+                    .state('app.single', {
+                        url: "/playlists/:playlistId",
+                        views: {
+                            'menuContent': {
+                                templateUrl: "templates/playlist.html",
+                                controller: 'PlaylistCtrl'
+                            }
+                        }
+                    });
+            // if none of the above states are matched, use this as the fallback
+            $urlRouterProvider.otherwise('/app/home');
+        });
 
+            // translation
+            $translateProvider.translations('en_GB', en_GB);
+            $translateProvider.translations('de_DE', de_DE);
+            $translateProvider.preferredLanguage('de_DE');
+        });
