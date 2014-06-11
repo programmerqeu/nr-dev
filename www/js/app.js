@@ -8,22 +8,22 @@
  * @version    0.0.3
  */
 
-'use strict';
+
 angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate'])
 
-	.run(function ($ionicPlatform, $rootScope) {
-	  console.log("Platform is ready!");
+	.run(function ($ionicPlatform, $rootScope, $log) {
+	  'use strict';
 
+	  $log.log('Platform is ready!');
 	  $rootScope.appVersion = appConfig.version;
 
 	  $ionicPlatform.ready(function () {
 
 		// start google analytics tracking
 		if (typeof analytics !== 'undefined') {
-		  analytics.startTrackerWithId('UA-35739360-3');
-		  analytics.trackView('Screen Title');
+		  analytics.startTrackerWithId(appConfig.uacode);
 		} else {
-		  console.log("Google Analytics plugin could not be loaded.")
+		  $log.log('Google Analytics plugin could not be loaded.');
 		}
 
 		// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -33,75 +33,55 @@ angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate']
 		}
 		if (window.StatusBar) {
 		  // org.apache.cordova.statusbar required
-		  StatusBar.styleDefault();
+		  window.StatusBar.styleDefault();
 		}
 	  });
 	})
 
-	.config(function ($stateProvider, $urlRouterProvider) {
-	  $stateProvider
+	.config(function ($stateProvider, $urlRouterProvider, $translateProvider) {
+	  'use strict';
 
+	  $stateProvider
 		  .state('app', {
-			url: "/app",
+			url: '/app',
 			abstract: true,
-			templateUrl: "templates/menu.html",
+			templateUrl: 'templates/menu.html',
 			controller: 'AppCtrl'
 		  })
 
 		  .state('app.home', {
-			url: "/home",
+			url: '/home',
 			views: {
 			  'menuContent': {
-				templateUrl: "templates/home.html",
-				controller: "HomeCtrl"
+				templateUrl: 'templates/home.html',
+				controller: 'HomeCtrl'
 			  }
 			}
 		  })
 
-		  .state('app.impress', {
-			url: "/impress",
+		  .state('app.imprint', {
+			url: '/imprint',
 			views: {
 			  'menuContent': {
-				templateUrl: "templates/impress.html",
-				controller: "ImpressCtrl"
-			  }
-			}
-		  })
-
-		  .state('app.browse', {
-			url: "/browse",
-			views: {
-			  'menuContent': {
-				templateUrl: "templates/browse.html"
-			  }
-			}
-		  })
-		  .state('app.playlists', {
-			url: "/playlists",
-			views: {
-			  'menuContent': {
-				templateUrl: "templates/playlists.html",
-				controller: 'PlaylistsCtrl'
-			  }
-			}
-		  })
-
-		  .state('app.single', {
-			url: "/playlists/:playlistId",
-			views: {
-			  'menuContent': {
-				templateUrl: "templates/playlist.html",
-				controller: 'PlaylistCtrl'
+				templateUrl: 'templates/imprint.html',
+				controller: 'ImprintCtrl'
 			  }
 			}
 		  });
 	  // if none of the above states are matched, use this as the fallback
 	  $urlRouterProvider.otherwise('/app/home');
-	});
 
-// translation
-$translateProvider.translations('en_GB', en_GB);
-$translateProvider.translations('de_DE', de_DE);
-$translateProvider.preferredLanguage('de_DE');
-})
-;
+
+	  // translations
+	  $translateProvider
+		  .translations('en_UK', en_UK)
+		  .translations('de_DE', de_DE)
+		  .fallbackLanguage('en_UK', 'de_DE')
+		  .registerAvailableLanguageKeys(['en', 'de'], {
+			'en_US': 'en',
+			'en_UK': 'en',
+			'de_DE': 'de',
+			'de_CH': 'de'
+		  })
+		  .determinePreferredLanguage();
+	});

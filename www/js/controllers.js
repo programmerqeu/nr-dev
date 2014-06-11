@@ -11,10 +11,10 @@
 'use strict';
 angular.module('nrdev.controllers', [])
 
-	.controller('AppCtrl', function ($scope) {
+	.controller('AppCtrl', function () {
 	})
 
-	.controller('HomeCtrl', function ($scope) {
+	.controller('HomeCtrl', function () {
 	  var page = {title: 'Developers home'};
 
 	  // start google analytics tracking
@@ -23,25 +23,11 @@ angular.module('nrdev.controllers', [])
 	  }
 	})
 
-	.controller('ImprintCtrl', function ($scope) {
+	.controller('ImprintCtrl', function () {
 	  var page = {title: 'Imprint'};
 
 	  // start google analytics tracking
 	  if (typeof analytics !== 'undefined') {
 		analytics.trackView(page.title);
 	  }
-	})
-
-	.controller('PlaylistsCtrl', function ($scope) {
-	  $scope.playlists = [
-		{title: 'Reggae', id: 1},
-		{title: 'Chill', id: 2},
-		{title: 'Dubstep', id: 3},
-		{title: 'Indie', id: 4},
-		{title: 'Rap', id: 5},
-		{title: 'Cowbell', id: 6}
-	  ];
-	})
-
-	.controller('PlaylistCtrl', function ($scope, $stateParams) {
-	})
+	});

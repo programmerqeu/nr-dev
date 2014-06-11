@@ -1,4 +1,4 @@
-var en_GB = {
+var en_UK = {
   search: 'Search',
   cancel: 'Cancel',
   about: 'About',
@@ -11,9 +11,9 @@ var en_GB = {
   authors: 'Authors',
   company: 'Company',
   company_director: 'Managing Director:',
-  mail_to: 'Mail to Netresearch',
-  call_to: 'Call to Netresearch',
-  link_to: 'Link to Netresearch',
+  mail_to: 'Mail to {{receiver}}',
+  call_to: 'Call to {{receiver}}',
+  link_to: 'Link to {{receiver}}',
   link_to_github: 'GitHub project site',
   version: 'App version'
 };

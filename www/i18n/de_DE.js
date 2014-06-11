@@ -11,9 +11,9 @@ var de_DE = {
   authors: 'Autoren',
   company: 'Unternehmen',
   company_director: 'Vertretungsberechtigter:',
-  mail_to: ' Netresearch schreiben',
-  call_to: ' Netresearch anrufen',
-  link_to: ' Netresearch Website besuchen',
+  mail_to: '{{receiver}} schreiben',
+  call_to: '{{receiver}} anrufen',
+  link_to: '{{receiver}} Website besuchen',
   link_to_github: 'GitHub Projektseite',
   version: 'Anwendungsversion'
 
