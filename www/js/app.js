@@ -77,11 +77,19 @@ angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate']
 		  .translations('en_UK', en_UK)
 		  .translations('de_DE', de_DE)
 		  .fallbackLanguage('en_UK', 'de_DE')
-		  .registerAvailableLanguageKeys(['en', 'de'], {
-			'en_US': 'en',
-			'en_UK': 'en',
-			'de_DE': 'de',
-			'de_CH': 'de'
+		  .registerAvailableLanguageKeys(['en_UK', 'de_DE'], {
+			'en': 	 'en_UK',
+			'en_US': 'en_UK',
+			'en-US': 'en_UK',
+			'en-UK': 'en_UK',
+			'en_UK': 'en_UK',
+			'de':	 'de_DE',
+			'de-DE': 'de_DE',
+			'de_DE': 'de_DE',
+			'de_CH': 'de_DE',
+			'de-CH': 'de_DE',
+			'de_AT': 'de_DE',
+			'de-AT': 'de_DE'
 		  })
 		  .determinePreferredLanguage();
 	});
