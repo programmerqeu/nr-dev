@@ -58,6 +58,11 @@ _Start simple as possible_
 		- phone
 	
 
+#### 4.0.0
+- **Donate a feature/beer 1.0**
+	- PayPal Donate Button
+	- Amazon wish list
+
 ### Version 1.0.0
 **New feature:** lamp control
 
@@ -94,12 +99,15 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 - **BDD Testing 3.0**
 	- Collect code coverage with [gulp-coverage](https://github.com/dylanb/gulp-coverage)
 
+#### 2.3.0
+- **Donate a feature/beer 2.0**
+	- progress bar as beer level
 
 ### Version 3.0.0
-**New feature:** Give me a beer
+**New feature:** Give me a beer/feature
 
 #### 3.0.0
-1. **Give me a beer 1.0**
+1. **Donate a beer/feature 3.0**
 	- flattr
 	- pay pal spenden knopf
 	- beer image
@@ -126,7 +134,7 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 **New feature:** _not planned yet_
 
 #### 4.x.0
-- **Give me a beer 2.0**
+- **Donate a beer/feature 4.0**
 	- beer with sensor controlled liquid with sensor controlled liquid rotate background image with CSS and JavaScript
 
 
@@ -134,5 +142,5 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 **New feature:** _not planned yet_
 
 #### 5.x.0
-- **Give me a beer 3.0**
+- **Donate a beer/feature 5.0**
 	- beer with sensor controlled liquid in canvas
