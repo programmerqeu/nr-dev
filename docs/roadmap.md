@@ -40,6 +40,7 @@ _Start simple as possible_
 
 ### 0.2.0
 - BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+- [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
 
 ### 0.3.0
 1. contacts 1.0
@@ -56,7 +57,6 @@ _Start simple as possible_
 	- phone
 
 
-
 ## Version 1.0.0
 **New feature:** lamp control
 
@@ -67,9 +67,13 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- show internal status
 
 ### 1.1.0
-1.  contact 2.0
+- contact 2.0
 	- filter search
 	- groups
+
+### 1.2.0
+- BDD Testing 2.0
+	- Watch changes with [gulp-jasmine](https://www.npmjs.org/package/gulp-jasmine)
 
 
 ## Version 2.0.0
@@ -129,5 +133,3 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 ### 5.x.0
 1. Give me a beer 3.0
 	- beer with sensor controlled liquid in canvas
-
-
