@@ -36,10 +36,12 @@ _Start simple as possible_
 	- Including UA-Code
 
 #### 0.1.0
-- **Multi language support**
-	- German
-	- English
-	-. Multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
+- **Multi language support 1.0**
+	- languages
+		- German
+		- English
+	- automatic preferred language detection
+	- multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
 
 #### 0.2.0
 - **BDD Testing**
@@ -60,11 +62,12 @@ _Start simple as possible_
 		- first name
 		- phone
 	
-
 #### 0.4.0
 - **Donate a feature/beer 1.0**
 	- PayPal Donate Button
 	- Amazon wish list
+
+
 
 ### Version 1.0.0
 **New feature:** lamp control
@@ -84,13 +87,23 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 - **BDD Testing 2.0**
 	- Watch changes with [gulp-jasmine](https://www.npmjs.org/package/gulp-jasmine)
 
+#### 1.3.0
+- **Multi language support 2.0**
+	- asnycron static language file loading
+	- german as normal included default language
+
+
 
 ### Version 2.0.0
 **New feature:** Meet and great
 
 #### 2.0.0
-- **Meet and great**
-	- Developers calendar
+- **Meet and great 1.0**
+	- developers calendar
+	- simple list from array (no CMS)
+		- date
+		- title
+		- location
 
 #### 2.1.0
 - **contacts 3.0**
@@ -122,10 +135,11 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- Google Analytics Event Tracking
 
 #### 3.2.0
-- **Meet and great advanced**
-	- Show event in native calendar (ical)
-	- Sync calendar to local calendar
-	- Sync event to local calendar (ical?)
+- **Meet and great 2.0**
+	- list view from Google Calender ical or xml
+	- location link to Google Maps
+		- latitude
+		- longitude
 
 #### 3.3.0
 - **contacts 4.0**
@@ -133,12 +147,20 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- show contacts
 
 
+
 ### Version 4.0.0
 **New feature:** _not planned yet_
 
-#### 4.x.0
+#### 4.X.0
 - **Donate a beer/feature 4.0**
 	- beer with sensor controlled liquid with sensor controlled liquid rotate background image with CSS and JavaScript
+
+#### 4.X.0
+- **Meet and great 3.0**
+	- Show event in native calendar (ical)
+	- Sync calendar to local calendar
+	- Sync event to local calendar (ical?)
+
 
 
 ### Version 5.0.0
@@ -147,3 +169,8 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 #### 5.x.0
 - **Donate a beer/feature 5.0**
 	- beer with sensor controlled liquid in canvas
+
+#### 5.X.0
+- **Meet and great 4.0**
+	- show/link attendies to _contacts_
+	- create new event
