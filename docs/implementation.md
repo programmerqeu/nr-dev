@@ -181,7 +181,8 @@ cordova plugin add https://github.com/danwilson/google-analytics-plugin.git
 ```bash
 cd /path/sdk/tools
 android sdk
-``` and select Google Analytics
+``` 
+and select Google Analytics
 
 ##### UA Code
 
