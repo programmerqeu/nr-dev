@@ -6,7 +6,7 @@ NR{dev} - Cross platform application
 
 _Collection of ideas_
 
-1. **Contacts**
+- **Contacts**
 	- attributes
 		- phone number
 		- email
@@ -20,6 +20,11 @@ _Collection of ideas_
 		- send as vCard
 		- sync to local adresss book
 		- Google Map with dot from address
+- **Multi language**
+	- Translatable into a variable number of languages
+	- l10n and [i18n](https://docs.angularjs.org/guide/i18n)
+	- Default language with asynchron language file loading for other languages
+	- [Automatic](http://angular-translate.github.io/docs/#/guide/09_language-negotiation) language selection with fallback
 - **Google Analtics**
 	- Including UA-Code
 	- Event tracking

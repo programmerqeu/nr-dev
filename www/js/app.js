@@ -1,92 +1,94 @@
-// Ionic Starter App
+/**
+ * NRdev
+ *
+ * @category   Application
+ * @package    NRdev
+ * @author     André Lademann <andre.lademann@netresearch.de>
+ * @license    https://netresearch.de/license
+ * @version    0.0.3
+ */
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.controllers' is found in controllers.js
-angular.module('nrdev', ['ionic', 'nrdev.controllers'])
+angular.module('nrdev', ['ionic', 'nrdev.controllers', 'pascalprecht.translate'])
 
-        .run(function($ionicPlatform) {
-            $ionicPlatform.ready(function() {
+	.run(function ($ionicPlatform, $rootScope, $log) {
+	  'use strict';
 
-                // start google analytics tracking
-                if (typeof analytics !== 'undefined') {
-                    analytics.startTrackerWithId('UA-35739360-3');
-                    analytics.trackView('Screen Title');
-                } else {
-                    console.log("Google Analytics plugin could not be loaded.")
-                }
+	  $log.log('Platform is ready!');
+	  $rootScope.appVersion = appConfig.version;
 
-                // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-                // for form inputs)
-                if (window.cordova && window.cordova.plugins.Keyboard) {
-                    cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-                }
-                if (window.StatusBar) {
-                    // org.apache.cordova.statusbar required
-                    StatusBar.styleDefault();
-                }
-            });
-        })
+	  $ionicPlatform.ready(function () {
 
-        .config(function($stateProvider, $urlRouterProvider) {
-            $stateProvider
+		// start google analytics tracking
+		if (typeof analytics !== 'undefined') {
+		  analytics.startTrackerWithId(appConfig.uacode);
+		} else {
+		  $log.log('Google Analytics plugin could not be loaded.');
+		}
 
-                    .state('app', {
-                        url: "/app",
-                        abstract: true,
-                        templateUrl: "templates/menu.html",
-                        controller: 'AppCtrl'
-                    })
+		// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+		// for form inputs)
+		if (window.cordova && window.cordova.plugins.Keyboard) {
+		  cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+		}
+		if (window.StatusBar) {
+		  // org.apache.cordova.statusbar required
+		  window.StatusBar.styleDefault();
+		}
+	  });
+	})
 
-                    .state('app.home', {
-                        url: "/home",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/home.html",
-                                controller: "HomeCtrl"
-                            }
-                        }
-                    })
+	.config(function ($stateProvider, $urlRouterProvider, $translateProvider) {
+	  'use strict';
 
-                    .state('app.imprint', {
-                        url: "/imprint",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/imprint.html",
-                                controller: "ImpressCtrl"
-                            }
-                        }
-                    })
+	  $stateProvider
+		  .state('app', {
+			url: '/app',
+			abstract: true,
+			templateUrl: 'templates/menu.html',
+			controller: 'AppCtrl'
+		  })
 
-                    .state('app.browse', {
-                        url: "/browse",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/browse.html"
-                            }
-                        }
-                    })
-                    .state('app.playlists', {
-                        url: "/playlists",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/playlists.html",
-                                controller: 'PlaylistsCtrl'
-                            }
-                        }
-                    })
+		  .state('app.home', {
+			url: '/home',
+			views: {
+			  'menuContent': {
+				templateUrl: 'templates/home.html',
+				controller: 'HomeCtrl'
+			  }
+			}
+		  })
 
-                    .state('app.single', {
-                        url: "/playlists/:playlistId",
-                        views: {
-                            'menuContent': {
-                                templateUrl: "templates/playlist.html",
-                                controller: 'PlaylistCtrl'
-                            }
-                        }
-                    });
-            // if none of the above states are matched, use this as the fallback
-            $urlRouterProvider.otherwise('/app/home');
-        });
+		  .state('app.imprint', {
+			url: '/imprint',
+			views: {
+			  'menuContent': {
+				templateUrl: 'templates/imprint.html',
+				controller: 'ImprintCtrl'
+			  }
+			}
+		  });
+	  // if none of the above states are matched, use this as the fallback
+	  $urlRouterProvider.otherwise('/app/home');
 
+
+	  // translations
+	  $translateProvider
+		  .translations('en_UK', en_UK)
+		  .translations('de_DE', de_DE)
+		  .fallbackLanguage('en_UK', 'de_DE')
+		  .registerAvailableLanguageKeys(['en_UK', 'de_DE'], {
+			'en': 	 'en_UK',
+			'en_US': 'en_UK',
+			'en-US': 'en_UK',
+			'en-UK': 'en_UK',
+			'en_UK': 'en_UK',
+			'de':	 'de_DE',
+			'de-DE': 'de_DE',
+			'de_DE': 'de_DE',
+			'de_CH': 'de_DE',
+			'de-CH': 'de_DE',
+			'de_AT': 'de_DE',
+			'de-AT': 'de_DE'
+		  })
+		  .determinePreferredLanguage();
+	});

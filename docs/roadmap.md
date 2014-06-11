@@ -6,125 +6,171 @@ NR{dev} - Cross platform application
 
 _Start simple as possible_
 
-## version 0.0.1
-1. frame layout
+### Version 0.0.0
+
+**Features:** 
+- Frame layout
+- Icons, splash screen
+- home page, imprint
+- Google Analytics
+- Documentation
+- BDD
+- Contacts
+- Multi language
+
+#### 0.0.1
+1. **frame layout**
 	- icons
 	- splash screen
 	- colours with SASS
-	- downloud web font
-- Home page
-- Impress page
-- Documentation
+	- download web font
+- **Home page**
+- **Imprint page**
+	- _tel_ links to call phone numbers
+	- _mailto_ links
+- **Documentation**
 
-## version 0.0.2
-1. Google Analtics
+####  0.0.2
+- **Google Analtics 1.0**
+	- Include GA Cordova Plugin
 	- Including UA-Code
-	- Eventtracking
 
-## version 0.0.3
-- BDD Testing with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+#### 0.1.0
+- **Multi language support 1.0**
+	- languages
+		- German
+		- English
+	- automatic preferred language detection
+	- multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
+
+#### 0.2.0
+- **BDD Testing**
+	- with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+	- [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
+
+#### 0.3.0
+- **contacts 1.0**
+	- data
+		- a simple Array
+	- list view
+		- Gravatar
+		- last name
+		- first name
+	- view details
+		- Gravatar
+		- last name
+		- first name
+		- phone
+	
+#### 0.4.0
+- **Donate a feature/beer 1.0**
+	- PayPal Donate Button
+	- Amazon wish list
 
 
-## version 0.1.0
-1. Multi language support
-	- German
-	- English
 
-## version 0.2.0
-1. contacts Ligth
-- data
-	- a simple Array
-- list view
-	- Gravatar
-	- last name
-	- first name
-- view details
-	- Gravatar
-	- last name
-	- first name
-	- phone
+### Version 1.0.0
+**New feature:** lamp control
 
-## version 0.2.0
-1. contacts Ligth
-- data
-	- simple
-- list view
-	- Gravatar
-	- last name
-	- first name
-- view details
-	- Gravatar
-	- last name
-	- first name
-	- phone
-- Google Analytics
+#### 1.0.0
+_lampen.nr control lamps an theirs colours in the office of netresearch_
 
-### version 0.2.1
-1. contacts Ligth+
-- data
-	- parse XML
+- **lamp control 1.0**
+	- show internal status
 
-### version 0.2.2
-1. contacts Ligth++
-- data
+#### 1.1.0
+- **contact 2.0**
+	- filter search
+	- groups
+
+#### 1.2.0
+- **BDD Testing 2.0**
+	- Watch changes with [gulp-jasmine](https://www.npmjs.org/package/gulp-jasmine)
+
+#### 1.3.0
+- **Multi language support 2.0**
+	- asnycron static language file loading
+	- german as normal included default language
+
+
+
+### Version 2.0.0
+**New feature:** Meet and great
+
+#### 2.0.0
+- **Meet and great 1.0**
+	- developers calendar
+	- simple list from array (no CMS)
+		- date
+		- title
+		- location
+
+#### 2.1.0
+- **contacts 3.0**
+	- data parse XML
 	- use local storage
-	- photos
-	- xml data
+	- local file storage for photos
 
-### version 0.3.0
-1. Give me a beer
+#### 2.2.0
+- **BDD Testing 3.0**
+	- Collect code coverage with [gulp-coverage](https://github.com/dylanb/gulp-coverage)
+
+#### 2.3.0
+- **Donate a feature/beer 2.0**
+	- progress bar as beer level
+
+### Version 3.0.0
+**New feature:** Give me a beer/feature
+
+#### 3.0.0
+1. **Donate a beer/feature 3.0**
 	- flattr
 	- pay pal spenden knopf
 	- beer image
 
-### version 0.4.0
-_lampen.nr control lamps an theirs colours in the office of netresearch_
 
-1. lampen internal access
-	- show internal status
-- Google Analytics Event Tracking
+#### 3.1.0
+- **Lamp control**
+	- colour switcher
+	- Google Analytics Event Tracking
 
-### version 0.4.1
-- colour switcher
+#### 3.2.0
+- **Meet and great 2.0**
+	- list view from Google Calender ical or xml
+	- location link to Google Maps
+		- latitude
+		- longitude
 
-
-## Version 1.0.0
-
----
-
-### 1.x.0
-1.  contact advanced
-	- filter search
-	- groups
-### 1.x.1
-1.  contact advanced
+#### 3.3.0
+- **contacts 4.0**
 	- Sync into local address book (vcf)
 	- show contacts
 
-### 1.x.x
-1. Give me a beer
+
+
+### Version 4.0.0
+**New feature:** _not planned yet_
+
+#### 4.X.0
+- **Donate a beer/feature 4.0**
 	- beer with sensor controlled liquid with sensor controlled liquid rotate background image with CSS and JavaScript
 
-### 1.x.x
-
-1. **Meet and great**
-	- Developers calendar
-
-
-
-## Version 2.0.0
-
----
-
-### 2.x.x
-1. Give me a beer
-	- beer with sensor controlled liquid in canvas
-		- rotate background image
-
-### 2.x.x
-
-1. **Meet and great**
+#### 4.X.0
+- **Meet and great 3.0**
 	- Show event in native calendar (ical)
 	- Sync calendar to local calendar
 	- Sync event to local calendar (ical?)
 
+
+
+### Version 5.0.0
+**New feature:** _not planned yet_
+
+#### 5.x.0
+- **Donate a beer/feature 5.0**
+	- beer with sensor controlled liquid in canvas
+
+#### 5.X.0
+- **Meet and great 4.0**
+	- show/link attendies to _contacts_
+	- create new event
