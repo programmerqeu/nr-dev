@@ -2484,7 +2484,7 @@ a.subdued {
   border-style: solid;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #ddd;
-  background-color: white;
+  background-color: #fdfdfd;
   /* border-width: 1px will actually create 2 device pixels on retina */
   /* this nifty trick sets an actual 1px border on hi-res displays */
   background-size: 0; }
@@ -2512,7 +2512,7 @@ a.subdued {
       background: transparent; }
   .bar.bar-light {
     border-color: #ddd;
-    background-color: white;
+    background-color: #fdfdfd;
     background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
     color: #444; }
     .bar.bar-light .title {
@@ -2638,7 +2638,7 @@ a.subdued {
 
 .bar-light .button {
   border-color: #ddd;
-  background-color: white;
+  background-color: #fdfdfd;
   color: #444; }
   .bar-light .button:hover {
     color: #444;
@@ -2903,12 +2903,12 @@ a.subdued {
 /* Allow parent element of tabs to define color, or just the tab itself */
 .tabs-light > .tabs, .tabs.tabs-light {
   border-color: #ddd;
-  background-color: #fff;
+  background-color: #fdfdfd;
   background-image: linear-gradient(0deg, #ddd, #ddd 50%, transparent 50%);
   color: #444; }
   .tabs-light > .tabs .tab-item .badge, .tabs.tabs-light .tab-item .badge {
     background-color: #444;
-    color: #fff; }
+    color: #fdfdfd; }
 
 .tabs-stable > .tabs, .tabs.tabs-stable {
   border-color: #b2b2b2;
@@ -3062,7 +3062,7 @@ a.subdued {
 .tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
   opacity: 1; }
   .tab-item.tab-item-active.tab-item-light, .tab-item.active.tab-item-light, .tab-item.activated.tab-item-light {
-    color: #fff; }
+    color: #fdfdfd; }
   .tab-item.tab-item-active.tab-item-stable, .tab-item.active.tab-item-stable, .tab-item.activated.tab-item-stable {
     color: #6af; }
   .tab-item.tab-item-active.tab-item-positive, .tab-item.active.tab-item-positive, .tab-item.activated.tab-item-positive {
@@ -3302,7 +3302,7 @@ a.subdued {
  */
 .item {
   border-color: #ddd;
-  background-color: #fff;
+  background-color: #fdfdfd;
   color: #444;
   position: relative;
   z-index: 2;
@@ -3347,7 +3347,7 @@ a.subdued {
     margin-right: 5px; }
   .item.item-light {
     border-color: #ddd;
-    background-color: #fff;
+    background-color: #fdfdfd;
     color: #444; }
   .item.item-stable {
     border-color: #b2b2b2;
@@ -3919,7 +3919,7 @@ a.item-content {
     display: none; }
 
 .tabs .tab-item .badge.badge-light, .badge.badge-light {
-  background-color: #fff;
+  background-color: #fdfdfd;
   color: #444; }
 .tabs .tab-item .badge.badge-stable, .badge.badge-stable {
   background-color: #6af;
@@ -4210,7 +4210,7 @@ input, button, select, textarea {
   border-radius: 2px;
   padding: 4px 8px 3px;
   border: none;
-  background-color: #fff; }
+  background-color: #fdfdfd; }
 
 .item-stacked-label input {
   overflow: hidden;
@@ -4483,7 +4483,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
   width: 28px;
   height: 28px;
   border-radius: 28px;
-  background-color: #fff;
+  background-color: #fdfdfd;
   top: 7px;
   left: 7px; }
   .toggle .handle:before {
@@ -4497,7 +4497,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled], input[type="rad
   -webkit-transform: translate3d(22px, 0, 0);
   -moz-transform: translate3d(22px, 0, 0);
   transform: translate3d(22px, 0, 0);
-  background-color: #fff; }
+  background-color: #fdfdfd; }
 
 .item-toggle.active {
   box-shadow: none; }
@@ -4587,7 +4587,7 @@ input[type="range"] {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #fdfdfd;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 1px 3px 5px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     -webkit-appearance: none; }
@@ -4794,7 +4794,7 @@ progress {
     margin-bottom: 10px; }
   .button.button-light {
     border-color: #ddd;
-    background-color: #fff;
+    background-color: #fdfdfd;
     color: #444; }
     .button.button-light:hover {
       color: #444;
@@ -6328,10 +6328,10 @@ a.button {
  * instead have colors which represent an emotion or generic theme.
  */
 .light, a.light {
-  color: #fff; }
+  color: #fdfdfd; }
 
 .light-bg {
-  background-color: #fff; }
+  background-color: #fdfdfd; }
 
 .light-border {
   border-color: #ddd; }
@@ -6455,4 +6455,8 @@ a.button {
     font-family: 'Lobster', cursive;
     font-size: 2.4em;
     font-weight: 400;
-    color: #fff; }
+    color: #fdfdfd; }
+
+footer {
+  color: #fdfdfd;
+  text-align: center; }
