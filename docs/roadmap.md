@@ -84,12 +84,14 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- Developers calendar
 
 ### 2.1.0
-1. contacts 3.0
+- contacts 3.0
 	- data parse XML
 	- use local storage
 	- local file storage for photos
 
-
+### 2.2.0
+- BDD Testing 3.0
+	- Collect code coverage with [gulp-coverage](https://github.com/dylanb/gulp-coverage)
 
 
 ## Version 3.0.0
