@@ -44,9 +44,9 @@ _Start simple as possible_
 	- multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
 
 #### 0.2.0
-- **BDD Testing**
+- **Testing**
 	- with [Jasmin](http://angularjs.de/artikel/angularjs-test)
-	- [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
+	- **CI** for Jasmin [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
 
 #### 0.3.0
 - **contacts 1.0**
@@ -79,13 +79,30 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- show internal status
 
 #### 1.1.0
+- ** Testing 2.0**
+	- **Functionality tests with [DalekJs](http://dalekjs.com/)**
+		- run on headless browser
+		- *Tests*
+			1. Header and Headline exists
+			- Menü exists
+			- Page imprint exists and is available
+			- Language selection works automatically
+			- Page contact exists and is available
+				- ALA Entry exists in list view
+					- Gravatar image is visible in online mode
+					- Fallback image is visible in offline mode
+					- First and last name is shown
+				- ALA Detail view is available
+					- image, first name, last name, address, email, phone
+					- mailto: link exists
+					- tel: link exists
+
+
+#### 1.2.0
 - **contact 2.0**
 	- filter search
 	- groups
 
-#### 1.2.0
-- **BDD Testing 2.0**
-	- Watch changes with [gulp-jasmine](https://www.npmjs.org/package/gulp-jasmine)
 
 #### 1.3.0
 - **Multi language support 2.0**
@@ -106,14 +123,18 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 		- location
 
 #### 2.1.0
+- **Testing 3.0**
+	- **CI**
+		- integrate in travis-ci for DalekJs
+		- Report on https://saucelabs.com/ for DalekJs
+	- Watch changes with [gulp-jasmine](https://www.npmjs.org/package/gulp-jasmine)
+
+#### 2.2.0
 - **contacts 3.0**
 	- data parse XML
 	- use local storage
 	- local file storage for photos
 
-#### 2.2.0
-- **BDD Testing 3.0**
-	- Collect code coverage with [gulp-coverage](https://github.com/dylanb/gulp-coverage)
 
 #### 2.3.0
 - **Donate a feature/beer 2.0**
@@ -128,20 +149,23 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- pay pal spenden knopf
 	- beer image
 
-
 #### 3.1.0
+- **Testing 4.0**
+	- Collect code coverage with [gulp-coverage](https://github.com/dylanb/gulp-coverage)
+
+#### 3.2.0
 - **Lamp control**
 	- colour switcher
 	- Google Analytics Event Tracking
 
-#### 3.2.0
+#### 3.3.0
 - **Meet and great 2.0**
 	- list view from Google Calender ical or xml
 	- location link to Google Maps
 		- latitude
 		- longitude
 
-#### 3.3.0
+#### 3.4.0
 - **contacts 4.0**
 	- Sync into local address book (vcf)
 	- show contacts
@@ -150,6 +174,10 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 ### Version 4.0.0
 **New feature:** _not planned yet_
+
+#### 4.1.0
+- **Testing 5.0**
+	- Make screenshots on fail
 
 #### 4.X.0
 - **Donate a beer/feature 4.0**
