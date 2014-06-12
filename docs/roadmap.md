@@ -24,8 +24,8 @@ _Start simple as possible_
 	- splash screen
 	- colours with SASS
 	- download web font
-- **Home page**
-- **Imprint page**
+- **Home page 1.0**
+- **Imprint page 1.0**
 	- _tel_ links to call phone numbers
 	- _mailto_ links
 - **Documentation**
@@ -103,11 +103,14 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- filter search
 	- groups
 
-
 #### 1.3.0
 - **Multi language support 2.0**
 	- asnycron static language file loading
 	- german as normal included default language
+
+#### 1.4.0
+- **Home page 2.0**
+	- animated logo on touch
 
 
 
@@ -139,6 +142,10 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 #### 2.3.0
 - **Donate a feature/beer 2.0**
 	- progress bar as beer level
+
+#### 2.4.0
+- **Home page 4.0**
+	- animated logo on shake gesture
 
 ### Version 3.0.0
 **New feature:** Give me a beer/feature
