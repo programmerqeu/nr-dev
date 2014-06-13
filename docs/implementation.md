@@ -196,9 +196,27 @@ and select Google Analytics
 
 
 ### version 0.2.0
-#### BDD Test
+#### Integration tests
+- **Functionality tests with [DalekJs](http://dalekjs.com/)**
+	- install DalekJS and browser driver for Chrome, FirefoxOS, IE and mobile Safarie
+	- run on headless browser
+	- integrate in travis-ci
 
-- [AngularJs and Jasmin](http://angularjs.de/artikel/angularjs-test)
+##### Tests
+1. Header and Headline exists
+- Menü exists
+- Page home exists and is available with logo
+- Page imprint exists and is available
+- Language selection works automatically
+- Page contact exists and is available
+	- ALA Entry exists in list view
+		- Gravatar image is visible in online mode
+		- Fallback image is visible in offline mode
+		- First and last name is shown
+	- ALA Detail view is available
+		- image, first name, last name, address, email, phone
+		- mailto: link exists
+		- tel: link exists
 
 
 ## User story

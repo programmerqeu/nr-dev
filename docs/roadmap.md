@@ -45,9 +45,23 @@ _Start simple as possible_
 
 #### 0.2.0
 - **Testing**
-	- with [Jasmin](http://angularjs.de/artikel/angularjs-test)
-	- **CI** for Jasmin [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
-
+	- **Integration tests with [DalekJs](http://dalekjs.com/)**
+		- run on headless browser
+		- run on [TraviCI](https://github.com/dalekjs/guineapig)
+		- *Tests*
+			1. Header and Headline exists
+			- Menü exists
+			- Page imprint exists and is available
+			- Language selection works automatically
+			- Page contact exists and is available
+				- ALA Entry exists in list view
+					- Gravatar image is visible in online mode
+					- Fallback image is visible in offline mode
+					- First and last name is shown
+				- ALA Detail view is available
+					- image, first name, last name, address, email, phone
+					- mailto: link exists
+					- tel: link exists
 #### 0.3.0
 - **contacts 1.0**
 	- data
@@ -68,7 +82,6 @@ _Start simple as possible_
 	- Amazon wish list
 
 
-
 ### Version 1.0.0
 **New feature:** lamp control
 
@@ -80,23 +93,8 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 #### 1.1.0
 - ** Testing 2.0**
-	- **Functionality tests with [DalekJs](http://dalekjs.com/)**
-		- run on headless browser
-		- *Tests*
-			1. Header and Headline exists
-			- Menü exists
-			- Page imprint exists and is available
-			- Language selection works automatically
-			- Page contact exists and is available
-				- ALA Entry exists in list view
-					- Gravatar image is visible in online mode
-					- Fallback image is visible in offline mode
-					- First and last name is shown
-				- ALA Detail view is available
-					- image, first name, last name, address, email, phone
-					- mailto: link exists
-					- tel: link exists
-
+	- **BDD** with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+    	- **CI** for Jasmin [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
 
 #### 1.2.0
 - **contact 2.0**
