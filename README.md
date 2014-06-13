@@ -1,7 +1,10 @@
 NR{dev} - Cross platform application
 ====================================
 
-[![Build Status](https://travis-ci.org/vergissberlin/nr-dev.svg?branch=develop)](https://travis-ci.org/vergissberlin/nr-dev)
+**CI status:** [![Build Status](https://travis-ci.org/vergissberlin/nr-dev.svg?branch=develop)](https://travis-ci.org/vergissberlin/nr-dev)
+**Dependency check:** gemnasium: [![Dependency Status](https://gemnasium.com/vergissberlin/nr-dev.svg)](https://gemnasium.com/vergissberlin/nr-dev), david-dm: [![Dependency Status](https://david-dm.org/vergissberlin/nr-dev.svg)](https://david-dm.org/vergissberlin/nr-dev)
+**Version:** [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
+**Code climate:** [![Code Climate](https://codeclimate.com/github/vergissberlin/nr-dev.png)](https://codeclimate.com/github/vergissberlin/nr-dev)
 
 An application for mobile devices. Created by and for developers of [Netresearch GmbH & Co.KG](http://netresearch.de).
 The app includes experiments with various API's. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book.
