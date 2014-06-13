@@ -1,7 +1,7 @@
 NR{dev} - Cross platform application
 ====================================
 
-**CI status:** [![Build Status](https://travis-ci.org/vergissberlin/nr-dev.svg?branch=develop)](https://travis-ci.org/vergissberlin/nr-dev)
+**CI status:** TravisCI: [![Build Status](https://travis-ci.org/vergissberlin/nr-dev.svg?branch=develop)](https://travis-ci.org/vergissberlin/nr-dev) CodeShip: [![Build Status](https://www.codeship.io/projects/91045130-d4fe-0131-bcf5-76b58fc60a40/status)](https://www.codeship.io/projects/23662)
 **Dependency check:** gemnasium: [![Dependency Status](https://gemnasium.com/vergissberlin/nr-dev.svg)](https://gemnasium.com/vergissberlin/nr-dev), david-dm: [![Dependency Status](https://david-dm.org/vergissberlin/nr-dev.svg)](https://david-dm.org/vergissberlin/nr-dev)
 **Version:** [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
 **Code climate:** [![Code Climate](https://codeclimate.com/github/vergissberlin/nr-dev.png)](https://codeclimate.com/github/vergissberlin/nr-dev)
