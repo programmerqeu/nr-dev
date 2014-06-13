@@ -1,15 +1,27 @@
-var gulp = require('gulp');
-var gutil = require('gulp-util');
+/**
+ * NRdev
+ *
+ * @category   Application
+ * @package    NRdev
+ * @author     André Lademann <andre.lademann@netresearch.de>
+ * @license    https://netresearch.de/license
+ * @version    0.2.0
+ */
+
 var bower = require('bower');
+var gulp = require('gulp');
 var concat = require('gulp-concat');
-var sass = require('gulp-sass');
+var dalek = require('gulp-dalek');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
+var sass = require('gulp-sass');
+var gutil = require('gulp-util');
 var sh = require('shelljs');
 
 var paths = {
   sass: ['./scss/**/*.scss']
 };
+
 
 gulp.task('default', ['sass']);
 
@@ -23,6 +35,15 @@ gulp.task('sass', function (done) {
 	  .pipe(rename({extname: '.min.css'}))
 	  .pipe(gulp.dest('./www/css/'))
 	  .on('end', done);
+});
+
+gulp.task('test', function() {
+  'use strict';
+  return gulp.src(['test/functional/base.js'])
+	  .pipe(dalek({
+		browser: ['phantomjs', 'chrome', 'chrome:canary'],
+		reporter: ['html', 'junit']
+	  }));
 });
 
 gulp.task('guard', function (done) {
