@@ -66,6 +66,7 @@ _Start simple as possible_
 - **contacts 1.0**
 	- data
 		- a simple Array
+		- encrypt email address in source code
 	- list view
 		- Gravatar
 		- last name
