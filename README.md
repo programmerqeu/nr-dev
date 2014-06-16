@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/vergissberlin/nr-dev.png?label=ready&title=Ready)](https://waffle.io/vergissberlin/nr-dev)
 NR{dev} - Cross platform application
 ====================================
 
