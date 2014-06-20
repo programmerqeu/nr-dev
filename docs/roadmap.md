@@ -45,6 +45,7 @@ _Start simple as possible_
 
 #### 0.2.0
 - **Testing**
+	- **First unit test**
 	- **Integration tests with [DalekJs](http://dalekjs.com/)**
 		- run on headless browser
 		- run on [TraviCI](https://github.com/dalekjs/guineapig)
