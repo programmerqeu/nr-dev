@@ -1,7 +1,8 @@
 /**
  * NRdev
  *
- * @category   Application
+ * @category   Deployment
+ * @sucategory Taskmanger
  * @package    NRdev
  * @author     André Lademann <andre.lademann@netresearch.de>
  * @license    https://netresearch.de/license
@@ -39,10 +40,10 @@ gulp.task('sass', function (done) {
 
 gulp.task('test', function() {
   'use strict';
-  return gulp.src(['test/functional/base.js'])
+  return gulp.src(['tests/integration/*.js'])
 	  .pipe(dalek({
-		browser: ['phantomjs', 'chrome', 'chrome:canary'],
-		reporter: ['html', 'junit']
+		browser: ['phantomjs'],
+		reporter: ['html', 'console']
 	  }));
 });
 

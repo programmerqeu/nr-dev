@@ -6,4 +6,4 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - npm install -g dalek-cli
 after_script:
-  - dalek tests/integration/testTest.js
+  - dalek tests/integration/*.js

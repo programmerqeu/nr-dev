@@ -20,38 +20,14 @@ module.exports = {
   'Can get page title (OK, TDD style, message)': function (test) {
 	test
 		.open(url)
-		.assert.title().is(title, 'Page title is correct')
-		.wait(200)
-		.screenshot('report/screenshots/page_home.png')
-		.done();
-  },
-
-  'Can get !page title': function (test) {
-	test
-		.open(url)
-		.assert.title().is.not('Home', 'Title is not "' + title + '"')
-		.done();
-  },
-
-  'Header is visible': function (test) {
-	test
-		.open(url)
-		.assert.visible('.bar-header')
-		.assert.visible('.page-home figure')
-		.assert.text('.bar-header .title').is('Developers home')
-		.assert.attr('.bar-header .title', 'ng-bind-html', 'title', 'Title in header is not bind.')
-//		.assert.attr('.bar-header', 'ng-bind-html', 'title')
-		.done();
-  },
-
-
-  'Logo is visible': function (test) {
-	test
-		.open(url)
-		.assert.visible('.page-home figure')
-		.resize({width: 640, height: 320})
-		.assert.visible('.page-home figure')
+		.assert.notVisible('.menu-left')
+		.click('.nav-bar .left-buttons button')
+		.wait(500)
+		//.assert.visible('.menu-left')
+		.screenshot('report/screenshots/page_home_menu.png')
 		.done();
   }
+
+
 };
 
