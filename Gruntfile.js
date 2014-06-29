@@ -183,7 +183,8 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('dalek_chrome', [
 		'connect:server',
-		'shell:dalekjsChrome'
+		'shell:dalekjsChrome',
+		'notify:watch'
 	]);
 
 	grunt.registerTask('dalek_firefox', [

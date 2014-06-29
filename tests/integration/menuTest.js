@@ -20,10 +20,10 @@ module.exports = {
   'Can get page title (OK, TDD style, message)': function (test) {
 	test
 		.open(url)
-		.assert.notVisible('.menu-left')
+//		.assert.notVisible('.menu-left')
 		.click('.nav-bar .left-buttons button')
-		.wait(500)
-		//.assert.visible('.menu-left')
+//		.wait(500)
+//		.assert.visible('.menu-left')
 		.screenshot('report/screenshots/page_home_menu.png')
 		.done();
   }
