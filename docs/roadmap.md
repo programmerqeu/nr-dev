@@ -4,10 +4,10 @@
 [![Dependency Status](https://gemnasium.com/vergissberlin/nr-dev.svg)](https://gemnasium.com/vergissberlin/nr-dev)
 [![Code Climate](https://codeclimate.com/github/vergissberlin/nr-dev.png)](https://codeclimate.com/github/vergissberlin/nr-dev)
 -->
-### Current version
+### Current version and open tasks
 
-The current version of _NR[dev]_ is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
-Open feature tasks you can find on [issues](https://github.com/vergissberlin/nr-dev/issues?labels=enhancement&state=open) and on waffle.io [![Stories in Ready](https://badge.waffle.io/vergissberlin/nr-dev.png?label=ready&title=Ready)](https://waffle.io/vergissberlin/nr-dev).
+- The current version of _NR[dev]_ is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
+- Open feature tasks you can find on [issues](https://github.com/vergissberlin/nr-dev/issues?labels=enhancement&state=open) and on waffle.io [![Stories in Ready](https://badge.waffle.io/vergissberlin/nr-dev.png?label=ready&title=Ready)](https://waffle.io/vergissberlin/nr-dev).
 
 
 ### Version 0.0.0
