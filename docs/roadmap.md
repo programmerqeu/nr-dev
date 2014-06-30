@@ -7,6 +7,8 @@
 ### Current version
 
 The current version of _NR[dev]_ is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
+Open feature tasks you can find on [issues](https://github.com/vergissberlin/nr-dev/issues?labels=enhancement&state=open) and on waffle.io [![Stories in Ready](https://badge.waffle.io/vergissberlin/nr-dev.png?label=ready&title=Ready)](https://waffle.io/vergissberlin/nr-dev).
+
 
 ### Version 0.0.0
 
