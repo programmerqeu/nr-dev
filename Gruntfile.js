@@ -99,7 +99,7 @@ module.exports = function (grunt) {
                 order: {
                     'roadmap.md': 'Roadmap',
                     'ideas.md': 'Ideas',
-                    'implementation.md': 'Implementation &  Requirements',
+                    'implementation.md': 'Implementation and Requirements',
                     'contribute.md': 'Contribute'
                 }
             }

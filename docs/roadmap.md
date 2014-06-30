@@ -6,7 +6,7 @@
 -->
 ### Current version
 
-The current version of _NR[dev]_ is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev).
+The current version of _NR[dev]_ is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
 
 ### Version 0.0.0
 
