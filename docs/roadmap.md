@@ -45,10 +45,8 @@ _Start simple as possible_
 
 #### 0.2.0
 - **Testing**
-	- **First unit test**
 	- **Integration tests with [DalekJs](http://dalekjs.com/)**
-		- run on headless browser
-		- run on [TraviCI](https://github.com/dalekjs/guineapig)
+		- run on headless browser locally
 		- *Tests*
 			1. Header and Headline exists
 			- Menü exists
@@ -95,8 +93,11 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 
 #### 1.1.0
 - ** Testing 2.0**
-	- **BDD** with [Jasmin](http://angularjs.de/artikel/angularjs-test)
+	- **BDD** with [Jasmine](http://angularjs.de/artikel/angularjs-test)
     	- **CI** for Jasmin [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
+	- **DalekJs**
+		- run on [TraviCI](https://travis-ci.org/vergissberlin/nr-dev/builds)
+		- create grunt watch task to run tests on changes 	
 
 #### 1.2.0
 - **contact 2.0**
