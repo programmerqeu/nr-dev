@@ -31,7 +31,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 // Include all of Ionic
-@import "/www/lib/ionic/scss/ionic";
+@import "www/lib/ionic/scss/ionic";
 
 // blur background
 .bg-blur {
@@ -57,4 +57,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 			color: #fff;
 		}
 	}
+}
+
+// footer styling
+footer {
+	color: #fff;
 }

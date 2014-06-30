@@ -10,8 +10,8 @@
  */
 
 'use strict';
-var url = 'http://nr-dev.local',
-	title = 'NR{dev}';
+var url = 'http://0.0.0.0:9001',
+	title = 'NR[dev]';
 
 module.exports = {
 
