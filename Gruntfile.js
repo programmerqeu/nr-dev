@@ -15,9 +15,26 @@ module.exports = function (grunt) {
 	// load all grunt tasks
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+    grunt.loadNpmTasks('grunt-readme-generator');
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		connect: {
+        compass: {
+            dist: {
+                options: {
+                    sassDir: 'scss',
+                    cssDir: 'www/css',
+                    environment: 'production'
+                }
+            },
+            dev: {
+                options: {
+                    sassDir: 'scss',
+                    cssDir: 'www/css'
+                }
+            }
+        },
+        connect: {
 			server: {
 				options: {
 					port: 9001,
@@ -39,116 +56,130 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		compass: {
-			dist: {
-				options: {
-					sassDir: 'scss',
-					cssDir: 'www/css',
-					environment: 'production'
-				}
-			},
-			dev: {
-				options: {
-					sassDir: 'scss',
-					cssDir: 'www/css'
-				}
-			}
-		},
 		cssmin: {
 			css: {
 				src: 'www/css/ionic.app.css',
 				dest: 'www/css/ionic.app.min.css'
 			}
 		},
-		uglify: {
-			js: {
-				files: {
-					'www/js/nrdev.js': ['www/js/app.js', 'www/js/config.js', 'www/js/controllers.js']
-				}
-			}
-		},
-		watch: {
-			css: {
-				files: 'scss/**/*.scss',
-				tasks: ['compass'],
-				options: {
-					livereload: false
-				}
-			},
-			scripts: {
-				files: ['www/js/**/*.js'],
-				tasks: ['uglify'],
-				options: {
-					spawn: false
-				}
-			}
-		},
-		shell: {
-			dalekjs: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js'
-			},
-			dalekjsAdvanced: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/advanced/*.js'
-			},
-			dalekjsCoffee: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.coffee'
-			},
-			dalekjsMultiple: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -b phantomjs,chrome -r console,html'
-			},
-			dalekjsChrome: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -b chrome'
-			},
-			dalekjsHtmlreport: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -r console,html'
-			},
-			dalekjsFirefox: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -b firefox'
-			}
-		},
-
-		notify: {
-			watch: {
-				options: {
-					title: 'Task Complete',  // optional
-					message: 'SASS and Uglify finished running' //required
-				}
-			},
-			server: {
-				options: {
-					message: 'Server is ready!'
-				}
-			}
-		}
-	});
+        notify: {
+            watch: {
+                options: {
+                    title: 'Task Complete',  // optional
+                    message: 'SASS and Uglify finished running' //required
+                }
+            },
+            server: {
+                options: {
+                    message: 'Server is ready!'
+                }
+            }
+        },
+        readme_generator: {
+            nr: {
+                options: {
+                    readme_folder: 'docs',
+                    output: 'README.md',
+                    table_of_contents: true,
+                    toc_extra_links: [],
+                    generate_changelog: false,
+                    banner: null,
+                    has_travis: true,
+                    github_username: 'vergissberlin',
+                    travis_branch: 'develop',
+                    generate_footer: true,
+                    generate_title: true,
+                    package_title: null,
+                    package_name: null,
+                    package_desc: null,
+                    informative: true,
+                    h1: '#',
+                    h2: '##',
+                    back_to_top_custom: null
+                },
+                order: {
+                    'roadmap.md': 'Roadmap',
+                    'ideas.md': 'Ideas',
+                    'implementation.md': 'Implementation',
+                    'contribute.md': 'Contribute'
+                }
+            }
+        },
+        shell: {
+            dalekjs: {
+                options: {
+                    stdout: true,
+                    failOnError: true
+                },
+                command: 'dalek tests/integration/*.js'
+            },
+            dalekjsAdvanced: {
+                options: {
+                    stdout: true,
+                    failOnError: true
+                },
+                command: 'dalek tests/advanced/*.js'
+            },
+            dalekjsCoffee: {
+                options: {
+                    stdout: true,
+                    failOnError: true
+                },
+                command: 'dalek tests/integration/*.coffee'
+            },
+            dalekjsMultiple: {
+                options: {
+                    stdout: true,
+                    failOnError: true
+                },
+                command: 'dalek tests/integration/*.js -b phantomjs,chrome -r console,html'
+            },
+            dalekjsChrome: {
+                options: {
+                    stdout: true,
+                    failOnError: true
+                },
+                command: 'dalek tests/integration/*.js -b chrome'
+            },
+            dalekjsHtmlreport: {
+                options: {
+                    stdout: true,
+                    failOnError: true
+                },
+                command: 'dalek tests/integration/*.js -r console,html'
+            },
+            dalekjsFirefox: {
+                options: {
+                    stdout: true,
+                    failOnError: true
+                },
+                command: 'dalek tests/integration/*.js -b firefox'
+            }
+        },
+        uglify: {
+            js: {
+                files: {
+                    'www/js/nrdev.js': ['www/js/app.js', 'www/js/config.js', 'www/js/controllers.js']
+                }
+            }
+        },
+        watch: {
+            css: {
+                files: 'scss/**/*.scss',
+                tasks: ['compass'],
+                options: {
+                    livereload: false
+                }
+            },
+            scripts: {
+                files: ['www/js/**/*.js'],
+                tasks: ['uglify'],
+                options: {
+                    spawn: false
+                }
+            }
+        }
+    });
 
 	grunt.registerTask('server', [
 		'connect:server'
@@ -203,6 +234,11 @@ module.exports = function (grunt) {
 		'notify:watch'
 	]);
 
+
+
+    // this would be run by typing "grunt test" on the command line
+    grunt.registerTask('readme', ['readme_generator']);
+
 	// this would be run by typing "grunt test" on the command line
 	grunt.registerTask('test', ['dalek']);
 
@@ -210,4 +246,3 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', ['watch']);
 
 };
-
