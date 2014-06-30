@@ -1,6 +1,3 @@
-NR{dev} - Cross platform application
-====================================
-
 ## Implementation &  Requirements
 
 ### version 0.0.1

@@ -5,142 +5,237 @@
 
 ## Jump to Section
 
-* [Contribute](#contribute)
+* [Roadmap](#roadmap)
 * [Ideas](#ideas)
 * [Implementation](#implementation)
-* [Roadmap](#roadmap)
+* [Contribute](#contribute)
 
-## Contribute
+## Roadmap
 [[Back To Top]](#jump-to-section)
 
-NR{dev} - Cross platform application
-====================================
-
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
-## Workflow
-
-- This project used [git-flow](https://github.com/nvie/gitflow). If you never used it before, have a look on [this blog post]()http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/) and this [this cheat sheet](http://danielkummer.github.io/git-flow-cheatsheet/)
-
-## Using this project
-
-We recommend using the `ionic` utility to create new Ionic projects that are based on this project but use a ready-made starter template.
-
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
-
-```bash
-$ sudo npm install -g ionic
-```
-
-Then run:
-
-```bash
-$ sudo npm install -g ionic
-$ ionic start myProject tabs
-```
-
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
-
-## Installation
-
-While we recommend using the `ionic` utility to create new Ionic projects, you can use this repo as a barebones starting point to your next Ionic app.
-
-To use this project as is, first clone the repo from GitHub, then run:
-
-```bash
-$ cd ionic-app-base
-$ sudo npm install -g cordova ionic gulp
-$ npm install
-$ gulp install
-```
-
-## Using Sass (optional)
-
-This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
-Sass's great features.
-
-Just update the `./scss/ionic.app.scss` file, and run `gulp` or `gulp watch` to rebuild the CSS files for Ionic.
-
-Note: if you choose to use the Sass method, make sure to remove the included `ionic.css` file in `index.html`, and then uncomment
-the include to your `ionic.app.css` file which now contains all your Sass code and Ionic itself:
-
-```html
-<!-- IF using Sass (run gulp sass first), then remove the CSS include above
-<link href="css/ionic.app.css" rel="stylesheet">
+<!--
+[![Build Status](https://www.codeship.io/projects/91045130-d4fe-0131-bcf5-76b58fc60a40/status)](https://www.codeship.io/projects/23662)
+[![Build Status](https://travis-ci.org/vergissberlin/nr-dev.svg?branch=develop)](https://travis-ci.org/vergissberlin/nr-dev)
+[![Dependency Status](https://gemnasium.com/vergissberlin/nr-dev.svg)](https://gemnasium.com/vergissberlin/nr-dev)
+[![Code Climate](https://codeclimate.com/github/vergissberlin/nr-dev.png)](https://codeclimate.com/github/vergissberlin/nr-dev)
 -->
-```
+The is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
+off an cross application for mobile devices. Created by and for developers of [Netresearch GmbH & Co.KG](http://netresearch.de).
+The app includes experiments with various API's. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book.
+It is based on [Ionic](ionicframework.com) base project. A special thanks goes to the developers of this project.
 
-## Updating Ionic
+## Roadmap
 
-To update to a new version of Ionic, open bower.json and change the version listed there.
+_Start simple as possible_
 
-For example, to update from version `1.0.0-beta.4` to `1.0.0-beta.5`, open bower.json and change this:
+### Version 0.0.0
 
-```
-"ionic": "driftyco/ionic-bower#1.0.0-beta.4"
-```
+**Features:** 
+- Frame layout
+- Icons, splash screen
+- home page, imprint
+- Google Analytics
+- Documentation
+- BDD
+- Contacts
+- Multi language
 
-To this:
+#### 0.0.1
+1. **frame layout**
+	- icons
+	- splash screen
+	- colours with SASS
+	- download web font
+- **Home page 1.0**
+- **Imprint page 1.0**
+	- _tel_ links to call phone numbers
+	- _mailto_ links
+- **Documentation**
 
-```
-"ionic": "driftyco/ionic-bower#1.0.0-beta.5"
-```
+####  0.0.2
+- **Google Analtics 1.0**
+	- Include GA Cordova Plugin
+	- Including UA-Code
 
-After saving the update to bower.json file, run `gulp install`.
+#### 0.1.0
+- **Multi language support 1.0**
+	- languages
+		- German
+		- English
+	- automatic preferred language detection
+	- multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
 
-Alternatively, install bower globally with `npm install -g bower` and run `bower install`.
+#### 0.2.0
+- **Testing**
+	- **Integration tests with [DalekJs](http://dalekjs.com/)**
+		- run on headless browser locally
+		- *Tests*
+			1. Header and Headline exists
+			- Menü exists
+			- Page imprint exists and is available
+			- Language selection works automatically
+			- Page contact exists and is available
+				- ALA Entry exists in list view
+					- Gravatar image is visible in online mode
+					- Fallback image is visible in offline mode
+					- First and last name is shown
+				- ALA Detail view is available
+					- image, first name, last name, address, email, phone
+					- mailto: link exists
+					- tel: link exists
+#### 0.3.0
+- **contacts 1.0**
+	- data
+		- a simple Array
+		- encrypt email address in source code
+	- list view
+		- Gravatar
+		- last name
+		- first name
+	- view details
+		- Gravatar
+		- last name
+		- first name
+		- phone
+	
+#### 0.4.0
+- **Donate a feature/beer 1.0**
+	- PayPal Donate Button
+	- Amazon wish list
+
+
+### Version 1.0.0
+**New feature:** lamp control
+
+#### 1.0.0
+_lampen.nr control lamps an theirs colours in the office of netresearch_
+
+- **lamp control 1.0**
+	- show internal status
+
+#### 1.1.0
+- ** Testing 2.0**
+	- **BDD** with [Jasmine](http://angularjs.de/artikel/angularjs-test)
+    	- **CI** for Jasmin [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
+	- **DalekJs**
+		- run on [TraviCI](https://travis-ci.org/vergissberlin/nr-dev/builds)
+		- create grunt watch task to run tests on changes 	
+
+#### 1.2.0
+- **contact 2.0**
+	- filter search
+	- groups
+
+#### 1.3.0
+- **Multi language support 2.0**
+	- asnycron static language file loading
+	- german as normal included default language
+
+#### 1.4.0
+- **Home page 2.0**
+	- animated logo on touch
 
 
 
-# Developer
-## Prepare Environment
-1. Donwload SDK http://developer.android.com/sdk/index.html
-- Follow Instructions: http://cordova.apache.org/docs/en/2.5.0/guide_getting-started_android_index.md.html
-- Export the paths to your  ~/.basrc file like so:
-```
-export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/platform-tools/:
-export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/tools/
-```
-- install ant ```sudo aptitude install ant```
-- create hardware config ```android create avd --name my_and --target 1```
-- build http://ionicframework.com/getting-started/
+### Version 2.0.0
+**New feature:** Meet and great
+
+#### 2.0.0
+- **Meet and great 1.0**
+	- developers calendar
+	- simple list from array (no CMS)
+		- date
+		- title
+		- location
+
+#### 2.1.0
+- **Testing 3.0**
+	- **CI**
+		- integrate in travis-ci for DalekJs
+		- Report on https://saucelabs.com/ for DalekJs
+	- Watch changes with [gulp-jasmine](https://www.npmjs.org/package/gulp-jasmine)
+
+#### 2.2.0
+- **contacts 3.0**
+	- data parse XML
+	- use local storage
+	- local file storage for photos
 
 
-```
-sudo aptitude install -y python-software-properties python g++ make
-sudo add-apt-repository -y ppa:chris-lea/node.js
-sudo aptitude update
-sudo aptitude install nodejs
-sudo aptitude install npm
-sudo npm install -g cordova
-sudo npm install -g phonegap
-phonegap create my-app
-cd my-app
-export PATH=${PATH}:/home/oshirowanen/Downloads/adt-bundle-linux-x86_64-20131030/sdk/platform-tools:/home/oshirowanen/Downloads/adt-bundle-linux-x86_64-20131030/sdk/tools
-sudo aptitude install ant
-cordova platform add android
-android create avd --name my_and --target 1
-phonegap run android
-```
+#### 2.3.0
+- **Donate a feature/beer 2.0**
+	- progress bar as beer level
+
+#### 2.4.0
+- **Home page 4.0**
+	- animated logo on shake gesture
+
+### Version 3.0.0
+**New feature:** Give me a beer/feature
+
+#### 3.0.0
+1. **Donate a beer/feature 3.0**
+	- flattr
+	- pay pal spenden knopf
+	- beer image
+
+#### 3.1.0
+- **Testing 4.0**
+	- Collect code coverage with [gulp-coverage](https://github.com/dylanb/gulp-coverage)
+
+#### 3.2.0
+- **Lamp control**
+	- colour switcher
+	- Google Analytics Event Tracking
+
+#### 3.3.0
+- **Meet and great 2.0**
+	- list view from Google Calender ical or xml
+	- location link to Google Maps
+		- latitude
+		- longitude
+
+#### 3.4.0
+- **contacts 4.0**
+	- Sync into local address book (vcf)
+	- show contacts
 
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
+
+### Version 4.0.0
+**New feature:** _not planned yet_
+
+#### 4.1.0
+- **Testing 5.0**
+	- Make screenshots on fail
+
+#### 4.X.0
+- **Donate a beer/feature 4.0**
+	- beer with sensor controlled liquid with sensor controlled liquid rotate background image with CSS and JavaScript
+
+#### 4.X.0
+- **Meet and great 3.0**
+	- Show event in native calendar (ical)
+	- Sync calendar to local calendar
+	- Sync event to local calendar (ical?)
+
+
+
+### Version 5.0.0
+**New feature:** _not planned yet_
+
+#### 5.x.0
+- **Donate a beer/feature 5.0**
+	- beer with sensor controlled liquid in canvas
+
+#### 5.X.0
+- **Meet and great 4.0**
+	- show/link attendies to _contacts_
+	- create new event
 
 
 ## Ideas
 [[Back To Top]](#jump-to-section)
-
-NR{dev} - Cross platform application
-====================================
-
 
 ## Ideas
 
@@ -221,9 +316,6 @@ _Collection of ideas_
 
 ## Implementation
 [[Back To Top]](#jump-to-section)
-
-NR{dev} - Cross platform application
-====================================
 
 ## Implementation &  Requirements
 
@@ -460,224 +552,128 @@ and select Google Analytics
 **Path:**	platforms/android/res/drawable
 
 
-## Roadmap
+## Contribute
 [[Back To Top]](#jump-to-section)
 
-NR{dev} - Cross platform application
-====================================
+## Contributing
 
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
-## Roadmap
+## Workflow
 
-_Start simple as possible_
+- This project used [git-flow](https://github.com/nvie/gitflow). If you never used it before, have a look on [this blog post]()http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/) and this [this cheat sheet](http://danielkummer.github.io/git-flow-cheatsheet/)
 
-### Version 0.0.0
+## Using this project
 
-**Features:** 
-- Frame layout
-- Icons, splash screen
-- home page, imprint
-- Google Analytics
-- Documentation
-- BDD
-- Contacts
-- Multi language
+We recommend using the `ionic` utility to create new Ionic projects that are based on this project but use a ready-made starter template.
 
-#### 0.0.1
-1. **frame layout**
-	- icons
-	- splash screen
-	- colours with SASS
-	- download web font
-- **Home page 1.0**
-- **Imprint page 1.0**
-	- _tel_ links to call phone numbers
-	- _mailto_ links
-- **Documentation**
+For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
 
-####  0.0.2
-- **Google Analtics 1.0**
-	- Include GA Cordova Plugin
-	- Including UA-Code
+```bash
+$ sudo npm install -g ionic
+```
 
-#### 0.1.0
-- **Multi language support 1.0**
-	- languages
-		- German
-		- English
-	- automatic preferred language detection
-	- multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
+Then run:
 
-#### 0.2.0
-- **Testing**
-	- **Integration tests with [DalekJs](http://dalekjs.com/)**
-		- run on headless browser locally
-		- *Tests*
-			1. Header and Headline exists
-			- Menü exists
-			- Page imprint exists and is available
-			- Language selection works automatically
-			- Page contact exists and is available
-				- ALA Entry exists in list view
-					- Gravatar image is visible in online mode
-					- Fallback image is visible in offline mode
-					- First and last name is shown
-				- ALA Detail view is available
-					- image, first name, last name, address, email, phone
-					- mailto: link exists
-					- tel: link exists
-#### 0.3.0
-- **contacts 1.0**
-	- data
-		- a simple Array
-		- encrypt email address in source code
-	- list view
-		- Gravatar
-		- last name
-		- first name
-	- view details
-		- Gravatar
-		- last name
-		- first name
-		- phone
-	
-#### 0.4.0
-- **Donate a feature/beer 1.0**
-	- PayPal Donate Button
-	- Amazon wish list
+```bash
+$ sudo npm install -g ionic
+$ ionic start myProject tabs
+```
 
+More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
 
-### Version 1.0.0
-**New feature:** lamp control
+## Installation
 
-#### 1.0.0
-_lampen.nr control lamps an theirs colours in the office of netresearch_
+While we recommend using the `ionic` utility to create new Ionic projects, you can use this repo as a barebones starting point to your next Ionic app.
 
-- **lamp control 1.0**
-	- show internal status
+To use this project as is, first clone the repo from GitHub, then run:
 
-#### 1.1.0
-- ** Testing 2.0**
-	- **BDD** with [Jasmine](http://angularjs.de/artikel/angularjs-test)
-    	- **CI** for Jasmin [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
-	- **DalekJs**
-		- run on [TraviCI](https://travis-ci.org/vergissberlin/nr-dev/builds)
-		- create grunt watch task to run tests on changes 	
+```bash
+$ cd ionic-app-base
+$ sudo npm install -g cordova ionic gulp
+$ npm install
+$ gulp install
+```
 
-#### 1.2.0
-- **contact 2.0**
-	- filter search
-	- groups
+## Using Sass (optional)
 
-#### 1.3.0
-- **Multi language support 2.0**
-	- asnycron static language file loading
-	- german as normal included default language
+This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
+Sass's great features.
 
-#### 1.4.0
-- **Home page 2.0**
-	- animated logo on touch
+Just update the `./scss/ionic.app.scss` file, and run `gulp` or `gulp watch` to rebuild the CSS files for Ionic.
+
+Note: if you choose to use the Sass method, make sure to remove the included `ionic.css` file in `index.html`, and then uncomment
+the include to your `ionic.app.css` file which now contains all your Sass code and Ionic itself:
+
+```html
+<!-- IF using Sass (run gulp sass first), then remove the CSS include above
+<link href="css/ionic.app.css" rel="stylesheet">
+-->
+```
+
+## Updating Ionic
+
+To update to a new version of Ionic, open bower.json and change the version listed there.
+
+For example, to update from version `1.0.0-beta.4` to `1.0.0-beta.5`, open bower.json and change this:
+
+```
+"ionic": "driftyco/ionic-bower#1.0.0-beta.4"
+```
+
+To this:
+
+```
+"ionic": "driftyco/ionic-bower#1.0.0-beta.5"
+```
+
+After saving the update to bower.json file, run `gulp install`.
+
+Alternatively, install bower globally with `npm install -g bower` and run `bower install`.
 
 
 
-### Version 2.0.0
-**New feature:** Meet and great
-
-#### 2.0.0
-- **Meet and great 1.0**
-	- developers calendar
-	- simple list from array (no CMS)
-		- date
-		- title
-		- location
-
-#### 2.1.0
-- **Testing 3.0**
-	- **CI**
-		- integrate in travis-ci for DalekJs
-		- Report on https://saucelabs.com/ for DalekJs
-	- Watch changes with [gulp-jasmine](https://www.npmjs.org/package/gulp-jasmine)
-
-#### 2.2.0
-- **contacts 3.0**
-	- data parse XML
-	- use local storage
-	- local file storage for photos
+# Developer
+## Prepare Environment
+1. Donwload SDK http://developer.android.com/sdk/index.html
+- Follow Instructions: http://cordova.apache.org/docs/en/2.5.0/guide_getting-started_android_index.md.html
+- Export the paths to your  ~/.basrc file like so:
+```
+export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/platform-tools/:
+export PATH=${PATH}:$HOME/Programme/phonegap/adt-bundle-linux-x86_64-20140321/sdk/tools/
+```
+- install ant ```sudo aptitude install ant```
+- create hardware config ```android create avd --name my_and --target 1```
+- build http://ionicframework.com/getting-started/
 
 
-#### 2.3.0
-- **Donate a feature/beer 2.0**
-	- progress bar as beer level
-
-#### 2.4.0
-- **Home page 4.0**
-	- animated logo on shake gesture
-
-### Version 3.0.0
-**New feature:** Give me a beer/feature
-
-#### 3.0.0
-1. **Donate a beer/feature 3.0**
-	- flattr
-	- pay pal spenden knopf
-	- beer image
-
-#### 3.1.0
-- **Testing 4.0**
-	- Collect code coverage with [gulp-coverage](https://github.com/dylanb/gulp-coverage)
-
-#### 3.2.0
-- **Lamp control**
-	- colour switcher
-	- Google Analytics Event Tracking
-
-#### 3.3.0
-- **Meet and great 2.0**
-	- list view from Google Calender ical or xml
-	- location link to Google Maps
-		- latitude
-		- longitude
-
-#### 3.4.0
-- **contacts 4.0**
-	- Sync into local address book (vcf)
-	- show contacts
+```
+sudo aptitude install -y python-software-properties python g++ make
+sudo add-apt-repository -y ppa:chris-lea/node.js
+sudo aptitude update
+sudo aptitude install nodejs
+sudo aptitude install npm
+sudo npm install -g cordova
+sudo npm install -g phonegap
+phonegap create my-app
+cd my-app
+export PATH=${PATH}:/home/oshirowanen/Downloads/adt-bundle-linux-x86_64-20131030/sdk/platform-tools:/home/oshirowanen/Downloads/adt-bundle-linux-x86_64-20131030/sdk/tools
+sudo aptitude install ant
+cordova platform add android
+android create avd --name my_and --target 1
+phonegap run android
+```
 
 
-
-### Version 4.0.0
-**New feature:** _not planned yet_
-
-#### 4.1.0
-- **Testing 5.0**
-	- Make screenshots on fail
-
-#### 4.X.0
-- **Donate a beer/feature 4.0**
-	- beer with sensor controlled liquid with sensor controlled liquid rotate background image with CSS and JavaScript
-
-#### 4.X.0
-- **Meet and great 3.0**
-	- Show event in native calendar (ical)
-	- Sync calendar to local calendar
-	- Sync event to local calendar (ical?)
-
-
-
-### Version 5.0.0
-**New feature:** _not planned yet_
-
-#### 5.x.0
-- **Donate a beer/feature 5.0**
-	- beer with sensor controlled liquid in canvas
-
-#### 5.X.0
-- **Meet and great 4.0**
-	- show/link attendies to _contacts_
-	- create new event
+## Issues
+Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
 
 
 
 
 --------
-<small>_This readme has been automatically generated by [readme generator](https://github.com/aponxi/grunt-readme-generator) on Mon Jun 30 2014 13:36:54 GMT+0200 (CEST)._</small>
+<small>_This readme has been automatically generated by [readme generator](https://github.com/aponxi/grunt-readme-generator) on Mon Jun 30 2014 13:44:40 GMT+0200 (CEST)._</small>

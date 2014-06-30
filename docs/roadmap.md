@@ -1,6 +1,3 @@
-NR{dev} - Cross platform application
-====================================
-
 <!--
 [![Build Status](https://www.codeship.io/projects/91045130-d4fe-0131-bcf5-76b58fc60a40/status)](https://www.codeship.io/projects/23662)
 [![Build Status](https://travis-ci.org/vergissberlin/nr-dev.svg?branch=develop)](https://travis-ci.org/vergissberlin/nr-dev)
