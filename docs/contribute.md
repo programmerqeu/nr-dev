@@ -1,16 +1,14 @@
-## Contributing
-
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## Workflow
+### Workflow
 
 - This project used [git-flow](https://github.com/nvie/gitflow). If you never used it before, have a look on [this blog post]()http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/) and this [this cheat sheet](http://danielkummer.github.io/git-flow-cheatsheet/)
 
-## Using this project
+### Using this project
 
 We recommend using the `ionic` utility to create new Ionic projects that are based on this project but use a ready-made starter template.
 
@@ -29,7 +27,7 @@ $ ionic start myProject tabs
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page.
 
-## Installation
+### Installation
 
 While we recommend using the `ionic` utility to create new Ionic projects, you can use this repo as a barebones starting point to your next Ionic app.
 
@@ -42,7 +40,7 @@ $ npm install
 $ gulp install
 ```
 
-## Using Sass (optional)
+### Using Sass (optional)
 
 This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
 Sass's great features.
@@ -58,7 +56,7 @@ the include to your `ionic.app.css` file which now contains all your Sass code a
 -->
 ```
 
-## Updating Ionic
+### Updating Ionic
 
 To update to a new version of Ionic, open bower.json and change the version listed there.
 
@@ -80,8 +78,8 @@ Alternatively, install bower globally with `npm install -g bower` and run `bower
 
 
 
-# Developer
-## Prepare Environment
+## Developer
+### Prepare Environment
 1. Donwload SDK http://developer.android.com/sdk/index.html
 - Follow Instructions: http://cordova.apache.org/docs/en/2.5.0/guide_getting-started_android_index.md.html
 - Export the paths to your  ~/.basrc file like so:
@@ -112,5 +110,5 @@ phonegap run android
 ```
 
 
-## Issues
+### Issues
 Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!

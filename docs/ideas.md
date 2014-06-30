@@ -1,5 +1,3 @@
-## Ideas
-
 _Collection of ideas_
 
 - **Testing**

@@ -1,5 +1,3 @@
-## Implementation &  Requirements
-
 ### version 0.0.1
 #### Icons
 For all images and icons, the PNG format is recommended. You should avoid using interlaced PNGs.

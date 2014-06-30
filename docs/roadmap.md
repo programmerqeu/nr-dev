@@ -4,14 +4,9 @@
 [![Dependency Status](https://gemnasium.com/vergissberlin/nr-dev.svg)](https://gemnasium.com/vergissberlin/nr-dev)
 [![Code Climate](https://codeclimate.com/github/vergissberlin/nr-dev.png)](https://codeclimate.com/github/vergissberlin/nr-dev)
 -->
-The is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
-off an cross application for mobile devices. Created by and for developers of [Netresearch GmbH & Co.KG](http://netresearch.de).
-The app includes experiments with various API's. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book.
-It is based on [Ionic](ionicframework.com) base project. A special thanks goes to the developers of this project.
+### Current version
 
-## Roadmap
-
-_Start simple as possible_
+The current version of _NR[dev]_ is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev).
 
 ### Version 0.0.0
 

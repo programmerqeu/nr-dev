@@ -1,7 +1,7 @@
 {
   "name": "nr-dev",
   "version": "0.2.1",
-  "description": "The is a cross application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG. The app includes experiments with various API's. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book. It is based on Ionic (http://ionicframework.com) base project. A special thanks goes to the developers of this project.",
+  "description": "The is a cross application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG (http://netresearch.de). The app includes experiments with various API's. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book. It is based on Ionic (http://ionicframework.com) base project. A special thanks goes to the developers of this project.",
   "author": "André Lademann",
   "scripts": {
     "test": "grunt dalek"
