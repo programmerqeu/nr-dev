@@ -28,11 +28,11 @@
 	- splash screen
 	- colours with SASS
 	- download web font
-- **Home page 1.0**
-- **Imprint page 1.0**
+- **home page 1.0**
+- **imprint page 1.0**
 	- _tel_ links to call phone numbers
 	- _mailto_ links
-- **Documentation**
+- **documentation**
 
 ####  0.0.2
 - **Google Analtics 1.0**
@@ -40,7 +40,7 @@
 	- Including UA-Code
 
 #### 0.1.0
-- **Multi language support 1.0**
+- **multi language support 1.0**
 	- languages
 		- German
 		- English
@@ -48,23 +48,14 @@
 	- multi language support with [angular-translate](https://github.com/angular-translate/angular-translate)
 
 #### 0.2.0
-- **Testing**
-	- **Integration tests with [DalekJs](http://dalekjs.com/)**
+- **testing 1.0**
+	- **integration tests with [DalekJs](http://dalekjs.com/)**
 		- run on headless browser locally
-		- *Tests*
+		- *tests*
 			1. Header and Headline exists
 			- Menü exists
 			- Page imprint exists and is available
-			- Language selection works automatically
-			- Page contact exists and is available
-				- ALA Entry exists in list view
-					- Gravatar image is visible in online mode
-					- Fallback image is visible in offline mode
-					- First and last name is shown
-				- ALA Detail view is available
-					- image, first name, last name, address, email, phone
-					- mailto: link exists
-					- tel: link exists
+
 #### 0.3.0
 - **contacts 1.0**
 	- data
@@ -79,6 +70,17 @@
 		- last name
 		- first name
 		- phone
+- **testing 1.1**
+	- Page contact exists and is available
+		- ALA Entry exists in list view
+			- Gravatar image is visible in online mode
+			- Fallback image is visible in offline mode
+			- First and last name is shown
+		- ALA Detail view is available
+			- image, first name, last name, address, email, phone
+			- mailto: link exists
+			- tel: link exists
+
 	
 #### 0.4.0
 - **Donate a feature/beer 1.0**
@@ -96,12 +98,13 @@ _lampen.nr control lamps an theirs colours in the office of netresearch_
 	- show internal status
 
 #### 1.1.0
-- ** Testing 2.0**
+- **testing 2.0**
 	- **BDD** with [Jasmine](http://angularjs.de/artikel/angularjs-test)
     	- **CI** for Jasmin [CoffeeScript Testing on Travis CI](http://relistan.com/coffeescript-testing-on-travis-ci/)
 	- **DalekJs**
 		- run on [TraviCI](https://travis-ci.org/vergissberlin/nr-dev/builds)
 		- create grunt watch task to run tests on changes 	
+		- Language selection works automatically
 
 #### 1.2.0
 - **contact 2.0**
