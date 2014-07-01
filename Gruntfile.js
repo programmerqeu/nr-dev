@@ -20,6 +20,12 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		compile: {
+			cssmin: {
+				css: {
+					src: 'www/css/main.css',
+					dest: 'www/css/main.min.css'
+				}
+			},
 			compass: {
 				dist: {
 					options: {
@@ -32,41 +38,6 @@ module.exports = function (grunt) {
 					options: {
 						sassDir: 'scss',
 						cssDir: 'www/css'
-					}
-				}
-			},
-			cssmin: {
-				css: {
-					src: 'www/css/main.css',
-					dest: 'www/css/main.min.css'
-				}
-			},
-			readme_generator: {
-				nr: {
-					options: {
-						readme_folder: 'docs',
-						output: 'README.md',
-						table_of_contents: true,
-						toc_extra_links: [],
-						generate_changelog: false,
-						has_travis: true,
-						github_username: 'vergissberlin',
-						travis_branch: 'develop',
-						generate_footer: true,
-						generate_title: true,
-						package_title: 'NR[dev] - Cross platform application',
-						package_name: 'nr-dev',
-						package_desc: 'The is a cross application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG. The app includes experiments with various API´s. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book. It is based on Ionic (http://ionicframework.com) base project. A special thanks goes to the developers of this project.',
-						informative: true,
-						h1: '#',
-						h2: '##',
-						back_to_top_custom: null
-					},
-					order: {
-						'roadmap.md': 'Roadmap',
-						'ideas.md': 'Ideas',
-						'implementation.md': 'Implementation and Requirements',
-						'contribute.md': 'Contribute'
 					}
 				}
 			},
@@ -111,6 +82,35 @@ module.exports = function (grunt) {
 			server: {
 				options: {
 					message: 'Server is ready!'
+				}
+			}
+		},
+		readme_generator: {
+			nr: {
+				options: {
+					readme_folder: 'docs',
+					output: 'README.md',
+					table_of_contents: true,
+					toc_extra_links: [],
+					generate_changelog: false,
+					has_travis: true,
+					github_username: 'vergissberlin',
+					travis_branch: 'develop',
+					generate_footer: true,
+					generate_title: true,
+					package_title: 'NR[dev] - Cross platform application',
+					package_name: 'nr-dev',
+					package_desc: 'The is a cross application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG. The app includes experiments with various API´s. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book. It is based on Ionic (http://ionicframework.com) base project. A special thanks goes to the developers of this project.',
+					informative: true,
+					h1: '#',
+					h2: '##',
+					back_to_top_custom: null
+				},
+				order: {
+					'roadmap.md': 'Roadmap',
+					'ideas.md': 'Ideas',
+					'implementation.md': 'Implementation and Requirements',
+					'contribute.md': 'Contribute'
 				}
 			}
 		},
