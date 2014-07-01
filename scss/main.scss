@@ -1,3 +1,13 @@
+//
+// NRdev
+//
+// @category    Template
+// @subcategory SCSS
+// @package     NRdev
+// @author      André Lademann <andre.lademann@netresearch.de>
+// @license     https://netresearch.de/license
+// @version     0.2.0
+
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -17,6 +27,12 @@ $dark: #333 !default;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
+// Include mixins
+@import "www/lib/ionic/scss/ionic";
+@import "mixins";
+@import "utility";
+
+// font settings
 @font-face {
 	font-family: 'Lobster';
 	font-style: normal;
@@ -30,9 +46,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	font-style: normal;
 }
 
-// Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
-
 // blur background
 .bg-blur {
 	background: transparent url(../img/bg.jpg) center center;
@@ -42,12 +55,28 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // home page
 .page-home {
 
+	// center element
+	.scroll {
+
+		width: 100%;
+		height: 100%;
+
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
 	figure {
 		width: 300px;
-		height: 300px;
-		padding: 20px;
-		box-sizing: border-box;
-		margin: 200px auto;
+		height: 180px;
 		text-align: center;
 
 		figcaption {

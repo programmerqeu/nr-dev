@@ -17,7 +17,7 @@ module.exports = {
 
   name: 'Home page - Developers home',
 
-  'Can get page title (OK, TDD style, message)': function (test) {
+  'Can get page title': function (test) {
 	test
 		.open(url)
 		.assert.title().is(title, 'Page title is correct')
@@ -26,10 +26,10 @@ module.exports = {
 		.done();
   },
 
-  'Can get !page title': function (test) {
+  'The title is not "Home"': function (test) {
 	test
 		.open(url)
-		.assert.title().is.not('Home', 'Title is not "' + title + '"')
+		.assert.title().is.not('Home', 'Title is not "Home"')
 		.done();
   },
 
@@ -40,10 +40,8 @@ module.exports = {
 		.assert.visible('.page-home figure')
 		.assert.text('.bar-header .title').is('Developers home')
 		.assert.attr('.bar-header .title', 'ng-bind-html', 'title', 'Title in header is not bind.')
-//		.assert.attr('.bar-header', 'ng-bind-html', 'title')
 		.done();
   },
-
 
   'Logo is visible': function (test) {
 	test
@@ -54,4 +52,3 @@ module.exports = {
 		.done();
   }
 };
-
