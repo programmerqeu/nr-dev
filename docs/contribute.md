@@ -40,7 +40,7 @@ $ npm install
 $ gulp install
 ```
 
-### Using Sass (optional)
+#### Using Sass (optional)
 
 This project makes it easy to use Sass (the SCSS syntax) in your projects. This enables you to override styles from Ionic, and benefit from
 Sass's great features.
@@ -56,7 +56,7 @@ the include to your `main.css` file which now contains all your Sass code and Io
 -->
 ```
 
-### Updating Ionic
+#### Updating Ionic
 
 To update to a new version of Ionic, open bower.json and change the version listed there.
 
@@ -77,9 +77,8 @@ After saving the update to bower.json file, run `gulp install`.
 Alternatively, install bower globally with `npm install -g bower` and run `bower install`.
 
 
-
-## Developer
-### Prepare Environment
+### Developer
+#### Prepare Environment
 1. Donwload SDK http://developer.android.com/sdk/index.html
 - Follow Instructions: http://cordova.apache.org/docs/en/2.5.0/guide_getting-started_android_index.md.html
 - Export the paths to your  ~/.basrc file like so:
