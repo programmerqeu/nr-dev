@@ -1,4 +1,16 @@
 .idea
 .sass-cache
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
 /nbproject
+/temp
+/www/lib/bower
+atlassian-ide-plugin.xml
 node_modules/
+npm-debug.log
+report

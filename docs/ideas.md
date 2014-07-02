@@ -1,11 +1,14 @@
-NR{dev} - Cross platform application
-====================================
-
-
-## Ideas
-
 _Collection of ideas_
 
+- **Testing**
+	- Integration tests with [DalekJs](http://dalekjs.com/)
+		- run test locally
+		- run locally with grunt watch task
+		- integrate in [travis-ci](https://travis-ci.org/vergissberlin/nr-dev/builds)
+	- Unit tests with [Jasmine](http://jasmine.github.io/), [Mocha](http://visionmedia.github.io/mocha/) or/and [chai](http://chaijs.com/)
+		- run test locally
+		- run test locally with [jsTestDriver](http://www.jetbrains.com/webstorm/webhelp/run-debug-configuration-jstestdriver.html) on WebStorm/PhpStorm
+		- integrate in [travis-ci](https://travis-ci.org/vergissberlin/nr-dev/builds)
 - **Contacts**
 	- attributes
 		- phone number

@@ -17,8 +17,8 @@
   "undef"    : true,
   "unused"   : true,
   "strict"   : true,
-  "trailing" : false,
-  "smarttabs": true,
+  "trailing" : true,
+  "smarttabs": false,
   "white"    : false,
   "globals"   : {
 
@@ -51,7 +51,5 @@
 	"spyOnEvent"           : false,
 	"waitsFor"             : false,
 	"xdescribe"            : false
-
-
   }
 }
