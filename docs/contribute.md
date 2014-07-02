@@ -35,14 +35,17 @@ git push --all
 git checkout develop
 git pull
 git flow release start 1.0.0
+git push --all
 ```
 
 ##### Finish release _1.0.0_
 
 ```bash
-git checkout release/NAME
+git checkout release/1.0.0
 git pull
-git flow release start NAME
+git flow release finish 1.0.0
+git push
+git push origin :release/1.0.0
 ```
 
 ### Using this project
