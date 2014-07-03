@@ -44,7 +44,8 @@ git push --all
 git checkout release/1.0.0
 git pull
 git flow release finish 1.0.0
-git push
+git push --all
+git push --tags
 git push origin :release/1.0.0
 ```
 
@@ -118,6 +119,7 @@ Alternatively, install bower globally with `npm install -g bower` and run `bower
 
 
 ### Developer
+
 #### Prepare Environment
 1. Donwload SDK http://developer.android.com/sdk/index.html
 - Follow Instructions: http://cordova.apache.org/docs/en/2.5.0/guide_getting-started_android_index.md.html
