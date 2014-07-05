@@ -9,13 +9,12 @@
  */
 
 'use strict';
-angular.module('nrdev.controllers', [])
 
-	.controller('ImprintCtrl', function () {
-	  var page = {title: 'Imprint'};
+appController.controller('ImprintCtrl', function () {
+	var page = {title: 'Imprint'};
 
-	  // start google analytics tracking
-	  if (typeof analytics !== 'undefined') {
+	// start google analytics tracking
+	if (typeof analytics !== 'undefined') {
 		analytics.trackView(page.title);
-	  }
-	});
+	}
+});

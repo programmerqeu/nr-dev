@@ -9,6 +9,7 @@
 *.gz
 /nbproject
 /temp
+/www/js/*.js
 /www/lib/bower
 atlassian-ide-plugin.xml
 node_modules/

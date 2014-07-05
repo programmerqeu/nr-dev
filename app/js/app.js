@@ -8,9 +8,9 @@
  * @version    0.0.3
  */
 
-angular.module('nrdev', [
+app = angular.module('nrdev', [
 	'ionic',
-	'nrdev.controllers',
+	'nrdev.controller',
 	'pascalprecht.translate'
 ])
 
@@ -106,3 +106,5 @@ angular.module('nrdev', [
 			})
 			.determinePreferredLanguage();
 	});
+
+appController = angular.module('nrdev.controller', []);

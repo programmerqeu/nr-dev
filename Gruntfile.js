@@ -40,13 +40,36 @@ module.exports = function (grunt) {
 						cssDir: 'www/css'
 					}
 				}
-			},
-			uglify: {
-				js: {
-					files: {
-						'www/js/nrdev.js': ['www/js/app.js', 'www/js/config.js', 'www/js/controllers.js']
-					}
+			}
+		},
+		concat: {
+			options: {
+				separator: '',
+				stripBanners: true,
+				banner: '/*! <%= pkg.name %> - <%= pkg.author %> - v<%= pkg.version %> - ' +
+				'<%= grunt.template.today("yyyy-mm-dd") %> */\n' +
+				'\'use strict\';\n',
+				process: function (src, filepath) {
+					return '// Source: ' + filepath + '\n' +
+					src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');
 				}
+			},
+			app: {
+				src: ['app/js/app.js'],
+				dest: 'www/js/app.js'
+			},
+			config: {
+				src: ['app/js/config.js'],
+				dest: 'www/js/config.js'
+			},
+			controller: {
+				src: [
+					'app/js/controller/appCtrl.js',
+					'app/js/controller/homeCtrl.js',
+					'app/js/controller/contactCtrl.js',
+					'app/js/controller/imprintCtrl.js'
+				],
+				dest: 'www/js/controller.js'
 			}
 		},
 		connect: {
@@ -174,8 +197,10 @@ module.exports = function (grunt) {
 				}
 			},
 			scripts: {
-				files: ['www/js/**/*.js'],
-				tasks: ['uglify'],
+				files: ['app/js/**/*.js'],
+				tasks: [
+					'concat'
+				],
 				options: {
 					spawn: false
 				}
@@ -193,6 +218,10 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('server', [
 		'connect:server'
+	]);
+
+	grunt.registerTask('cc', [
+		'compile:concat'
 	]);
 
 	grunt.registerTask('preview', [

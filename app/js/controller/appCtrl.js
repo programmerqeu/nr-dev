@@ -9,7 +9,12 @@
  */
 
 'use strict';
-angular.module('nrdev.controllers', [])
 
-	.controller('AppCtrl', function () {
-	});
+appController.controller('AppCtrl', function () {
+	var page = {title: 'Developers home'};
+
+	// start google analytics tracking
+	if (typeof analytics !== 'undefined') {
+		analytics.trackView(page.title);
+	}
+});
