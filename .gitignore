@@ -8,10 +8,11 @@
 *.pid
 *.gz
 /nbproject
+/node_modules
+/report
 /temp
 /www/js/*.js
+/www/js/sourcemap.map
 /www/lib/bower
 atlassian-ide-plugin.xml
-node_modules/
 npm-debug.log
-report
