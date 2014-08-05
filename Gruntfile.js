@@ -55,12 +55,8 @@ module.exports = function (grunt) {
 				}
 			},
 			app: {
-				src: ['app/js/app.js'],
+				src: ['app/js/config.js', 'app/js/app.js'],
 				dest: 'www/js/app.js'
-			},
-			config: {
-				src: ['app/js/config.js'],
-				dest: 'www/js/config.js'
 			},
 			controller: {
 				src: [
@@ -96,6 +92,12 @@ module.exports = function (grunt) {
 			}
 		},
 		notify: {
+			compress: {
+				options: {
+					title: 'Compress task Complete',
+					message: 'Concat and uglify finished running'
+				}
+			},
 			watch: {
 				options: {
 					title: 'Task Complete',  // optional
@@ -188,6 +190,20 @@ module.exports = function (grunt) {
 				command: 'dalek tests/integration/*.js -b firefox'
 			}
 		},
+		uglify: {
+			options: {
+				sourceMap: true,
+				sourceMapName: 'www/js/sourcemap.map',
+				beautify: false,
+				compress: true,
+				report: 'gzip'
+			},
+			dist: {
+				files: {
+					'www/js/nrdev.min.js': ['www/js/app.js','www/js/controller.js']
+				}
+			}
+		},
 		watch: {
 			css: {
 				files: 'scss/**/*.scss',
@@ -199,7 +215,8 @@ module.exports = function (grunt) {
 			scripts: {
 				files: ['app/js/**/*.js'],
 				tasks: [
-					'concat'
+					'concat',
+					'uglify'
 				],
 				options: {
 					spawn: false
@@ -271,6 +288,12 @@ module.exports = function (grunt) {
 		'sass',
 		'cssmin',
 		'notify:watch'
+	]);
+
+	grunt.registerTask('compress', [
+		'concat',
+		'uglify',
+		'notify:compress'
 	]);
 
 
