@@ -5,12 +5,8 @@
     "ionic": "driftyco/ionic-bower#1.0.0-beta.6"
   },
   "dependencies": {
-		"angular": "1.2.x",
+		"angular": "~1.2.21",
 		"angular-route": "1.2.x",
-		"angular-loader": "1.2.x",
-		"angular-mocks": "~1.2.x",
-		"angular-translate": "~2.2.0",
-		"bower": "*",
-		"html5-boilerplate": "~4.3.0"
+		"angular-translate": "~2.2.0"
 	}
 }
