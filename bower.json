@@ -1,12 +1,18 @@
 {
   "name": "NRdev",
+	"description": "The is a cross application for mobile devices. Created by and for developers of Netresearch GmbH & Co.KG (http://netresearch.de). The app includes experiments with various API's. Manage colors of lamps in the office, games from noise, let you list parts of the internal address book. It is based on Ionic (http://ionicframework.com) base project. A special thanks goes to the developers of this project.",
+	"version": "0.3.0",
+	"homepage": "https://github.com/vergissberlin/nr-dev",
+	"license": "MIT",
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.0.0-beta.6"
   },
   "dependencies": {
-		"angular": "~1.2.21",
+		"angular": "1.2.x",
 		"angular-route": "1.2.x",
+		"angular-loader": "1.2.x",
+		"angular-mocks": "~1.2.x",
 		"angular-translate": "~2.2.0"
 	}
 }
