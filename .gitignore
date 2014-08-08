@@ -14,7 +14,7 @@
 /report
 /temp
 /www/js/*.js
-/www/lib/**/*.js
+/www/lib/*
 /www/js/sourcemap.map
 /www/lib/bower
 atlassian-ide-plugin.xml
