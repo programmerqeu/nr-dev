@@ -12,7 +12,6 @@
 		"angular": "1.2.x",
 		"angular-route": "1.2.x",
 		"angular-loader": "1.2.x",
-		"angular-mocks": "~1.2.x",
-		"angular-translate": "~2.2.0"
+		"angular-mocks": "~1.2.x"
 	}
 }
