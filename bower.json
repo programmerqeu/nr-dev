@@ -5,9 +5,6 @@
 	"homepage": "https://github.com/vergissberlin/nr-dev",
 	"license": "MIT",
   "private": "true",
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.6"
-  },
   "dependencies": {
 		"angular": "1.2.x",
 		"angular-route": "1.2.x",
