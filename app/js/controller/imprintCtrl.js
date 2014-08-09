@@ -10,7 +10,7 @@
 
 'use strict';
 
-appController.controller('ImprintCtrl', function () {
+window.appController.controller('ImprintCtrl', function () {
 	var page = {title: 'Imprint'};
 
 	// start google analytics tracking

@@ -10,7 +10,7 @@
 
 'use strict';
 
-appController.controller('AppCtrl', function () {
+window.appController.controller('AppCtrl', function () {
 	var page = {title: 'Developers home'};
 
 	// start google analytics tracking

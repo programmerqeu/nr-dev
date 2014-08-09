@@ -1,48 +1,10 @@
-/**
- * NRdev
- *
- * @category   Controller
- * @package    NRdev
- * @author     André Lademann <andre.lademann@netresearch.de>
- * @license    https://netresearch.de/license
- * @version    0.0.3
- */
-
-app = angular.module('nrdev', [
+window.app = angular.module('nrdev', [
 	'ionic',
 	'nrdev.controller',
+	'nrdev.model',
 	'pascalprecht.translate'
 ])
-
-	.run(function ($ionicPlatform, $rootScope, $log) {
-		'use strict';
-
-		$log.log('Platform is ready!');
-		$rootScope.appVersion = appConfig.version;
-
-		$ionicPlatform.ready(function () {
-
-			// start google analytics tracking
-			if (typeof analytics !== 'undefined') {
-				analytics.startTrackerWithId(appConfig.uacode);
-			} else {
-				$log.log('Google Analytics plugin could not be loaded.');
-			}
-
-			// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-			// for form inputs)
-			if (window.cordova && window.cordova.plugins.Keyboard) {
-				cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-			}
-			if (window.StatusBar) {
-				// org.apache.cordova.statusbar required
-				window.StatusBar.styleDefault();
-			}
-		});
-	})
-
 	.config(function ($stateProvider, $urlRouterProvider, $translateProvider) {
-		'use strict';
 
 		$stateProvider
 			.state('app', {
@@ -81,9 +43,9 @@ app = angular.module('nrdev', [
 					}
 				}
 			});
+
 		// if none of the above states are matched, use this as the fallback
 		$urlRouterProvider.otherwise('/app/home');
-
 
 		// translations
 		$translateProvider
@@ -105,6 +67,35 @@ app = angular.module('nrdev', [
 				'de-AT': 'de_DE'
 			})
 			.determinePreferredLanguage();
-	});
+	}
 
-appController = angular.module('nrdev.controller', []);
+		.run(function ($ionicPlatform, $rootScope, $log) {
+
+			$log.log('Platform is ready!');
+			$rootScope.appVersion = appConfig.version;
+
+			$ionicPlatform.ready(function () {
+
+				// start google analytics tracking
+				if (typeof analytics !== 'undefined') {
+					analytics.startTrackerWithId(window.appConfig.uacode);
+				} else {
+					$log.log('Google Analytics plugin could not be loaded.');
+				}
+
+				// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+				// for form inputs)
+				if (window.cordova && window.cordova.plugins.Keyboard) {
+					cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+				}
+				if (window.StatusBar) {
+					// org.apache.cordova.statusbar required
+					window.StatusBar.styleDefault();
+				}
+			});
+		})
+);
+
+window.appController = angular.module('nrdev.controller', ['nrdev.model', 'nrdev.service']);
+window.appModel = angular.module('nrdev.model', []);
+window.appService = angular.module('nrdev.service', []);
