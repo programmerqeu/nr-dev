@@ -10,20 +10,4 @@ describe('Globals', function(){
     expect(window).toBeDefined();
   });
 
-  it('should be ...', function() {
-    expect(window).toBeDefined();
-  });
-
-  it('should be ...', function() {
-    expect(window).toBeDefined();
-  });
-
-  it('should be ...', function() {
-    expect(window).toBeDefined();
-  });
-
-  it('should be ...', function() {
-    expect(window).toBeDefined();
-  });
-
 });
