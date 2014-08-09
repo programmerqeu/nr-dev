@@ -4,5 +4,4 @@
 
 describe('my app', function() {
 
-  browser.get('index.html');
 });
