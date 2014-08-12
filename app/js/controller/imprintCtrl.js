@@ -10,11 +10,16 @@
 
 'use strict';
 
-window.appController.controller('ImprintCtrl', function () {
-	var page = {title: 'Imprint'};
+window.appController
+	.controller('ImprintCtrl',
+	['$scope',
+		function ($scope) {
+			var page = {title: 'Imprint'};
 
-	// start google analytics tracking
-	if (typeof analytics !== 'undefined') {
-		analytics.trackView(page.title);
-	}
-});
+			$scope.title = {title: 'Developers home'};
+
+			// start google analytics tracking
+			if (typeof analytics !== 'undefined') {
+				analytics.trackView(page.title);
+			}
+		}]);

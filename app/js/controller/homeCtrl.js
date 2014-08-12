@@ -10,11 +10,19 @@
 
 'use strict';
 
-window.appController.controller('HomeCtrl', function () {
-	var page = {title: 'Developers home'};
+window.appController
+	.controller('HomeCtrl',
+	['$scope',
+		function ($scope) {
 
-	// start google analytics tracking
-	if (typeof analytics !== 'undefined') {
-		analytics.trackView(page.title);
-	}
-});
+			var page = {title: 'Developers home'};
+
+			$scope.title = {
+				title: 'Developers home'
+			};
+
+			// start google analytics tracking
+			if (typeof analytics !== 'undefined') {
+				analytics.trackView(page.title);
+			}
+		}]);

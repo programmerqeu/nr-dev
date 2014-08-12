@@ -1,14 +1,17 @@
 module.exports = function (config) {
+	'use strict';
+
 	config.set({
 
 		basePath: '../',
 
 		files: [
-//			'app/js/**/*.js',
-			'test/unit/**/*.js',
 			'www/lib/angular/angular.js',
+			'www/lib/angular-mocks/angular-mocks.js',
 			'www/lib/angular-route/angular-route.js',
-			'www/lib/angular-mocks/angular-mocks.js'
+			'www/lib/angular-translate/angular-translate.js',
+			'app/js/controller/testCtrl.js',
+			'test/unit/testSpec.js'
 		],
 
 		autoWatch: true,
@@ -17,11 +20,16 @@ module.exports = function (config) {
 
 		browsers: ['Chrome'],
 
+		// level of logging
+		// possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
+		logLevel: config.LOG_INFO,
+
 		plugins: [
+			'karma-junit-reporter',
 			'karma-chrome-launcher',
 			'karma-firefox-launcher',
-			'karma-jasmine',
-			'karma-junit-reporter'
+			'karma-phantomjs-launcher',
+			'karma-jasmine'
 		],
 
 		junitReporter: {
