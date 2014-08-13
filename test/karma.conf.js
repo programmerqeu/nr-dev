@@ -10,8 +10,10 @@ module.exports = function (config) {
 			'www/lib/angular-mocks/angular-mocks.js',
 			'www/lib/angular-route/angular-route.js',
 			'www/lib/angular-translate/angular-translate.js',
-			'app/js/controller/testCtrl.js',
-			'test/unit/testSpec.js'
+			'app/js/config.js',
+			'app/js/app.js',
+			'app/js/controller/appCtrl.js',
+			'test/unit/controller/appSpec.js'
 		],
 
 		autoWatch: true,
