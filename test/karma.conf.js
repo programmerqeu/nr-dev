@@ -10,10 +10,20 @@ module.exports = function (config) {
 			'www/lib/angular-mocks/angular-mocks.js',
 			'www/lib/angular-route/angular-route.js',
 			'www/lib/angular-translate/angular-translate.js',
+
+			// scripts
 			'app/js/config.js',
 			'app/js/app.js',
 			'app/js/controller/appCtrl.js',
-			'test/unit/controller/appSpec.js'
+			'app/js/controller/contactCtrl.js',
+			'app/js/controller/homeCtrl.js',
+			'app/js/controller/imprintCtrl.js',
+
+			// specs
+			'test/unit/controller/appSpec.js',
+			'test/unit/controller/contactSpec.js',
+			'test/unit/controller/homeSpec.js',
+			'test/unit/controller/imprintSpec.js'
 		],
 
 		autoWatch: true,
