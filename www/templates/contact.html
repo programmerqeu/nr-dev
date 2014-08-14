@@ -1,0 +1,57 @@
+<ion-view title="{{'contact' | translate}}">
+
+	<ion-header-bar class="bar-positive">
+		<h1 class="title">3000 Contacts</h1>
+		<div class="button" ng-click="scrollBottom()">
+			Scroll To Bottom
+		</div>
+	</ion-header-bar>
+	<ion-header-bar class="bar-light bar-subheader">
+		<input type="search"
+					 placeholder="Filter contacts..."
+					 ng-model="search"
+					 ng-focus="searchFocused = true"
+					 ng-blur="searchFocused = false"
+					 ng-change="scrollTop()">
+		<button ng-if="search.length"
+						class="button button-icon ion-android-close input-button"
+						ng-click="clearSearch()">
+		</button>
+	</ion-header-bar>
+
+	<ion-nav-buttons side="left" class="bar-dark">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+
+	<!--<ion-content class="has-header padding bg-blur" overflow-scroll="scroll" scrollbar-x="true" scrollbar-y="false">-->
+		<div class="list list-inset">
+			<label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" placeholder="Search" ng-model="titleFilter.SnomIPPhoneDirectory.Title">
+			</label>
+		</div>
+
+		<div class="list" ng-controller="ContactCtrl">
+			<div class="item item-divider" translate="contact"></div>
+			<ul>
+				<li ng-repeat="contact in contacts | filter: titleFilter">
+					<a href=""  class="item item-button-right">
+						{{contact.SnomIPPhoneDirectory.Title}}
+						<button class="button button-positive">
+							<i class="icon ion-ios7-cloud-download"></i>
+						</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<footer>
+			<center>
+				<small>
+					{{'version'|translate}} {{appVersion}}
+				</small>
+			</center>
+		</footer>
+
+	</ion-content>
+</ion-view>
