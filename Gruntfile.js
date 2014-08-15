@@ -68,29 +68,6 @@ module.exports = function (grunt) {
 				dest: 'www/js/controller.js'
 			}
 		},
-		connect: {
-			server: {
-				options: {
-					port: 9001,
-					base: 'www',
-					keepalive: true
-				}
-			},
-			preview: {
-				options: {
-					port: 9002,
-					base: 'www',
-					keepalive: true
-				}
-			},
-			reports: {
-				options: {
-					port: 9003,
-					base: 'report/dalek',
-					keepalive: true
-				}
-			}
-		},
 		notify: {
 			compress: {
 				options: {
@@ -139,57 +116,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		shell: {
-			dalekjs: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js'
-			},
-			dalekjsAdvanced: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/advanced/*.js'
-			},
-			dalekjsCoffee: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.coffee'
-			},
-			dalekjsMultiple: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -b phantomjs,chrome -r console,html'
-			},
-			dalekjsChrome: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -b chrome'
-			},
-			dalekjsHtmlreport: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -r console,html'
-			},
-			dalekjsFirefox: {
-				options: {
-					stdout: true,
-					failOnError: true
-				},
-				command: 'dalek tests/integration/*.js -b firefox'
-			}
-		},
 		uglify: {
 			options: {
 				sourceMap: true,
@@ -227,61 +153,13 @@ module.exports = function (grunt) {
 					'tests/**/*.js',
 					'www/templates/**/*.html',
 					'www/js/**/*.js'
-				],
-				tasks: ['shell:dalekjs']
+				]
 			}
 		}
 	});
 
-	grunt.registerTask('server', [
-		'connect:server'
-	]);
-
 	grunt.registerTask('cc', [
 		'compile:concat'
-	]);
-
-	grunt.registerTask('preview', [
-		'connect:preview'
-	]);
-
-	grunt.registerTask('reports', [
-		'connect:reports'
-	]);
-
-	grunt.registerTask('dalek', [
-		'watch',
-		'shell:dalekjs'
-	]);
-	grunt.registerTask('dalek_advanced', [
-		'connect:server',
-		'shell:dalekjsAdvanced'
-	]);
-
-	grunt.registerTask('dalek_coffee', [
-		'connect:server',
-		'shell:dalekjsCoffee'
-	]);
-
-	grunt.registerTask('dalek_htmlreport', [
-		'connect:server',
-		'shell:dalekjsHtmlreport'
-	]);
-
-	grunt.registerTask('dalek_chrome', [
-		'connect:server',
-		'shell:dalekjsChrome',
-		'notify:watch'
-	]);
-
-	grunt.registerTask('dalek_firefox', [
-		'connect:server',
-		'shell:dalekjsFirefox'
-	]);
-
-	grunt.registerTask('dalek_multiple', [
-		'connect:server',
-		'shell:dalekjsMultiple'
 	]);
 
 	grunt.registerTask('scss', [
@@ -296,12 +174,8 @@ module.exports = function (grunt) {
 		'notify:compress'
 	]);
 
-
 	// this would be run by typing "grunt test" on the command line
 	grunt.registerTask('readme', ['readme_generator']);
-
-	// this would be run by typing "grunt test" on the command line
-	grunt.registerTask('test', ['dalek']);
 
 	// the default task can be run just by typing "grunt" on the command line
 	grunt.registerTask('default', ['watch']);

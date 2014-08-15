@@ -9,6 +9,7 @@
  */
 
 'use strict';
+var holgerNauten = true;
 
 window.appController
 	.controller('AppCtrl',
