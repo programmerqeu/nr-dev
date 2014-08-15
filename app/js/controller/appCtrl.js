@@ -12,8 +12,8 @@
 
 window.appController
 	.controller('AppCtrl',
-	['$scope',
-		function ($scope) {
+	['$log', '$scope',
+		function ($log, $scope) {
 			var page = {title: 'Developers home'};
 			$scope.title = 'NR[dev]';
 

@@ -15,3 +15,16 @@ window.appConfig = {
 	version: '0.3.0',
 	uacode: 'UA-35739360-3'
 };
+
+window.appService = angular.module('nrdev.service', []);
+window.appModel = angular.module('nrdev.model', []);
+window.appController = angular.module(
+	'nrdev.controller',
+	['nrdev.model', 'nrdev.service']);
+
+window.app = angular.module('nrdev', [
+	'ionic',
+	'ui.router',
+	'nrdev.controller',
+	'pascalprecht.translate'
+]);

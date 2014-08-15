@@ -12,10 +12,12 @@
 
 window.appController
 	.controller('HomeCtrl',
-	['$scope',
-		function ($scope) {
+	['$log', '$scope',
+		function ($log, $scope) {
 
+			$log.log('Home controller loaded');
 			var page = {title: 'Developers home'};
+
 
 			$scope.title = {
 				title: 'Developers home'

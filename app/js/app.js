@@ -1,14 +1,20 @@
-window.app = angular.module('nrdev', [
-	'ionic',
-	'ngRoute',
-	'nrdev.controller',
-	'pascalprecht.translate'
-])
-	.config([
-		'$stateProvider',
-		'$translateProvider',
-		'$urlRouterProvider',
-		function ($stateProvider,
+/**
+ * NRdev
+ *
+ * @category   Configuration
+ * @package    NRdev
+ * @author     André Lademann <andre.lademann@netresearch.de>
+ * @license    https://netresearch.de/license
+ * @version    0.1.0
+ */
+
+//	var app = angular.module('plunker', ['ui.bootstrap', 'ui.bootstrap.tpls','ui.router']);
+//	app.config(function($stateProvider, $urlRouterProvider) {
+//	$urlRouterProvider.otherwise("/");
+//	$stateProvider
+
+window.app
+	.config(function ($stateProvider,
 							$urlRouterProvider,
 							$translateProvider) {
 
@@ -73,12 +79,8 @@ window.app = angular.module('nrdev', [
 				})
 				.determinePreferredLanguage();
 		}
-	])
-	.run([
-		'$ionicPlatform',
-		'$rootScope',
-		'$log',
-		function ($ionicPlatform,
+	)
+	.run(function ($ionicPlatform,
 							 $rootScope,
 							 $log) {
 		'use strict';
@@ -102,8 +104,4 @@ window.app = angular.module('nrdev', [
 				window.StatusBar.styleDefault();
 			}
 		});
-	}]);
-
-window.appController = angular.module('nrdev.controller', ['nrdev.model', 'nrdev.service']);
-window.appModel = angular.module('nrdev.model', []);
-window.appService = angular.module('nrdev.service', []);
+	});

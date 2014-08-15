@@ -55,14 +55,17 @@ module.exports = function (grunt) {
 				}
 			},
 			app: {
-				src: ['app/js/config.js', 'app/js/app.js'],
+				src: ['app/js/app.js'],
 				dest: 'www/js/app.js'
+			},
+			config: {
+				src: ['app/js/config.js'],
+				dest: 'www/js/config.js'
 			},
 			controller: {
 				src: [
 					'app/js/controller/appCtrl.js',
 					'app/js/controller/homeCtrl.js',
-					'app/js/controller/contactCtrl.js',
 					'app/js/controller/imprintCtrl.js'
 				],
 				dest: 'www/js/controller.js'
