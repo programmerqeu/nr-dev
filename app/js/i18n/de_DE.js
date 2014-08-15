@@ -1,3 +1,5 @@
+'use strict';
+
 var de_DE = {
 	about: 'Über diese App',
 	authors: 'Autoren',

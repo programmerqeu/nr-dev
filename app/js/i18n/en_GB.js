@@ -1,3 +1,5 @@
+'use strict';
+
 var en_UK = {
 	about: 'About',
 	authors: 'Authors',

@@ -1,15 +1,13 @@
 window.app = angular.module('nrdev', [
 	'ionic',
+	'ngRoute',
 	'nrdev.controller',
-	'nrdev.model',
 	'pascalprecht.translate'
 ])
 	.config([
-		'$routeProvider',
 		'$stateProvider',
 		'$translateProvider',
 		'$urlRouterProvider',
-
 		function ($stateProvider,
 							$urlRouterProvider,
 							$translateProvider) {

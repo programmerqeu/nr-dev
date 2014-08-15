@@ -66,6 +66,10 @@ module.exports = function (grunt) {
 					'app/js/controller/imprintCtrl.js'
 				],
 				dest: 'www/js/controller.js'
+			},
+			i18n: {
+				src: ['app/js/i18n/*'],
+				dest: 'www/js/i18n.js'
 			}
 		},
 		notify: {
@@ -159,7 +163,7 @@ module.exports = function (grunt) {
 	});
 
 	grunt.registerTask('cc', [
-		'compile:concat'
+		'concat'
 	]);
 
 	grunt.registerTask('scss', [
