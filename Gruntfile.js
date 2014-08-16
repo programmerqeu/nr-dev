@@ -65,6 +65,7 @@ module.exports = function (grunt) {
 			controller: {
 				src: [
 					'app/js/controller/appCtrl.js',
+					'app/js/controller/contactCtrl.js',
 					'app/js/controller/homeCtrl.js',
 					'app/js/controller/imprintCtrl.js'
 				],
