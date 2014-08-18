@@ -6,7 +6,9 @@ module.exports = function (config) {
 		basePath: '../',
 
 		files: [
-			'www/lib/angular/angular.js',
+			// libraries
+			'www/lib/ionic/js/ionic.bundle.min.js',
+			'www/lib/angular-ui-router/release/angular-ui-router.min.js',
 			'www/lib/angular-mocks/angular-mocks.js',
 			'www/lib/angular-route/angular-route.js',
 			'www/lib/angular-translate/angular-translate.js',
@@ -14,10 +16,8 @@ module.exports = function (config) {
 			// scripts
 			'app/js/config.js',
 			'app/js/app.js',
-			'app/js/controller/appCtrl.js',
-			'app/js/controller/contactCtrl.js',
-			'app/js/controller/homeCtrl.js',
-			'app/js/controller/imprintCtrl.js',
+			'app/js/i18n/*.js',
+			'app/js/controller/*.js',
 
 			// specs
 			'test/unit/controller/appSpec.js',
@@ -28,9 +28,12 @@ module.exports = function (config) {
 
 		autoWatch: true,
 
-		frameworks: ['jasmine'],
-
 		browsers: ['Chrome'],
+
+		// enable / disable colors in the output (reporters and logs)
+		colors: true,
+
+		frameworks: ['jasmine'],
 
 		// level of logging
 		// possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG

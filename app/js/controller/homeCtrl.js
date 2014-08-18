@@ -19,9 +19,7 @@ window.appController
 			var page = {title: 'Developers home'};
 
 
-			$scope.title = {
-				title: 'Developers home'
-			};
+			$scope.title = page.title;
 
 			// start google analytics tracking
 			if (typeof analytics !== 'undefined') {

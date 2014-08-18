@@ -1,17 +1,37 @@
 'use strict';
 
 /**
- * jasmine specs for contact controllers
+ * jasmine specs for home controller
  */
-describe('Home controller should', function(){
+describe('Home controller should', function () {
 
-	beforeEach(module('nrdev.controller'));
+	var scope, controller;
 
-	it('should ...', inject(function($controller) {
-		var homeController = $controller('HomeCtrl', {
-			$scope: {}
+	beforeEach(function () {
+		module('nrdev');
+		module('nrdev.controller');
+	});
+
+	describe('HomeCtrl', function () {
+
+		beforeEach(inject(function ($rootScope, $controller) {
+			scope = $rootScope.$new();
+			controller = $controller('HomeCtrl', {
+				'$scope': scope
+			});
+		}));
+
+		it('should ...', inject(function ($controller) {
+			var appController = $controller('HomeCtrl', {
+				$scope: {}
+			});
+			expect(appController).toBeDefined();
+		}));
+
+		it('sets the title', function () {
+			expect(scope.title).toBe('Developers home');
 		});
-		expect(homeController).toBeDefined();
-	}));
+
+	});
 
 });
