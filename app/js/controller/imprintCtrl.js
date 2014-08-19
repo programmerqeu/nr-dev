@@ -16,10 +16,11 @@ window.appController
 		function ($scope) {
 			var page = {title: 'Imprint'};
 
-			$scope.title = {title: 'Developers home'};
+			$scope.title = page.title;
 
 			// start google analytics tracking
 			if (typeof analytics !== 'undefined') {
 				analytics.trackView(page.title);
 			}
-		}]);
+		}
+	]);

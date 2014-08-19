@@ -1,17 +1,37 @@
 'use strict';
 
 /**
- * jasmine specs for contact controllers
+ * jasmine specs for home controller
  */
-describe('Imprint controller should', function(){
+describe('Imprint controller should', function () {
 
-	beforeEach(module('nrdev.controller'));
+	var scope, controller;
 
-	it('should ...', inject(function($controller) {
-		var imprintController = $controller('ImprintCtrl', {
-			$scope: {}
+	beforeEach(function () {
+		module('nrdev');
+		module('nrdev.controller');
+	});
+
+	describe('ImprintCtrl', function () {
+
+		beforeEach(inject(function ($rootScope, $controller) {
+			scope = $rootScope.$new();
+			controller = $controller('ImprintCtrl', {
+				'$scope': scope
+			});
+		}));
+
+		it('should ...', inject(function ($controller) {
+			var imprintController = $controller('ImprintCtrl', {
+				$scope: {}
+			});
+			expect(imprintController).toBeDefined();
+		}));
+
+		it('sets the title', function () {
+			expect(scope.title).toBe('Imprint');
 		});
-		expect(imprintController).toBeDefined();
-	}));
+
+	});
 
 });

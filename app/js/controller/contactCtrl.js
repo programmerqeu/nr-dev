@@ -19,6 +19,8 @@ window.appController
 				letterHasMatch;
 
 			page = {title: 'Contact'};
+			$scope.title = page.title;
+
 			$scope.getContacts = function () {
 				var contacts;
 
@@ -45,10 +47,9 @@ window.appController
 				});
 			};
 
-			$scope.contacts = [];
-
 			// start google analytics tracking
 			if (typeof analytics !== 'undefined') {
 				analytics.trackView(page.title);
 			}
-		}]);
+		}
+	]);

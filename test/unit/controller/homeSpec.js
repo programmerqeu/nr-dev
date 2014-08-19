@@ -22,10 +22,10 @@ describe('Home controller should', function () {
 		}));
 
 		it('should ...', inject(function ($controller) {
-			var appController = $controller('HomeCtrl', {
+			var homeController = $controller('HomeCtrl', {
 				$scope: {}
 			});
-			expect(appController).toBeDefined();
+			expect(homeController).toBeDefined();
 		}));
 
 		it('sets the title', function () {
