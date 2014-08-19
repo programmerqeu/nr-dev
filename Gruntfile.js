@@ -134,7 +134,12 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'www/js/nrdev.min.js': ['www/js/app.js','www/js/controller.js']
+					'www/js/nrdev.min.js': [
+						'www/js/i18n.js',
+						'www/js/config.js',
+						'www/js/app.js',
+						'www/js/controller.js'
+					]
 				}
 			}
 		},
@@ -164,10 +169,6 @@ module.exports = function (grunt) {
 			}
 		}
 	});
-
-	grunt.registerTask('cc', [
-		'concat'
-	]);
 
 	grunt.registerTask('scss', [
 		'sass',
