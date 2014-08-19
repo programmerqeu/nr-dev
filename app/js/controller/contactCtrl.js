@@ -47,6 +47,30 @@ window.appController
 				});
 			};
 
+			// http://www.gravatar.com/avatar/cb9c39001ba2a0637fe02edfab1c45e0.jpg?s=120&r=pg&d=identicon
+			$scope.contacts = [
+				{
+					firstName: 'André',
+					lastName: 'Lademann',
+					gravatar: '7702981a0474e6dfefc8158907f3f5f8',
+					link: {
+						blog: 'http://blog.netresearch.de',
+						github: 'vergissberlin',
+						gplus: '102068444349380253348',
+						twitter: 'vergissberlin'
+					}
+				},
+				{
+					firstName: 'Michael',
+					lastName: 'Ablass',
+					gravatar: 'cb9c39001ba2a0637fe02edfab1c45e0',
+					link: {
+						blog: 'http://blog.netresearch.de'
+					}
+				}
+			];
+
+
 			// start google analytics tracking
 			if (typeof analytics !== 'undefined') {
 				analytics.trackView(page.title);

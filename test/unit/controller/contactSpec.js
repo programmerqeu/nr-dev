@@ -21,19 +21,30 @@ describe('Contact controller should', function () {
 			});
 		}));
 
-		it('should ...', inject(function ($controller) {
+		it('should be defined...', inject(function ($controller) {
 			var contactController = $controller('ContactCtrl', {
 				$scope: {}
 			});
-			expect(contactController).toBeDefined();
+			expect(contactController).toBeDefined('be defined.');
 		}));
 
-		it('sets the title', function () {
+		it('sets the title ...', function () {
 			expect(scope.title).toBe('Contact');
 		});
 
-		it('should have getContacts', function () {
+		it('should have getContacts ...', function () {
 			expect(scope.getContacts).toBeDefined();
+		});
+
+		it('contact should have ...', function () {
+			expect(scope.contacts[0].firstName).toBeDefined();
+			expect(scope.contacts[0].lastName).toBeDefined();
+			expect(scope.contacts[0].gravatar).toBeDefined();
+			expect(scope.contacts[0].link).toBeDefined();
+			expect(scope.contacts[0].link.blog).toBeDefined();
+			expect(scope.contacts[0].link.github).toBeDefined();
+			expect(scope.contacts[0].link.gplus).toBeDefined();
+			expect(scope.contacts[0].link.twitter).toBeDefined();
 		});
 
 	});

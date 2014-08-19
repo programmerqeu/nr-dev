@@ -25,4 +25,5 @@ window.appController
 			if (typeof analytics !== 'undefined') {
 				analytics.trackView(page.title);
 			}
-		}]);
+		}
+	]);
