@@ -16,11 +16,16 @@ window.appConfig = {
 	uacode: 'UA-35739360-3'
 };
 
+window.appDirective = angular.module('nrdev.directive', []);
 window.appService = angular.module('nrdev.service', []);
 window.appModel = angular.module('nrdev.model', []);
 window.appController = angular.module(
 	'nrdev.controller',
-	['nrdev.model', 'nrdev.service']);
+	[
+		'nrdev.model',
+		'nrdev.service',
+		'nrdev.directive'
+	]);
 
 window.app = angular.module('nrdev', [
 	'ionic',
