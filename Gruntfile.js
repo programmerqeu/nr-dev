@@ -19,26 +19,26 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		compass: {
+			dist: {
+				options: {
+					sassDir: 'app/scss',
+					cssDir: 'www/css',
+					environment: 'production'
+				}
+			},
+			dev: {
+				options: {
+					sassDir: 'app/scss',
+					cssDir: 'www/css'
+				}
+			}
+		},
 		compile: {
 			cssmin: {
 				css: {
 					src: 'www/css/main.css',
 					dest: 'www/css/main.min.css'
-				}
-			},
-			compass: {
-				dist: {
-					options: {
-						sassDir: 'scss',
-						cssDir: 'www/css',
-						environment: 'production'
-					}
-				},
-				dev: {
-					options: {
-						sassDir: 'scss',
-						cssDir: 'www/css'
-					}
 				}
 			}
 		},
@@ -54,6 +54,15 @@ module.exports = function (grunt) {
 					src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');
 				}
 			},
+			// libraries
+			components: {
+				src: [
+					'www/lib/angular-translate/angular-translate.min.js',
+					'www/lib/ngCordova/dist/ng-cordova.min.js'
+				],
+				dest: 'www/lib/libraries.min.js'
+			},
+			// scripts
 			app: {
 				src: ['app/js/app.js'],
 				dest: 'www/js/app.js'
@@ -70,6 +79,18 @@ module.exports = function (grunt) {
 					'app/js/controller/imprintCtrl.js'
 				],
 				dest: 'www/js/controller.js'
+			},
+			directive: {
+				src: [
+					'app/js/directive/gravatarDirective.js'
+				],
+				dest: 'www/js/directive.js'
+			},
+			service: {
+				src: [
+					'app/js/service/contactService.js'
+				],
+				dest: 'www/js/service.js'
 			},
 			i18n: {
 				src: ['app/js/i18n/*'],
@@ -138,6 +159,8 @@ module.exports = function (grunt) {
 						'www/js/i18n.js',
 						'www/js/config.js',
 						'www/js/app.js',
+						'www/js/directive.js',
+						'www/js/service.js',
 						'www/js/controller.js'
 					]
 				}
@@ -145,7 +168,7 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			css: {
-				files: 'scss/**/*.scss',
+				files: 'app/scss/**/*.scss',
 				tasks: ['compass'],
 				options: {
 					livereload: false

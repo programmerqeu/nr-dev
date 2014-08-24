@@ -23,12 +23,17 @@ $energized:		#f0b840 !default;
 $assertive:		#ef4e3a !default;
 $royal:				#8a6de9 !default;
 $dark:				#333 !default;
+$gray:				#f5f5f5;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
+$item-avatar-width: 60px;
+$item-avatar-height: 60px;
+$item-avatar-border-radius: 30px;
+
 // Include mixins
-@import "www/lib/ionic/scss/ionic";
+@import "../../www/lib/ionic/scss/ionic";
 @import "mixins";
 @import "utility";
 
@@ -46,11 +51,20 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	font-style: normal;
 }
 
-// blur background
-.bg-blur {
-	background: transparent url(../../www/img/bg.jpg) center center;
-	background-size: cover;
+
+// ==
+// Customize ironic theme
+
+// avatar in lest view
+.item-avatar {
+	& > img:first-child {
+		padding: 2px;
+		border: darken($gray, 4%) solid 1px;
+	}
 }
+
+// ==
+// Pages
 
 // home page
 .page-home {
@@ -92,3 +106,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 footer {
 	color: $light;
 }
+
+
+// ==
+// Utilities
+
+
+// blur background
+.bg-blur {
+	background: transparent url(../../www/img/bg.jpg) center center;
+	background-size: cover;
+}
+

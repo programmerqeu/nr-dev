@@ -13,6 +13,7 @@
 /node_modules
 /report
 /temp
+/www/css/*.css
 /www/js/*.js
 /www/lib/*
 /www/js/sourcemap.map
