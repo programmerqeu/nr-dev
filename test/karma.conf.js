@@ -12,18 +12,32 @@ module.exports = function (config) {
 			'www/lib/angular-mocks/angular-mocks.js',
 			'www/lib/angular-route/angular-route.js',
 			'www/lib/angular-translate/angular-translate.js',
+			'www/lib/ngCordova/dist/ng-cordova.js',
+
+			// custom matcher
+			'lodash.js',
+			'test/unit/customMatcher.js',
 
 			// scripts
 			'app/js/config.js',
 			'app/js/app.js',
 			'app/js/i18n/*.js',
-			'app/js/controller/*.js',
+			'app/js/service/contactService.js',
+			//'app/js/directive/gravatarDirective.js',
 
-			// specs
+			// specs controller
+			'app/js/controller/*.js',
 			'test/unit/controller/appSpec.js',
 			'test/unit/controller/contactSpec.js',
 			'test/unit/controller/homeSpec.js',
-			'test/unit/controller/imprintSpec.js'
+			'test/unit/controller/imprintSpec.js',
+
+			// specs services
+			'test/unit/service/contactSpec.js'
+
+			// specs directives
+			//'test/unit/directive/gravatarSpec.js',
+
 		],
 
 		autoWatch: true,

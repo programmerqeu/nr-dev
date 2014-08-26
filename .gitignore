@@ -9,8 +9,8 @@
 *.out
 *.pid
 *.gz
-/nbproject
 /node_modules
+/plugins
 /report
 /temp
 /www/css/*.css

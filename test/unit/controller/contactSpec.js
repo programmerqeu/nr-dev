@@ -1,7 +1,14 @@
 'use strict';
-
 /**
+ * NRdev
+ *
  * jasmine specs for home controller
+ *
+ * @category   Unit tests
+ * @package    NRdev
+ * @author     André Lademann <andre.lademann@netresearch.de>
+ * @license    https://netresearch.de/license
+ * @version    0.1.0
  */
 describe('Contact controller should', function () {
 
@@ -10,6 +17,8 @@ describe('Contact controller should', function () {
 	beforeEach(function () {
 		module('nrdev');
 		module('nrdev.controller');
+		module('nrdev.directive');
+		module('nrdev.service');
 	});
 
 	describe('ContactCtrl', function () {
@@ -21,7 +30,7 @@ describe('Contact controller should', function () {
 			});
 		}));
 
-		it('should be defined...', inject(function ($controller) {
+		it('should be defined ...', inject(function ($controller) {
 			var contactController = $controller('ContactCtrl', {
 				$scope: {}
 			});
@@ -33,18 +42,7 @@ describe('Contact controller should', function () {
 		});
 
 		it('should have getContacts ...', function () {
-			expect(scope.getContacts).toBeDefined();
-		});
-
-		it('contact should have ...', function () {
-			expect(scope.contacts[0].firstName).toBeDefined();
-			expect(scope.contacts[0].lastName).toBeDefined();
-			expect(scope.contacts[0].gravatar).toBeDefined();
-			expect(scope.contacts[0].link).toBeDefined();
-			expect(scope.contacts[0].link.blog).toBeDefined();
-			expect(scope.contacts[0].link.github).toBeDefined();
-			expect(scope.contacts[0].link.gplus).toBeDefined();
-			expect(scope.contacts[0].link.twitter).toBeDefined();
+			expect(scope.contacts).toBeDefined();
 		});
 
 	});

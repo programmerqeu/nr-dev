@@ -1,5 +1,5 @@
 /**
- * NRdev
+ //* NRdev
  *
  * @category   Configuration
  * @package    NRdev
@@ -16,12 +16,16 @@ window.appConfig = {
 	uacode: 'UA-35739360-3'
 };
 
-window.appDirective = angular.module('nrdev.directive', []);
-window.appService = angular.module('nrdev.service', []);
-window.appModel = angular.module('nrdev.model', []);
-window.appController = angular.module(
-	'nrdev.controller',
-	[
+window.appDirective = angular.module('nrdev.directive', [
+	'ngCordova'
+]);
+window.appService = angular.module('nrdev.service', [
+	'ngCordova'
+]);
+window.appModel = angular.module('nrdev.model', [
+	'ngCordova'
+]);
+window.appController = angular.module('nrdev.controller', [
 		'nrdev.model',
 		'nrdev.service',
 		'nrdev.directive'
@@ -29,7 +33,11 @@ window.appController = angular.module(
 
 window.app = angular.module('nrdev', [
 	'ionic',
+	'ngCordova',
+	'pascalprecht.translate',
 	'ui.router',
 	'nrdev.controller',
-	'pascalprecht.translate'
+	'nrdev.directive',
+	'nrdev.model',
+	'nrdev.service'
 ]);

@@ -8,11 +8,6 @@
  * @version    0.1.0
  */
 
-//	var app = angular.module('plunker', ['ui.bootstrap', 'ui.bootstrap.tpls','ui.router']);
-//	app.config(function($stateProvider, $urlRouterProvider) {
-//	$urlRouterProvider.otherwise("/");
-//	$stateProvider
-
 window.app
 	.config(function ($stateProvider,
 							$urlRouterProvider,
@@ -81,7 +76,8 @@ window.app
 		}
 	)
 	.run(function ($ionicPlatform,
-							 $rootScope,
+								 $window,
+								 $rootScope,
 							 $log) {
 		'use strict';
 
@@ -103,5 +99,21 @@ window.app
 				// org.apache.cordova.statusbar required
 				window.StatusBar.styleDefault();
 			}
+
+			if (window.cordova) {
+				$rootScope.status = navigator.onLine;
+				$window.addEventListener('offline', function () {
+					$rootScope.$apply(function () {
+						$rootScope.status = 'offline';
+
+					});
+				}, false);
+				$window.addEventListener('online', function () {
+					$rootScope.$apply(function () {
+						$rootScope.status = 'online';
+					});
+				}, false);
+			}
+
 		});
 	});
