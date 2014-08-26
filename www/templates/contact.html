@@ -31,15 +31,14 @@
 			</label>
 		</div>
 
-		<div class="list" ng-controller="ContactCtrl">
+	<div class="list" ng-controller="ContactCtrl">
 			<div class="item item-divider" translate="contact"></div>
 			<ul>
 				<li ng-repeat="contact in contacts | filter: titleFilter">
-					<a href=""  class="item item-button-right">
-						{{contact.SnomIPPhoneDirectory.Title}}
-						<button class="button button-positive">
-							<i class="icon ion-ios7-cloud-download"></i>
-						</button>
+					<a href="" class="item item-avatar item-button-right">
+						<gravatar alt="{{contact.firstName}} {{contact.lastName}}" size="60" hash="{{contact.gravatar}}"></gravatar>
+						<h2>{{contact.firstName}} {{contact.lastName}}</h2>
+						<p>{{contact.languages}} {{contact.gravatar}}</p>
 					</a>
 				</li>
 			</ul>
