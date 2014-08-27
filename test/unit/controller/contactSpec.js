@@ -1,4 +1,3 @@
-'use strict';
 /**
  * NRdev
  *
@@ -11,6 +10,7 @@
  * @version    0.1.0
  */
 describe('Contact controller should', function () {
+	'use strict';
 
 	var scope, controller;
 

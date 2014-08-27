@@ -1,4 +1,3 @@
-'use strict';
 /**
  * jasmine specs for services go here
  *
@@ -7,17 +6,31 @@
  */
 
 describe('Contact service', function () {
+	'use strict';
 
-	var contactService;
+	var contactService, mock;
 
 	beforeEach(function () {
 		module('nrdev.service');
 	});
 
+
 	describe('ContactService', function () {
 
 		beforeEach(inject(function (_ContactService_) {
 			contactService = _ContactService_;
+			mock = 		{
+				firstName: 'Torsten',
+				lastName: 'Turbine',
+				languages: 'PHP, JavaScript, Ruby, Turbo Pascal',
+				gravatar: '7702981a0474e6dfefc8158907f3f5f8',
+				link: {
+					blog: 'http://blog.netresearch.de',
+					github: 'tturbine',
+					gplus: '1044444444444444444444',
+					twitter: 'tturbo'
+				}
+			};
 
 			this.addMatchers({
 				toBeSimilarTo: function (expected) {
@@ -48,12 +61,36 @@ describe('Contact service', function () {
 		it('gets the right data', function() {
 			expect(contactService.contactList[0].firstName).toBeDefined();
 			expect(contactService.contactList[0].lastName).toBeDefined();
+			expect(contactService.contactList[0].languages).toBeDefined();
 			expect(contactService.contactList[0].gravatar).toBeDefined();
 			expect(contactService.contactList[0].link).toBeDefined();
 			expect(contactService.contactList[0].link.blog).toBeDefined();
 			expect(contactService.contactList[0].link.github).toBeDefined();
 			expect(contactService.contactList[0].link.gplus).toBeDefined();
 			expect(contactService.contactList[0].link.twitter).toBeDefined();
+		});
+
+		it('define crud methods', function() {
+			expect(contactService.addItem).toBeDefined();
+			expect(contactService.getItem).toBeDefined();
+			expect(contactService.getAllItems).toBeDefined();
+			expect(contactService.removeItem).toBeDefined();
+		});
+
+		it('define service information methods', function() {
+			expect(contactService.size).toBeDefined();
+		});
+
+
+		it('should able to add and red an item', function() {
+			var lastItem;
+			contactService.addItem(mock);
+			lastItem = contactService.size()-1;
+			console.log(lastItem);
+			console.log(contactService.contactList.length);
+			console.log(contactService.contactList[20]);
+
+			expect(contactService.getItem(lastItem)).toBeSimilarTo(mock);
 		});
 
 	});
