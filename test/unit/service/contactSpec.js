@@ -81,16 +81,18 @@ describe('Contact service', function () {
 			expect(contactService.size).toBeDefined();
 		});
 
-
-		it('should able to add and red an item', function() {
+		it('should able to add and read an item', function() {
 			var lastItem;
 			contactService.addItem(mock);
 			lastItem = contactService.size()-1;
-			console.log(lastItem);
-			console.log(contactService.contactList.length);
-			console.log(contactService.contactList[20]);
-
 			expect(contactService.getItem(lastItem)).toBeSimilarTo(mock);
+		});
+
+		it('should able to add remove a item', function() {
+			var lastItem;
+			lastItem = contactService.size();
+			contactService.removeItem(lastItem);
+			expect(contactService.size()).toEqual(lastItem - 1);
 		});
 
 	});

@@ -23,7 +23,7 @@ module.exports = function (config) {
 			'app/js/app.js',
 			'app/js/i18n/*.js',
 			'app/js/service/contactService.js',
-			//'app/js/directive/gravatarDirective.js',
+			'app/js/directive/gravatarDirective.js',
 
 			// specs controller
 			'app/js/controller/*.js',
@@ -33,10 +33,10 @@ module.exports = function (config) {
 			'test/unit/controller/imprintSpec.js',
 
 			// specs services
-			'test/unit/service/contactSpec.js'
+			'test/unit/service/contactSpec.js',
 
 			// specs directives
-			//'test/unit/directive/gravatarSpec.js',
+			'test/unit/directive/gravatarSpec.js'
 
 		],
 

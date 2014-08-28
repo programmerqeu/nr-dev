@@ -12,8 +12,8 @@ window.appDirective
 			restrict: 'AE',
 			replace: true,
 			scope: {
-				hash: '@',
 				alt: '@',
+				hash: '@',
 				size: '@'
 			},
 			link: function (scope) {
