@@ -10,8 +10,9 @@
  */
 
 'use strict';
-var url = 'http://0.0.0.0:9001',
-	title = 'NR[dev]';
+
+var url = 'http://0.0.0.0:9001';
+
 
 module.exports = {
 
@@ -20,7 +21,7 @@ module.exports = {
   'Can get page title': function (test) {
 	test
 		.open(url)
-		.assert.title().is(title, 'Page title is correct')
+		.assert.title().is('NR[dev]', 'Page title is correct')
 		.wait(200)
 		.screenshot('report/screenshots/page_home.png')
 		.done();
