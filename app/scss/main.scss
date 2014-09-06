@@ -42,11 +42,11 @@ $item-avatar-border-radius: 30px;
 	font-family: 'Lobster';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../../www/fnt/lobster.eot');
-	src: url('../../www/fnt/lobster.eot?#iefix') format('embedded-opentype'),
-	url('../../www/fnt/lobster.woff') format('woff'),
-	url('../../www/fnt/lobster.ttf') format('truetype'),
-	url('../../www/fnt/lobster.svg#lobster_1.4regular') format('svg');
+	src: url('../fnt/lobster.eot');
+	src: url('../fnt/lobster.eot?#iefix') format('embedded-opentype'),
+	url('../fnt/lobster.woff') format('woff'),
+	url('../fnt/lobster.ttf') format('truetype'),
+	url('../fnt/lobster.svg#lobster_1.4regular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -111,10 +111,8 @@ footer {
 // ==
 // Utilities
 
-
 // blur background
 .bg-blur {
-	background: transparent url(../../www/img/bg.jpg) center center;
+	background: transparent url(../img/bg.jpg) center center;
 	background-size: cover;
 }
-
