@@ -4,6 +4,8 @@
 [![Dependency Status](https://gemnasium.com/vergissberlin/nr-dev.svg)](https://gemnasium.com/vergissberlin/nr-dev)
 [![Code Climate](https://codeclimate.com/github/vergissberlin/nr-dev.png)](https://codeclimate.com/github/vergissberlin/nr-dev)
 -->
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vergissberlin/nr-dev/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 ### Current version and open tasks
 
 - The current version of _NR[dev]_ is [![GitHub version](https://badge.fury.io/gh/vergissberlin%2Fnr-dev.svg)](http://badge.fury.io/gh/vergissberlin%2Fnr-dev)
