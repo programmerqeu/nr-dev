@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "plugins/com.ionic.keyboard/package.json",
+        "plugins/org.apache.cordova.console/package.json",
+        "plugins/org.apache.cordova.device/package.json",
+        "plugins/org.apache.cordova.splashscreen/package.json"
+      ]
+    }
+  }
+}
